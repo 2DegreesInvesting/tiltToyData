@@ -32,5 +32,9 @@ devtools::install_github("2DegreesInvesting/tiltToyData")
 ## Example
 
 ```{r}
+files <- list.files(system.file("extdata", package = "tiltToyData"), full.names = TRUE)
+files
 
+
+head(read.csv(files[[1]]))
 ```
