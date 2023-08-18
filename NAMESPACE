@@ -2,3 +2,5 @@
 
 export(toy_dataset)
 export(toy_datasets)
+importFrom(readr,read_csv)
+importFrom(withr,local_options)

@@ -34,6 +34,7 @@ devtools::install_github("2DegreesInvesting/tiltToyData")
 
 ```{r}
 library(tiltToyData)
+library(readr)
 
 files <- toy_datasets()
 files
@@ -41,5 +42,5 @@ files
 path <- toy_dataset(files[[1]])
 path
 
-head(read.csv(path))
+read_csv(path, show_col_types = FALSE)
 ```
