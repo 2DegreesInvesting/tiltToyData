@@ -27,10 +27,10 @@ library(tiltToyData)
 library(readr)
 
 toy_files()
-#> [1] "emissions_profile_any_companies.csv.gz"     "emissions_profile_products.csv.gz"          "emissions_profile_upstream_products.csv.gz" "sector_profile_companies.csv.gz"            "sector_profile_upstream_companies.csv.gz"
+#> [1] "emissions_profile_any_companies.csv.gz"     "emissions_profile_products.csv.gz"          "emissions_profile_upstream_products.csv.gz" "sector_profile_any_scenarios.csv.gz"        "sector_profile_companies.csv.gz"            "sector_profile_upstream_companies.csv.gz"   "sector_profile_upstream_products.csv.gz"
 
 toy_path(toy_files()[[1]])
-#> [1] "/usr/local/lib/R/site-library/tiltToyData/extdata/emissions_profile_any_companies.csv.gz"
+#> [1] "/tmp/RtmptAYd79/temp_libpath767aa686ec606/tiltToyData/extdata/emissions_profile_any_companies.csv.gz"
 
 toy_files() |> 
   lapply(\(x) read_csv(toy_path(x), show_col_types = FALSE)) |> 
@@ -75,6 +75,22 @@ toy_files() |>
 #> 10             3.51e+0 Inudstry          kg                      2560 c5f28517-0c26-5746-9afe-3f3a48bfc71c_85a9dda1a-105ab3269262          be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200-4b08-9dec-9c7c0e3585bc
 #> # ℹ 23 more rows
 #> 
+#> $sector_profile_any_scenarios.csv.gz
+#> # A tibble: 388 × 8
+#>    scenario region sector    subsector              year  value reductions type 
+#>    <chr>    <chr>  <chr>     <chr>                 <dbl>  <dbl>      <dbl> <chr>
+#>  1 1.5c rps world  power     <NA>                   2030 5359.        0.58 ipr  
+#>  2 1.5c rps world  power     <NA>                   2050 -807.        1.06 ipr  
+#>  3 1.5c rps world  buildings <NA>                   2030 2454.        0.18 ipr  
+#>  4 1.5c rps world  buildings <NA>                   2050   61.3       0.98 ipr  
+#>  5 1.5c rps world  industry  iron and steel         2030 1872.        0.23 ipr  
+#>  6 1.5c rps world  industry  iron and steel         2050   88.3       0.96 ipr  
+#>  7 1.5c rps world  industry  non-metallic minerals  2030 2641.        0.13 ipr  
+#>  8 1.5c rps world  industry  non-metallic minerals  2050  592.        0.8  ipr  
+#>  9 1.5c rps world  industry  chemicals              2030 1218.        0.12 ipr  
+#> 10 1.5c rps world  industry  chemicals              2050  102.        0.93 ipr  
+#> # ℹ 378 more rows
+#> 
 #> $sector_profile_companies.csv.gz
 #> # A tibble: 28 × 10
 #>    company_id                               company_name          clustered activity_uuid_product_uuid                                     isic_4digit tilt_sector           tilt_subsector         type  sector              subsector          
@@ -102,5 +118,21 @@ toy_files() |>
 #> 5 vicquelin-espaces-verts_fra697272-00101  aged cheese ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa cheese production, soft, from cow milk kg    land use   
 #> 6 bst-procontrol-gmbh_00000005104947-001   cheese      ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa market for cheese, fresh, unripened    kg    land use   
 #> 7 leider-gmbh_00000005064318-001           cream       2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb-4c66-86eb-2253ef8ee54d market for seal, natural rubber based  kg    land use   
-#> 8 cheries-baqu_neu316541-00101             rubber      2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb-4c66-86eb-2253ef8ee54d seal production, natural rubber based  kg    land use
+#> 8 cheries-baqu_neu316541-00101             rubber      2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb-4c66-86eb-2253ef8ee54d seal production, natural rubber based  kg    land use   
+#> 
+#> $sector_profile_upstream_products.csv.gz
+#> # A tibble: 74 × 10
+#>    activity_uuid_product_uuid                                                input_activity_uuid_product_uuid                                          input_reference_product_name input_unit input_isic_4digit input_tilt_sector     input_tilt_subsector type  sector              subsector          
+#>    <chr>                                                                     <chr>                                                                     <chr>                        <chr>                  <dbl> <chr>                 <chr>                <chr> <chr>               <chr>              
+#>  1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 5de8c337-dea9-5c1f-9d90-002de27188be_8911bd8c-a96f-4440-9f8e-a7dacf5e79de biowaste                     kg                      3821 non-metallic minerals raw minerals         ipr   no_match            no_match           
+#>  2 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 5de8c337-dea9-5c1f-9d90-002de27188be_8911bd8c-a96f-4440-9f8e-a7dacf5e79de biowaste                     kg                      3821 non-metallic minerals raw minerals         weo   bioenergy and waste total energy supply
+#>  3 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 1aeb18b9-8355-560f-82aa-543c771c4d61_a0e53510-b90b-43ba-80cc-7600f5da004f chemical, inorganic          kg                      2011 non-metallic minerals raw minerals         ipr   industry            chemicals          
+#>  4 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 1aeb18b9-8355-560f-82aa-543c771c4d61_a0e53510-b90b-43ba-80cc-7600f5da004f chemical, inorganic          kg                      2011 non-metallic minerals raw minerals         weo   total               chemicals          
+#>  5 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 22704506-7707-5ae7-990d-ebf01ac04fb5_50c41012-3b00-429d-ace3-40d0afb69746 chemical, organic            kg                      1201 non-metallic minerals raw minerals         ipr   industry            chemicals          
+#>  6 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 22704506-7707-5ae7-990d-ebf01ac04fb5_50c41012-3b00-429d-ace3-40d0afb69746 chemical, organic            kg                      1201 non-metallic minerals raw minerals         weo   total               chemicals          
+#>  7 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 92078219-1ed3-5215-9f70-931cdefad520_5c21b18e-e32d-4c76-8d16-2238632163c2 cow milk                     kg                      4141 non-metallic minerals raw minerals         ipr   land use            <NA>               
+#>  8 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 92078219-1ed3-5215-9f70-931cdefad520_5c21b18e-e32d-4c76-8d16-2238632163c2 cow milk                     kg                      4141 non-metallic minerals raw minerals         weo   no_match            no_match           
+#>  9 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 9d483329-b09a-5513-b1bc-722cb211e928_bded6c5a-4dca-497e-bdd9-fcd343012087 cream, from cow milk         kg                      1050 non-metallic minerals raw minerals         ipr   industry            other industry     
+#> 10 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 9d483329-b09a-5513-b1bc-722cb211e928_bded6c5a-4dca-497e-bdd9-fcd343012087 cream, from cow milk         kg                      1050 non-metallic minerals raw minerals         weo   total               industry           
+#> # ℹ 64 more rows
 ```
