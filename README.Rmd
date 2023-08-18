@@ -36,11 +36,11 @@ devtools::install_github("2DegreesInvesting/tiltToyData")
 library(tiltToyData)
 library(readr)
 
-files <- toy_datasets()
-files
+toy_files()
 
-toy_dataset(files[[1]])
+toy_path(toy_files()[[1]])
 
-datasets <- lapply(files, \(x) read_csv(toy_dataset(x), show_col_types = FALSE))
-setNames(datasets, files)
+toy_files() |> 
+  lapply(\(x) read_csv(toy_path(x), show_col_types = FALSE)) |> 
+  setNames(toy_files())
 ```

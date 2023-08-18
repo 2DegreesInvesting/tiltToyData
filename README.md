@@ -26,17 +26,17 @@ devtools::install_github("2DegreesInvesting/tiltToyData")
 library(tiltToyData)
 library(readr)
 
-files <- toy_datasets()
-files
+toy_files()
 #> [1] "emissions_profile_any_companies.csv.gz"    
 #> [2] "emissions_profile_products.csv.gz"         
 #> [3] "emissions_profile_upstream_products.csv.gz"
 
-toy_dataset(files[[1]])
+toy_path(toy_files()[[1]])
 #> [1] "/usr/local/lib/R/site-library/tiltToyData/extdata/emissions_profile_any_companies.csv.gz"
 
-datasets <- lapply(files, \(x) read_csv(toy_dataset(x), show_col_types = FALSE))
-setNames(datasets, files)
+toy_files() |> 
+  lapply(\(x) read_csv(toy_path(x), show_col_types = FALSE)) |> 
+  setNames(toy_files())
 #> $emissions_profile_any_companies.csv.gz
 #> # A tibble: 9 × 4
 #>   activity_uuid_product_uuid                          clustered company_id unit 
