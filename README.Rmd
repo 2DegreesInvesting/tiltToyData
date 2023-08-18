@@ -39,8 +39,8 @@ library(readr)
 files <- toy_datasets()
 files
 
-path <- toy_dataset(files[[1]])
-path
+toy_dataset(files[[1]])
 
-read_csv(path, show_col_types = FALSE)
+datasets <- lapply(files, \(x) read_csv(toy_dataset(x), show_col_types = FALSE))
+setNames(datasets, files)
 ```
