@@ -20,12 +20,17 @@ devtools::install_github("2DegreesInvesting/tiltToyData")
 ## Example
 
 ``` r
-files <- list.files(system.file("extdata", package = "tiltToyData"), full.names = TRUE)
+library(tiltToyData)
+
+files <- toy_datasets()
 files
+#> [1] "emissions_profile_any_companies.csv.gz"
+
+path <- toy_dataset(files[[1]])
+path
 #> [1] "/usr/local/lib/R/site-library/tiltToyData/extdata/emissions_profile_any_companies.csv.gz"
 
-
-head(read.csv(files[[1]]))
+head(read.csv(path))
 #>                                                  activity_uuid_product_uuid
 #> 1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa
 #> 2 be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200-4b08-9dec-9c7c0e3585bc
