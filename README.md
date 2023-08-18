@@ -27,11 +27,19 @@ library(tiltToyData)
 library(readr)
 
 toy_files()
-#> [1] "emissions_profile_any_companies.csv.gz"     "emissions_profile_products.csv.gz"          "emissions_profile_upstream_products.csv.gz" "sector_profile_any_scenarios.csv.gz"        "sector_profile_companies.csv.gz"            "sector_profile_upstream_companies.csv.gz"   "sector_profile_upstream_products.csv.gz"
+#> [1] "emissions_profile_any_companies.csv.gz"    
+#> [2] "emissions_profile_products.csv.gz"         
+#> [3] "emissions_profile_upstream_products.csv.gz"
+#> [4] "sector_profile_any_scenarios.csv.gz"       
+#> [5] "sector_profile_companies.csv.gz"           
+#> [6] "sector_profile_upstream_companies.csv.gz"  
+#> [7] "sector_profile_upstream_products.csv.gz"
 
 toy_path(toy_files()[[1]])
-#> [1] "/tmp/RtmptAYd79/temp_libpath767aa686ec606/tiltToyData/extdata/emissions_profile_any_companies.csv.gz"
+#> [1] "/usr/local/lib/R/site-library/tiltToyData/extdata/emissions_profile_any_companies.csv.gz"
+```
 
+``` r
 toy_files() |> 
   lapply(\(x) read_csv(toy_path(x), show_col_types = FALSE)) |> 
   setNames(toy_files())

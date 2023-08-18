@@ -11,8 +11,6 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
-
-options(width = 1000)
 ```
 
 # tiltToyData
@@ -41,8 +39,15 @@ library(readr)
 toy_files()
 
 toy_path(toy_files()[[1]])
+```
 
+```{r echo=FALSE}
+options(width = 1000)
+```
+
+```{r}
 toy_files() |> 
   lapply(\(x) read_csv(toy_path(x), show_col_types = FALSE)) |> 
   setNames(toy_files())
 ```
+
