@@ -35,19 +35,13 @@ devtools::install_github("2DegreesInvesting/tiltToyData")
 ```{r}
 library(tiltToyData)
 library(readr)
+options(readr.show_col_types = FALSE)
 
 toy_files()
 
-toy_path(toy_files()[[1]])
-```
+read_csv(toy_emissions_profile_products())
 
-```{r echo=FALSE}
-options(width = 1000)
-```
-
-```{r}
-toy_files() |> 
-  lapply(\(x) read_csv(toy_path(x), show_col_types = FALSE)) |> 
+toy_files() |>
+  lapply(\(x) read_csv(toy_path(x))) |>
   setNames(toy_files())
 ```
-

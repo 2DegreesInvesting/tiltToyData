@@ -1,13 +1,12 @@
-read_toy_dataset <- function(dataset, ...) {
-  file <- sprintf("%s.%s", dataset, toy_ext())
-  path <- toy_path(file)
-  read_csv(path, show_col_types = FALSE, ...)
+local_snapshot <- function(.local_envir = parent.frame()) {
+  op <- append(read_quietly(), print_widely())
+  local_options(op, .local_envir = .local_envir)
 }
 
-toy_ext <- function() {
-  "csv.gz"
+read_quietly <- function() {
+  list(readr.show_col_types = FALSE)
 }
 
-snapshot_witdh <- function() {
+print_widely <- function() {
   list(width = 1000)
 }
