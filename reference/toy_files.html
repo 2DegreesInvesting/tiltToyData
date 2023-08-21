@@ -73,8 +73,7 @@ available files are returned. listed.</p></dd>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">files</span> <span class="op">&lt;-</span> <span class="fu">toy_files</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">files</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">toy_files</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "emissions_profile_any_companies.csv.gz"    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [2] "emissions_profile_products.csv.gz"         </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [3] "emissions_profile_upstream_products.csv.gz"</span>
@@ -83,8 +82,11 @@ available files are returned. listed.</p></dd>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [6] "sector_profile_upstream_companies.csv.gz"  </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [7] "sector_profile_upstream_products.csv.gz"   </span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="fu">toy_path</span><span class="op">(</span><span class="va">files</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">toy_path</span><span class="op">(</span><span class="fu">toy_files</span><span class="op">(</span><span class="op">)</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/home/runner/work/_temp/Library/tiltToyData/extdata/emissions_profile_any_companies.csv.gz"</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu"><a href="toy_datasets.html">toy_emissions_profile_products</a></span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/home/runner/work/_temp/Library/tiltToyData/extdata/emissions_profile_products.csv.gz"</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

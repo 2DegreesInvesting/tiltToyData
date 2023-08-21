@@ -70,6 +70,7 @@
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://2degreesinvesting.github.io/tiltToyData/">tiltToyData</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://readr.tidyverse.org" class="external-link">readr</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>readr.show_col_types <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/toy_files.html">toy_files</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "emissions_profile_any_companies.csv.gz"    </span></span>
@@ -80,51 +81,62 @@
 <span><span class="co">#&gt; [6] "sector_profile_upstream_companies.csv.gz"  </span></span>
 <span><span class="co">#&gt; [7] "sector_profile_upstream_products.csv.gz"</span></span>
 <span></span>
-<span><span class="fu"><a href="reference/toy_files.html">toy_path</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_files</a></span><span class="op">(</span><span class="op">)</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "/usr/local/lib/R/site-library/tiltToyData/extdata/emissions_profile_any_companies.csv.gz"</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/toy_files.html">toy_files</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span>\<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_path</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>, show_col_types <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_datasets.html">toy_emissions_profile_products</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 5 × 6</span></span>
+<span><span class="co">#&gt;   co2_footprint tilt_sector    unit  isic_4digit activity_uuid_product_uuid     </span></span>
+<span><span class="co">#&gt;           &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;                          </span></span>
+<span><span class="co">#&gt; 1        176.   Industry       unit         2560 0a242b09-772a-5edf-8e82-9cb4ba…</span></span>
+<span><span class="co">#&gt; 2         58.1  Industry       unit         2560 be06d25c-73dc-55fb-965b-0f3004…</span></span>
+<span><span class="co">#&gt; 3          4.95 Steel &amp; Metals kg           2870 977d997e-c257-5033-ba39-d0edee…</span></span>
+<span><span class="co">#&gt; 4         12.5  Agriculture    kg           1780 ebb8475e-ff57-5e4e-937b-b57881…</span></span>
+<span><span class="co">#&gt; 5          2.07 Industry       kg           2679 2f7b77a7-1556-5c1b-b0aa-c4534d…</span></span>
+<span><span class="co">#&gt; # ℹ 1 more variable: ei_activity_name &lt;chr&gt;</span></span>
+<span></span>
+<span><span class="fu"><a href="reference/toy_files.html">toy_files</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span>\<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_path</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/stats/setNames.html" class="external-link">setNames</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_files</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; $emissions_profile_any_companies.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 9 × 4</span></span>
-<span><span class="co">#&gt;   activity_uuid_product_uuid                                                clustered   company_id                               unit </span></span>
-<span><span class="co">#&gt;   &lt;chr&gt;                                                                     &lt;chr&gt;       &lt;chr&gt;                                    &lt;chr&gt;</span></span>
-<span><span class="co">#&gt; 1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa stove       fleischerei-stiefsohn_00000005219477-001 unit </span></span>
-<span><span class="co">#&gt; 2 be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200-4b08-9dec-9c7c0e3585bc oven        fleischerei-stiefsohn_00000005219477-001 unit </span></span>
-<span><span class="co">#&gt; 3 977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-eca5-482d-a829-c18e46a52db4 steel       pecheries-basques_fra316541-00101        kg   </span></span>
-<span><span class="co">#&gt; 4 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa aged cheese hoche-butter-gmbh_deu422723-693847001    kg   </span></span>
-<span><span class="co">#&gt; 5 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa aged cheese vicquelin-espaces-verts_fra697272-00101  kg   </span></span>
-<span><span class="co">#&gt; 6 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa cheese      bst-procontrol-gmbh_00000005104947-001   kg   </span></span>
-<span><span class="co">#&gt; 7 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb-4c66-86eb-2253ef8ee54d cream       leider-gmbh_00000005064318-001           kg   </span></span>
-<span><span class="co">#&gt; 8 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb-4c66-86eb-2253ef8ee54d rubber      cheries-baqu_neu316541-00101             kg   </span></span>
-<span><span class="co">#&gt; 9 &lt;NA&gt;                                                                      apple       ca-coity-trg-aua-gmbh_00000384-001       &lt;NA&gt; </span></span>
+<span><span class="co">#&gt;   activity_uuid_product_uuid                          clustered company_id unit </span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;                                               &lt;chr&gt;     &lt;chr&gt;      &lt;chr&gt;</span></span>
+<span><span class="co">#&gt; 1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0… stove     fleischer… unit </span></span>
+<span><span class="co">#&gt; 2 be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200… oven      fleischer… unit </span></span>
+<span><span class="co">#&gt; 3 977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-eca5… steel     pecheries… kg   </span></span>
+<span><span class="co">#&gt; 4 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c… aged che… hoche-but… kg   </span></span>
+<span><span class="co">#&gt; 5 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c… aged che… vicquelin… kg   </span></span>
+<span><span class="co">#&gt; 6 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c… cheese    bst-proco… kg   </span></span>
+<span><span class="co">#&gt; 7 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb… cream     leider-gm… kg   </span></span>
+<span><span class="co">#&gt; 8 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb… rubber    cheries-b… kg   </span></span>
+<span><span class="co">#&gt; 9 &lt;NA&gt;                                                apple     ca-coity-… &lt;NA&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $emissions_profile_products.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 5 × 6</span></span>
-<span><span class="co">#&gt;   co2_footprint tilt_sector    unit  isic_4digit activity_uuid_product_uuid                                                ei_activity_name                      </span></span>
-<span><span class="co">#&gt;           &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;                                                                     &lt;chr&gt;                                 </span></span>
-<span><span class="co">#&gt; 1        176.   Industry       unit         2560 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa cookstove production or electric      </span></span>
-<span><span class="co">#&gt; 2         58.1  Industry       unit         2560 be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200-4b08-9dec-9c7c0e3585bc microwave oven production             </span></span>
-<span><span class="co">#&gt; 3          4.95 Steel &amp; Metals kg           2870 977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-eca5-482d-a829-c18e46a52db4 market for steel, chromium steel      </span></span>
-<span><span class="co">#&gt; 4         12.5  Agriculture    kg           1780 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa cheese production, soft, from cow milk</span></span>
-<span><span class="co">#&gt; 5          2.07 Industry       kg           2679 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb-4c66-86eb-2253ef8ee54d market for seal, natural rubber based </span></span>
+<span><span class="co">#&gt;   co2_footprint tilt_sector    unit  isic_4digit activity_uuid_product_uuid     </span></span>
+<span><span class="co">#&gt;           &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;                          </span></span>
+<span><span class="co">#&gt; 1        176.   Industry       unit         2560 0a242b09-772a-5edf-8e82-9cb4ba…</span></span>
+<span><span class="co">#&gt; 2         58.1  Industry       unit         2560 be06d25c-73dc-55fb-965b-0f3004…</span></span>
+<span><span class="co">#&gt; 3          4.95 Steel &amp; Metals kg           2870 977d997e-c257-5033-ba39-d0edee…</span></span>
+<span><span class="co">#&gt; 4         12.5  Agriculture    kg           1780 ebb8475e-ff57-5e4e-937b-b57881…</span></span>
+<span><span class="co">#&gt; 5          2.07 Industry       kg           2679 2f7b77a7-1556-5c1b-b0aa-c4534d…</span></span>
+<span><span class="co">#&gt; # ℹ 1 more variable: ei_activity_name &lt;chr&gt;</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $emissions_profile_upstream_products.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 33 × 6</span></span>
-<span><span class="co">#&gt;    input_co2_footprint input_tilt_sector input_unit input_isic_4digit input_activity_uuid_product_uuid                                     activity_uuid_product_uuid                                               </span></span>
-<span><span class="co">#&gt;                  &lt;dbl&gt; &lt;chr&gt;             &lt;chr&gt;                  &lt;dbl&gt; &lt;chr&gt;                                                                &lt;chr&gt;                                                                    </span></span>
-<span><span class="co">#&gt;  1             7.07e+0 Inudstry          kg                      2560 5de8c337-dea9-5c1f-9d90-002de27188be_8911bd8c-a96f-4440-9f8e-a7dacf5 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa</span></span>
-<span><span class="co">#&gt;  2             3.99e+1 Inudstry          kwh                     2560 1aeb18b9-8355-560f-82aa-543c771c4d61_a0e53510-b90b-43ba-80cc-7600f5d 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa</span></span>
-<span><span class="co">#&gt;  3             5.12e-1 Inudstry          kg                      2560 22704506-7707-5ae7-990d-ebf01ac04fb5_50c41012-3b00-429d-ace3-40d0    0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa</span></span>
-<span><span class="co">#&gt;  4             1.24e+0 Inudstry          kg                      2560 92078219-1ed3-5215-9f70-931cdefad520_5c21b18e-e32d-4c76-8d16-2238632 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa</span></span>
-<span><span class="co">#&gt;  5             2.12e+1 Inudstry          kwh                     2560 9d483329-b09a-5513-b1bc-722cb211e928_bd4dca-497e-bdd9-fcd343012087   0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa</span></span>
-<span><span class="co">#&gt;  6             1.24e-9 Inudstry          kg                      2560 8709b463-732e-592e-9b88-999ed17af48f_6b6b3a15-e0-baea-cda98afc61c2   0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa</span></span>
-<span><span class="co">#&gt;  7             7   e-9 Inudstry          kg                      2560 d44e7db1-4dda-51ed2929a8f1a2_32e60fbc-4778-470c-9653-feb859a3418f    0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa</span></span>
-<span><span class="co">#&gt;  8             1.04e+0 Inudstry          kg                      2560 7c7718bb-2372-5d04-a7ac-1ae5b12b05e3_61396bcb-bf35-411a-a6a6-85e8    0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa</span></span>
-<span><span class="co">#&gt;  9             1.12e+0 Inudstry          kg                      2560 f08f52c5-559-92f7-ed216a32eed2_1b30b018-ac39-41f4-a9e0-92057ee       be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200-4b08-9dec-9c7c0e3585bc</span></span>
-<span><span class="co">#&gt; 10             3.51e+0 Inudstry          kg                      2560 c5f28517-0c26-5746-9afe-3f3a48bfc71c_85a9dda1a-105ab3269262          be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200-4b08-9dec-9c7c0e3585bc</span></span>
+<span><span class="co">#&gt;    input_co2_footprint input_tilt_sector input_unit input_isic_4digit</span></span>
+<span><span class="co">#&gt;                  &lt;dbl&gt; &lt;chr&gt;             &lt;chr&gt;                  &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1             7.07e+0 Inudstry          kg                      2560</span></span>
+<span><span class="co">#&gt;  2             3.99e+1 Inudstry          kwh                     2560</span></span>
+<span><span class="co">#&gt;  3             5.12e-1 Inudstry          kg                      2560</span></span>
+<span><span class="co">#&gt;  4             1.24e+0 Inudstry          kg                      2560</span></span>
+<span><span class="co">#&gt;  5             2.12e+1 Inudstry          kwh                     2560</span></span>
+<span><span class="co">#&gt;  6             1.24e-9 Inudstry          kg                      2560</span></span>
+<span><span class="co">#&gt;  7             7   e-9 Inudstry          kg                      2560</span></span>
+<span><span class="co">#&gt;  8             1.04e+0 Inudstry          kg                      2560</span></span>
+<span><span class="co">#&gt;  9             1.12e+0 Inudstry          kg                      2560</span></span>
+<span><span class="co">#&gt; 10             3.51e+0 Inudstry          kg                      2560</span></span>
 <span><span class="co">#&gt; # ℹ 23 more rows</span></span>
+<span><span class="co">#&gt; # ℹ 2 more variables: input_activity_uuid_product_uuid &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   activity_uuid_product_uuid &lt;chr&gt;</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $sector_profile_any_scenarios.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 388 × 8</span></span>
@@ -144,48 +156,57 @@
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $sector_profile_companies.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 28 × 10</span></span>
-<span><span class="co">#&gt;    company_id                               company_name          clustered activity_uuid_product_uuid                                     isic_4digit tilt_sector           tilt_subsector         type  sector              subsector          </span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;                                    &lt;chr&gt;                 &lt;chr&gt;     &lt;chr&gt;                                                                &lt;dbl&gt; &lt;chr&gt;                 &lt;chr&gt;                  &lt;chr&gt; &lt;chr&gt;               &lt;chr&gt;              </span></span>
-<span><span class="co">#&gt;  1 fleischerei-stiefsohn_00000005219477-001 fleischerei-stiefsohn steel     0faa7ecb-fef2-5117-8993-387c1236-001e-49b5-aa3d-810c0214f9ce          2410 &lt;NA&gt;                  &lt;NA&gt;                   ipr   industry            iron and steel     </span></span>
-<span><span class="co">#&gt;  2 fleischerei-stiefsohn_00000005219477-001 fleischerei-stiefsohn steel     0faa7ecb-fef2-5117-8993-387c1236-001e-49b5-aa3d-810c0214f9ce          2410 &lt;NA&gt;                  &lt;NA&gt;                   weo   total               iron and steel     </span></span>
-<span><span class="co">#&gt;  3 pecheries-basques_fra316541-00101        pecheries-basques     nitrogen  03fbf989-9a1a-5e3d-a5bd-15f36f89b3-af52-4826-97f7-cc35f80f226f        2029 &lt;NA&gt;                  &lt;NA&gt;                   ipr   industry            chemicals          </span></span>
-<span><span class="co">#&gt;  4 pecheries-basques_fra316541-00101        pecheries-basques     nitrogen  03fbf989-9a1a-5e3d-a5bd-15f36f89b3-af52-4826-97f7-cc35f80f226f        2029 &lt;NA&gt;                  &lt;NA&gt;                   weo   total               chemicals          </span></span>
-<span><span class="co">#&gt;  5 hoche-butter-gmbh_deu422723-693847001    hoche-butter-gmbh     waste     &lt;NA&gt;                                                                    NA energy                bioenergy &amp; waste      ipr   total               energy             </span></span>
-<span><span class="co">#&gt;  6 hoche-butter-gmbh_deu422723-693847001    hoche-butter-gmbh     waste     &lt;NA&gt;                                                                    NA energy                bioenergy &amp; waste      weo   bioenergy and waste total energy supply</span></span>
-<span><span class="co">#&gt;  7 hoche-butter-gmbh_deu422723-693847002    hoche-butter-gmbh     car       &lt;NA&gt;                                                                    NA transportation        transportation         ipr   transport           other transport    </span></span>
-<span><span class="co">#&gt;  8 hoche-butter-gmbh_deu422723-693847002    hoche-butter-gmbh     car       &lt;NA&gt;                                                                    NA transportation        transportation         weo   total               transport          </span></span>
-<span><span class="co">#&gt;  9 hoche-butter-gmbh_deu422723-693847003    hoche-butter-gmbh     heater    &lt;NA&gt;                                                                    NA construction industry construction buildings ipr   buildings           &lt;NA&gt;               </span></span>
-<span><span class="co">#&gt; 10 hoche-butter-gmbh_deu422723-693847003    hoche-butter-gmbh     heater    &lt;NA&gt;                                                                    NA construction industry construction buildings weo   total               buildings          </span></span>
+<span><span class="co">#&gt;    company_id          company_name clustered activity_uuid_produc…¹ isic_4digit</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;               &lt;chr&gt;        &lt;chr&gt;     &lt;chr&gt;                        &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89…        2410</span></span>
+<span><span class="co">#&gt;  2 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89…        2410</span></span>
+<span><span class="co">#&gt;  3 pecheries-basques_… pecheries-b… nitrogen  03fbf989-9a1a-5e3d-a5…        2029</span></span>
+<span><span class="co">#&gt;  4 pecheries-basques_… pecheries-b… nitrogen  03fbf989-9a1a-5e3d-a5…        2029</span></span>
+<span><span class="co">#&gt;  5 hoche-butter-gmbh_… hoche-butte… waste     &lt;NA&gt;                            NA</span></span>
+<span><span class="co">#&gt;  6 hoche-butter-gmbh_… hoche-butte… waste     &lt;NA&gt;                            NA</span></span>
+<span><span class="co">#&gt;  7 hoche-butter-gmbh_… hoche-butte… car       &lt;NA&gt;                            NA</span></span>
+<span><span class="co">#&gt;  8 hoche-butter-gmbh_… hoche-butte… car       &lt;NA&gt;                            NA</span></span>
+<span><span class="co">#&gt;  9 hoche-butter-gmbh_… hoche-butte… heater    &lt;NA&gt;                            NA</span></span>
+<span><span class="co">#&gt; 10 hoche-butter-gmbh_… hoche-butte… heater    &lt;NA&gt;                            NA</span></span>
 <span><span class="co">#&gt; # ℹ 18 more rows</span></span>
+<span><span class="co">#&gt; # ℹ abbreviated name: ¹​activity_uuid_product_uuid</span></span>
+<span><span class="co">#&gt; # ℹ 5 more variables: tilt_sector &lt;chr&gt;, tilt_subsector &lt;chr&gt;, type &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   sector &lt;chr&gt;, subsector &lt;chr&gt;</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $sector_profile_upstream_companies.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 8 × 6</span></span>
-<span><span class="co">#&gt;   company_id                               clustered   activity_uuid_product_uuid                                                ei_activity_name                       unit  tilt_sector</span></span>
-<span><span class="co">#&gt;   &lt;chr&gt;                                    &lt;chr&gt;       &lt;chr&gt;                                                                     &lt;chr&gt;                                  &lt;chr&gt; &lt;chr&gt;      </span></span>
-<span><span class="co">#&gt; 1 fleischerei-stiefsohn_00000005219477-001 stove       0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa cookstove production or electric       unit  energy     </span></span>
-<span><span class="co">#&gt; 2 fleischerei-stiefsohn_00000005219477-001 oven        be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200-4b08-9dec-9c7c0e3585bc microwave oven production              unit  energy     </span></span>
-<span><span class="co">#&gt; 3 pecheries-basques_fra316541-00101        steel       977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-eca5-482d-a829-c18e46a52db4 market for steel, chromium steel       kg    energy     </span></span>
-<span><span class="co">#&gt; 4 hoche-butter-gmbh_deu422723-693847001    aged cheese ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa cheese production, soft, from cow milk kg    &lt;NA&gt;       </span></span>
-<span><span class="co">#&gt; 5 vicquelin-espaces-verts_fra697272-00101  aged cheese ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa cheese production, soft, from cow milk kg    land use   </span></span>
-<span><span class="co">#&gt; 6 bst-procontrol-gmbh_00000005104947-001   cheese      ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa market for cheese, fresh, unripened    kg    land use   </span></span>
-<span><span class="co">#&gt; 7 leider-gmbh_00000005064318-001           cream       2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb-4c66-86eb-2253ef8ee54d market for seal, natural rubber based  kg    land use   </span></span>
-<span><span class="co">#&gt; 8 cheries-baqu_neu316541-00101             rubber      2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb-4c66-86eb-2253ef8ee54d seal production, natural rubber based  kg    land use   </span></span>
+<span><span class="co">#&gt;   company_id clustered activity_uuid_produc…¹ ei_activity_name unit  tilt_sector</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;                  &lt;chr&gt;            &lt;chr&gt; &lt;chr&gt;      </span></span>
+<span><span class="co">#&gt; 1 fleischer… stove     0a242b09-772a-5edf-8e… cookstove produ… unit  energy     </span></span>
+<span><span class="co">#&gt; 2 fleischer… oven      be06d25c-73dc-55fb-96… microwave oven … unit  energy     </span></span>
+<span><span class="co">#&gt; 3 pecheries… steel     977d997e-c257-5033-ba… market for stee… kg    energy     </span></span>
+<span><span class="co">#&gt; 4 hoche-but… aged che… ebb8475e-ff57-5e4e-93… cheese producti… kg    &lt;NA&gt;       </span></span>
+<span><span class="co">#&gt; 5 vicquelin… aged che… ebb8475e-ff57-5e4e-93… cheese producti… kg    land use   </span></span>
+<span><span class="co">#&gt; 6 bst-proco… cheese    ebb8475e-ff57-5e4e-93… market for chee… kg    land use   </span></span>
+<span><span class="co">#&gt; 7 leider-gm… cream     2f7b77a7-1556-5c1b-b0… market for seal… kg    land use   </span></span>
+<span><span class="co">#&gt; 8 cheries-b… rubber    2f7b77a7-1556-5c1b-b0… seal production… kg    land use   </span></span>
+<span><span class="co">#&gt; # ℹ abbreviated name: ¹​activity_uuid_product_uuid</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $sector_profile_upstream_products.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 74 × 10</span></span>
-<span><span class="co">#&gt;    activity_uuid_product_uuid                                                input_activity_uuid_product_uuid                                          input_reference_product_name input_unit input_isic_4digit input_tilt_sector     input_tilt_subsector type  sector              subsector          </span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;                                                                     &lt;chr&gt;                                                                     &lt;chr&gt;                        &lt;chr&gt;                  &lt;dbl&gt; &lt;chr&gt;                 &lt;chr&gt;                &lt;chr&gt; &lt;chr&gt;               &lt;chr&gt;              </span></span>
-<span><span class="co">#&gt;  1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 5de8c337-dea9-5c1f-9d90-002de27188be_8911bd8c-a96f-4440-9f8e-a7dacf5e79de biowaste                     kg                      3821 non-metallic minerals raw minerals         ipr   no_match            no_match           </span></span>
-<span><span class="co">#&gt;  2 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 5de8c337-dea9-5c1f-9d90-002de27188be_8911bd8c-a96f-4440-9f8e-a7dacf5e79de biowaste                     kg                      3821 non-metallic minerals raw minerals         weo   bioenergy and waste total energy supply</span></span>
-<span><span class="co">#&gt;  3 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 1aeb18b9-8355-560f-82aa-543c771c4d61_a0e53510-b90b-43ba-80cc-7600f5da004f chemical, inorganic          kg                      2011 non-metallic minerals raw minerals         ipr   industry            chemicals          </span></span>
-<span><span class="co">#&gt;  4 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 1aeb18b9-8355-560f-82aa-543c771c4d61_a0e53510-b90b-43ba-80cc-7600f5da004f chemical, inorganic          kg                      2011 non-metallic minerals raw minerals         weo   total               chemicals          </span></span>
-<span><span class="co">#&gt;  5 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 22704506-7707-5ae7-990d-ebf01ac04fb5_50c41012-3b00-429d-ace3-40d0afb69746 chemical, organic            kg                      1201 non-metallic minerals raw minerals         ipr   industry            chemicals          </span></span>
-<span><span class="co">#&gt;  6 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 22704506-7707-5ae7-990d-ebf01ac04fb5_50c41012-3b00-429d-ace3-40d0afb69746 chemical, organic            kg                      1201 non-metallic minerals raw minerals         weo   total               chemicals          </span></span>
-<span><span class="co">#&gt;  7 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 92078219-1ed3-5215-9f70-931cdefad520_5c21b18e-e32d-4c76-8d16-2238632163c2 cow milk                     kg                      4141 non-metallic minerals raw minerals         ipr   land use            &lt;NA&gt;               </span></span>
-<span><span class="co">#&gt;  8 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 92078219-1ed3-5215-9f70-931cdefad520_5c21b18e-e32d-4c76-8d16-2238632163c2 cow milk                     kg                      4141 non-metallic minerals raw minerals         weo   no_match            no_match           </span></span>
-<span><span class="co">#&gt;  9 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 9d483329-b09a-5513-b1bc-722cb211e928_bded6c5a-4dca-497e-bdd9-fcd343012087 cream, from cow milk         kg                      1050 non-metallic minerals raw minerals         ipr   industry            other industry     </span></span>
-<span><span class="co">#&gt; 10 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa 9d483329-b09a-5513-b1bc-722cb211e928_bded6c5a-4dca-497e-bdd9-fcd343012087 cream, from cow milk         kg                      1050 non-metallic minerals raw minerals         weo   total               industry           </span></span>
-<span><span class="co">#&gt; # ℹ 64 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt;    activity_uuid_product_uuid      input_activity_uuid_…¹ input_reference_prod…²</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;                           &lt;chr&gt;                  &lt;chr&gt;                 </span></span>
+<span><span class="co">#&gt;  1 0a242b09-772a-5edf-8e82-9cb4ba… 5de8c337-dea9-5c1f-9d… biowaste              </span></span>
+<span><span class="co">#&gt;  2 0a242b09-772a-5edf-8e82-9cb4ba… 5de8c337-dea9-5c1f-9d… biowaste              </span></span>
+<span><span class="co">#&gt;  3 0a242b09-772a-5edf-8e82-9cb4ba… 1aeb18b9-8355-560f-82… chemical, inorganic   </span></span>
+<span><span class="co">#&gt;  4 0a242b09-772a-5edf-8e82-9cb4ba… 1aeb18b9-8355-560f-82… chemical, inorganic   </span></span>
+<span><span class="co">#&gt;  5 0a242b09-772a-5edf-8e82-9cb4ba… 22704506-7707-5ae7-99… chemical, organic     </span></span>
+<span><span class="co">#&gt;  6 0a242b09-772a-5edf-8e82-9cb4ba… 22704506-7707-5ae7-99… chemical, organic     </span></span>
+<span><span class="co">#&gt;  7 0a242b09-772a-5edf-8e82-9cb4ba… 92078219-1ed3-5215-9f… cow milk              </span></span>
+<span><span class="co">#&gt;  8 0a242b09-772a-5edf-8e82-9cb4ba… 92078219-1ed3-5215-9f… cow milk              </span></span>
+<span><span class="co">#&gt;  9 0a242b09-772a-5edf-8e82-9cb4ba… 9d483329-b09a-5513-b1… cream, from cow milk  </span></span>
+<span><span class="co">#&gt; 10 0a242b09-772a-5edf-8e82-9cb4ba… 9d483329-b09a-5513-b1… cream, from cow milk  </span></span>
+<span><span class="co">#&gt; # ℹ 64 more rows</span></span>
+<span><span class="co">#&gt; # ℹ abbreviated names: ¹​input_activity_uuid_product_uuid,</span></span>
+<span><span class="co">#&gt; #   ²​input_reference_product_name</span></span>
+<span><span class="co">#&gt; # ℹ 7 more variables: input_unit &lt;chr&gt;, input_isic_4digit &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; #   input_tilt_sector &lt;chr&gt;, input_tilt_subsector &lt;chr&gt;, type &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   sector &lt;chr&gt;, subsector &lt;chr&gt;</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="license">
