@@ -8,7 +8,7 @@ Authors@R: c(
   )
 Description: Toy datasets for 'TILT'.
 License: MIT + file LICENSE
-URL: https://2degreesinvesting.github.io/tiltToyData/
+URL: https://2degreesinvesting.github.io/tiltToyData/, https://github.com/2DegreesInvesting/tiltToyData
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
@@ -18,3 +18,4 @@ RoxygenNote: 7.2.3
 Imports: 
     readr,
     withr
+BugReports: https://github.com/2DegreesInvesting/tiltToyData/issues
