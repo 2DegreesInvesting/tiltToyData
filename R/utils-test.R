@@ -1,7 +1,11 @@
 read_toy_dataset <- function(dataset, ...) {
-  file <- sprintf("%s.%s", dataset, toy_ext())
+  file <- toy_file(dataset)
   path <- toy_path(file)
   read_csv(path, show_col_types = FALSE, ...)
+}
+
+toy_file <- function(x) {
+  sprintf("%s.%s", x, toy_ext())
 }
 
 toy_ext <- function() {
