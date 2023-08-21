@@ -1,27 +1,54 @@
-#' Get path to toy datasets
+#' Toy datasets
 #'
-#' This package comes bundled with a number of toy datasets in its
-#' 'inst/extdata' directory. Use `toy_files()` to list all the available
-#' datasets and `toy_path()` to retrieve the path to one example.
-#'
-#' @param file File.
-#' @param pattern A regular expression of filenames to match. If `NULL` all
-#'   available files are returned. listed.
-#'
-#' @return A character.
+#' @name toy_datasets
+NULL
+
+#' @rdname toy_datasets
 #' @export
-#'
-#' @examples
-#' files <- toy_files()
-#' files
-#'
-#' toy_path(files[[1]])
-toy_files <- function (pattern = NULL) {
-  list.files(system.file("extdata", package = "tiltToyData"), pattern = pattern)
+toy_emissions_profile_any_companies <- function() {
+  toy_path(toy_file("emissions_profile_any_companies"))
 }
 
+#' @rdname toy_datasets
 #' @export
-#' @rdname toy_files
-toy_path <- function(file) {
-  system.file("extdata", file, package = "tiltToyData", mustWork = TRUE)
+toy_emissions_profile_products <- function() {
+  toy_path(toy_file("emissions_profile_products"))
+}
+
+#' @rdname toy_datasets
+#' @export
+toy_emissions_profile_upstream_products <- function() {
+  toy_path(toy_file("emissions_profile_upstream_products"))
+}
+
+#' @rdname toy_datasets
+#' @export
+toy_sector_profile_any_scenarios <- function() {
+  toy_path(toy_file("sector_profile_any_scenarios"))
+}
+
+#' @rdname toy_datasets
+#' @export
+toy_sector_profile_companies <- function() {
+  toy_path(toy_file("sector_profile_companies"))
+}
+
+#' @rdname toy_datasets
+#' @export
+toy_sector_profile_upstream_companies <- function() {
+  toy_path(toy_file("sector_profile_upstream_companies"))
+}
+
+#' @rdname toy_datasets
+#' @export
+toy_sector_profile_upstream_products <- function() {
+  toy_path(toy_file("sector_profile_upstream_products"))
+}
+
+toy_file <- function(x) {
+  sprintf("%s.%s", x, toy_ext())
+}
+
+toy_ext <- function() {
+  "csv.gz"
 }
