@@ -1,4 +1,4 @@
-#' Get path to toy datasets
+#' Paths to toy datasets
 #'
 #' This package comes bundled with a number of toy datasets in its
 #' 'inst/extdata' directory. Use `toy_files()` to list all the available
@@ -16,7 +16,6 @@
 #'
 #' toy_path(toy_files()[[1]])
 #'
-#' toy_emissions_profile_products()
 toy_files <- function(pattern = NULL) {
   list.files(system.file("extdata", package = "tiltToyData"), pattern = pattern)
 }

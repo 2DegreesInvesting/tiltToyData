@@ -12,6 +12,8 @@ Toy datasets for 'TILT'.
 Useful links:
 \itemize{
   \item \url{https://2degreesinvesting.github.io/tiltToyData/}
+  \item \url{https://github.com/2DegreesInvesting/tiltToyData}
+  \item Report bugs at \url{https://github.com/2DegreesInvesting/tiltToyData/issues}
 }
 
 }
