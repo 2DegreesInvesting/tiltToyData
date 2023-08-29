@@ -27,8 +27,8 @@ devtools::install_github("2DegreesInvesting/tiltToyData")
 
 ``` r
 library(tiltToyData)
+#> Loading required package: tiltAdapters
 library(readr)
-options(readr.show_col_types = FALSE)
 
 toy_files()
 #> [1] "emissions_profile_any_companies.csv.gz"    
@@ -39,19 +39,17 @@ toy_files()
 #> [6] "sector_profile_upstream_companies.csv.gz"  
 #> [7] "sector_profile_upstream_products.csv.gz"
 
-read_csv(toy_emissions_profile_products())
-#> # A tibble: 5 × 6
-#>   co2_footprint tilt_sector    unit  isic_4digit activity_uuid_product_uuid     
-#>           <dbl> <chr>          <chr>       <dbl> <chr>                          
-#> 1        176.   Industry       unit         2560 0a242b09-772a-5edf-8e82-9cb4ba…
-#> 2         58.1  Industry       unit         2560 be06d25c-73dc-55fb-965b-0f3004…
-#> 3          4.95 Steel & Metals kg           2870 977d997e-c257-5033-ba39-d0edee…
-#> 4         12.5  Agriculture    kg           1780 ebb8475e-ff57-5e4e-937b-b57881…
-#> 5          2.07 Industry       kg           2679 2f7b77a7-1556-5c1b-b0aa-c4534d…
-#> # ℹ 1 more variable: ei_activity_name <chr>
+toy_path(toy_files())
+#> [1] "/usr/local/lib/R/site-library/tiltToyData/extdata/emissions_profile_any_companies.csv.gz"    
+#> [2] "/usr/local/lib/R/site-library/tiltToyData/extdata/emissions_profile_products.csv.gz"         
+#> [3] "/usr/local/lib/R/site-library/tiltToyData/extdata/emissions_profile_upstream_products.csv.gz"
+#> [4] "/usr/local/lib/R/site-library/tiltToyData/extdata/sector_profile_any_scenarios.csv.gz"       
+#> [5] "/usr/local/lib/R/site-library/tiltToyData/extdata/sector_profile_companies.csv.gz"           
+#> [6] "/usr/local/lib/R/site-library/tiltToyData/extdata/sector_profile_upstream_companies.csv.gz"  
+#> [7] "/usr/local/lib/R/site-library/tiltToyData/extdata/sector_profile_upstream_products.csv.gz"
 
 toy_files() |>
-  lapply(\(x) read_csv(toy_path(x))) |>
+  lapply(\(x) read_csv(toy_path(x), show_col_types = FALSE)) |>
   setNames(toy_files())
 #> $emissions_profile_any_companies.csv.gz
 #> # A tibble: 9 × 4
@@ -68,33 +66,33 @@ toy_files() |>
 #> 9 <NA>                                                apple     ca-coity-… <NA> 
 #> 
 #> $emissions_profile_products.csv.gz
-#> # A tibble: 5 × 6
-#>   co2_footprint tilt_sector    unit  isic_4digit activity_uuid_product_uuid     
-#>           <dbl> <chr>          <chr>       <dbl> <chr>                          
-#> 1        176.   Industry       unit         2560 0a242b09-772a-5edf-8e82-9cb4ba…
-#> 2         58.1  Industry       unit         2560 be06d25c-73dc-55fb-965b-0f3004…
-#> 3          4.95 Steel & Metals kg           2870 977d997e-c257-5033-ba39-d0edee…
-#> 4         12.5  Agriculture    kg           1780 ebb8475e-ff57-5e4e-937b-b57881…
-#> 5          2.07 Industry       kg           2679 2f7b77a7-1556-5c1b-b0aa-c4534d…
-#> # ℹ 1 more variable: ei_activity_name <chr>
+#> # A tibble: 5 × 7
+#>   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit
+#>           <dbl> <chr>          <chr>          <chr>       <dbl>
+#> 1        176.   Industry       Other          unit         2560
+#> 2         58.1  Industry       Other          unit         2560
+#> 3          4.95 Steel & Metals Steel          kg           2870
+#> 4         12.5  Agriculture    Agriculture    kg           1780
+#> 5          2.07 Industry       Other          kg           2679
+#> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
 #> 
 #> $emissions_profile_upstream_products.csv.gz
-#> # A tibble: 33 × 6
-#>    input_co2_footprint input_tilt_sector input_unit input_isic_4digit
-#>                  <dbl> <chr>             <chr>                  <dbl>
-#>  1             7.07e+0 Inudstry          kg                      2560
-#>  2             3.99e+1 Inudstry          kwh                     2560
-#>  3             5.12e-1 Inudstry          kg                      2560
-#>  4             1.24e+0 Inudstry          kg                      2560
-#>  5             2.12e+1 Inudstry          kwh                     2560
-#>  6             1.24e-9 Inudstry          kg                      2560
-#>  7             7   e-9 Inudstry          kg                      2560
-#>  8             1.04e+0 Inudstry          kg                      2560
-#>  9             1.12e+0 Inudstry          kg                      2560
-#> 10             3.51e+0 Inudstry          kg                      2560
+#> # A tibble: 33 × 7
+#>    input_co2_footprint input_tilt_sector input_tilt_subsector input_unit
+#>                  <dbl> <chr>             <chr>                <chr>     
+#>  1             7.07e+0 Inudstry          Other                kg        
+#>  2             3.99e+1 Inudstry          Other                kwh       
+#>  3             5.12e-1 Inudstry          Other                kg        
+#>  4             1.24e+0 Inudstry          Other                kg        
+#>  5             2.12e+1 Inudstry          Other                kwh       
+#>  6             1.24e-9 Inudstry          Other                kg        
+#>  7             7   e-9 Inudstry          Other                kg        
+#>  8             1.04e+0 Inudstry          Other                kg        
+#>  9             1.12e+0 Inudstry          Other                kg        
+#> 10             3.51e+0 Inudstry          Other                kg        
 #> # ℹ 23 more rows
-#> # ℹ 2 more variables: input_activity_uuid_product_uuid <chr>,
-#> #   activity_uuid_product_uuid <chr>
+#> # ℹ 3 more variables: input_isic_4digit <dbl>,
+#> #   input_activity_uuid_product_uuid <chr>, activity_uuid_product_uuid <chr>
 #> 
 #> $sector_profile_any_scenarios.csv.gz
 #> # A tibble: 388 × 8
