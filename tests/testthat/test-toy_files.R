@@ -1,4 +1,8 @@
 test_that("outputs one known file", {
+  expect_no_error(toy_path("sector_profile_companies.csv.gz"))
+})
+
+test_that("work with no argument", {
   expect_true("sector_profile_companies.csv.gz" %in% toy_files())
 })
 

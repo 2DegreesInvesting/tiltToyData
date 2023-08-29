@@ -1,6 +1,11 @@
 #' @export
-toy_files.default <- function(pattern = NULL) {
+toy_files.character <- function(pattern = NULL) {
   list.files(system.file("extdata", package = "tiltToyData"), pattern = pattern)
+}
+
+#' @export
+toy_files.default <- function(pattern = NULL) {
+  list.files(system.file("extdata", package = "tiltToyData"))
 }
 
 #' @export
