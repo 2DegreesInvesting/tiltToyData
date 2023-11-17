@@ -15,7 +15,7 @@
 #'
 #' toy_sector_profile_upstream_products()
 toy_emissions_profile_any_companies <- function() {
-  compatible_path(toy_file("emissions_profile_any_companies"))
+  compatible_companies_path(toy_file("emissions_profile_any_companies"))
 }
 
 #' @rdname toy_files
@@ -39,13 +39,13 @@ toy_sector_profile_any_scenarios <- function() {
 #' @rdname toy_files
 #' @export
 toy_sector_profile_companies <- function() {
-  compatible_path(toy_file("sector_profile_companies"))
+  compatible_companies_path(toy_file("sector_profile_companies"))
 }
 
 #' @rdname toy_files
 #' @export
 toy_sector_profile_upstream_companies <- function() {
-  compatible_path(toy_file("sector_profile_upstream_companies"))
+  compatible_companies_path(toy_file("sector_profile_upstream_companies"))
 }
 
 #' @rdname toy_files

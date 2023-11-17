@@ -19,7 +19,7 @@ company_id_cutoff <- function() {
   )
 }
 
-compatible_path <- function(file) {
+compatible_companies_path <- function(file) {
   if (needs_company_id()) {
     file.path(toy_path("deprecated"), file)
   } else {
