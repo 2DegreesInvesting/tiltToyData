@@ -40,61 +40,61 @@ toy_files()
 #> [7] "sector_profile_upstream_products.csv.gz"
 
 read_csv(toy_emissions_profile_products())
-#> # A tibble: 5 × 6
-#>   co2_footprint tilt_sector    unit  isic_4digit activity_uuid_product_uuid     
-#>           <dbl> <chr>          <chr>       <dbl> <chr>                          
-#> 1        176.   Industry       unit         2560 0a242b09-772a-5edf-8e82-9cb4ba…
-#> 2         58.1  Industry       unit         2560 be06d25c-73dc-55fb-965b-0f3004…
-#> 3          4.95 Steel & Metals kg           2870 977d997e-c257-5033-ba39-d0edee…
-#> 4         12.5  Agriculture    kg           1780 ebb8475e-ff57-5e4e-937b-b57881…
-#> 5          2.07 Industry       kg           2679 2f7b77a7-1556-5c1b-b0aa-c4534d…
-#> # ℹ 1 more variable: ei_activity_name <chr>
+#> # A tibble: 5 × 7
+#>   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit
+#>           <dbl> <chr>          <chr>          <chr>       <dbl>
+#> 1        176.   Industry       Other          unit         2560
+#> 2         58.1  Industry       Other          unit         2560
+#> 3          4.95 Steel & Metals Steel          kg           2870
+#> 4         12.5  Agriculture    Agriculture    kg           1780
+#> 5          2.07 Industry       Other          kg           2679
+#> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
 
 toy_files() |>
   lapply(\(x) read_csv(toy_path(x))) |>
   setNames(toy_files())
 #> $emissions_profile_any_companies.csv.gz
 #> # A tibble: 9 × 4
-#>   activity_uuid_product_uuid                          clustered company_id unit 
-#>   <chr>                                               <chr>     <chr>      <chr>
-#> 1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0… stove     fleischer… unit 
-#> 2 be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200… oven      fleischer… unit 
-#> 3 977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-eca5… steel     pecheries… kg   
-#> 4 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c… aged che… hoche-but… kg   
-#> 5 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c… aged che… vicquelin… kg   
-#> 6 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c… cheese    bst-proco… kg   
-#> 7 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb… cream     leider-gm… kg   
-#> 8 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb… rubber    cheries-b… kg   
-#> 9 <NA>                                                apple     ca-coity-… <NA> 
+#>   activity_uuid_product_uuid                        clustered companies_id unit 
+#>   <chr>                                             <chr>     <chr>        <chr>
+#> 1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4… stove     fleischerei… unit 
+#> 2 be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-22… oven      fleischerei… unit 
+#> 3 977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-ec… steel     pecheries-b… kg   
+#> 4 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b… aged che… hoche-butte… kg   
+#> 5 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b… aged che… vicquelin-e… kg   
+#> 6 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b… cheese    bst-procont… kg   
+#> 7 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6f… cream     leider-gmbh… kg   
+#> 8 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6f… rubber    cheries-baq… kg   
+#> 9 <NA>                                              apple     ca-coity-tr… <NA> 
 #> 
 #> $emissions_profile_products.csv.gz
-#> # A tibble: 5 × 6
-#>   co2_footprint tilt_sector    unit  isic_4digit activity_uuid_product_uuid     
-#>           <dbl> <chr>          <chr>       <dbl> <chr>                          
-#> 1        176.   Industry       unit         2560 0a242b09-772a-5edf-8e82-9cb4ba…
-#> 2         58.1  Industry       unit         2560 be06d25c-73dc-55fb-965b-0f3004…
-#> 3          4.95 Steel & Metals kg           2870 977d997e-c257-5033-ba39-d0edee…
-#> 4         12.5  Agriculture    kg           1780 ebb8475e-ff57-5e4e-937b-b57881…
-#> 5          2.07 Industry       kg           2679 2f7b77a7-1556-5c1b-b0aa-c4534d…
-#> # ℹ 1 more variable: ei_activity_name <chr>
+#> # A tibble: 5 × 7
+#>   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit
+#>           <dbl> <chr>          <chr>          <chr>       <dbl>
+#> 1        176.   Industry       Other          unit         2560
+#> 2         58.1  Industry       Other          unit         2560
+#> 3          4.95 Steel & Metals Steel          kg           2870
+#> 4         12.5  Agriculture    Agriculture    kg           1780
+#> 5          2.07 Industry       Other          kg           2679
+#> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
 #> 
 #> $emissions_profile_upstream_products.csv.gz
-#> # A tibble: 33 × 6
-#>    input_co2_footprint input_tilt_sector input_unit input_isic_4digit
-#>                  <dbl> <chr>             <chr>                  <dbl>
-#>  1             7.07e+0 Inudstry          kg                      2560
-#>  2             3.99e+1 Inudstry          kwh                     2560
-#>  3             5.12e-1 Inudstry          kg                      2560
-#>  4             1.24e+0 Inudstry          kg                      2560
-#>  5             2.12e+1 Inudstry          kwh                     2560
-#>  6             1.24e-9 Inudstry          kg                      2560
-#>  7             7   e-9 Inudstry          kg                      2560
-#>  8             1.04e+0 Inudstry          kg                      2560
-#>  9             1.12e+0 Inudstry          kg                      2560
-#> 10             3.51e+0 Inudstry          kg                      2560
+#> # A tibble: 33 × 7
+#>    input_co2_footprint input_tilt_sector input_tilt_subsector input_unit
+#>                  <dbl> <chr>             <chr>                <chr>     
+#>  1             7.07e+0 Inudstry          Other                kg        
+#>  2             3.99e+1 Inudstry          Other                kwh       
+#>  3             5.12e-1 Inudstry          Other                kg        
+#>  4             1.24e+0 Inudstry          Other                kg        
+#>  5             2.12e+1 Inudstry          Other                kwh       
+#>  6             1.24e-9 Inudstry          Other                kg        
+#>  7             7   e-9 Inudstry          Other                kg        
+#>  8             1.04e+0 Inudstry          Other                kg        
+#>  9             1.12e+0 Inudstry          Other                kg        
+#> 10             3.51e+0 Inudstry          Other                kg        
 #> # ℹ 23 more rows
-#> # ℹ 2 more variables: input_activity_uuid_product_uuid <chr>,
-#> #   activity_uuid_product_uuid <chr>
+#> # ℹ 3 more variables: input_isic_4digit <dbl>,
+#> #   input_activity_uuid_product_uuid <chr>, activity_uuid_product_uuid <chr>
 #> 
 #> $sector_profile_any_scenarios.csv.gz
 #> # A tibble: 388 × 8
@@ -114,7 +114,7 @@ toy_files() |>
 #> 
 #> $sector_profile_companies.csv.gz
 #> # A tibble: 28 × 10
-#>    company_id          company_name clustered activity_uuid_produc…¹ isic_4digit
+#>    companies_id        company_name clustered activity_uuid_produc…¹ isic_4digit
 #>    <chr>               <chr>        <chr>     <chr>                        <dbl>
 #>  1 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89…        2410
 #>  2 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89…        2410
@@ -133,17 +133,18 @@ toy_files() |>
 #> 
 #> $sector_profile_upstream_companies.csv.gz
 #> # A tibble: 8 × 6
-#>   company_id clustered activity_uuid_produc…¹ ei_activity_name unit  tilt_sector
-#>   <chr>      <chr>     <chr>                  <chr>            <chr> <chr>      
-#> 1 fleischer… stove     0a242b09-772a-5edf-8e… cookstove produ… unit  energy     
-#> 2 fleischer… oven      be06d25c-73dc-55fb-96… microwave oven … unit  energy     
-#> 3 pecheries… steel     977d997e-c257-5033-ba… market for stee… kg    energy     
-#> 4 hoche-but… aged che… ebb8475e-ff57-5e4e-93… cheese producti… kg    <NA>       
-#> 5 vicquelin… aged che… ebb8475e-ff57-5e4e-93… cheese producti… kg    land use   
-#> 6 bst-proco… cheese    ebb8475e-ff57-5e4e-93… market for chee… kg    land use   
-#> 7 leider-gm… cream     2f7b77a7-1556-5c1b-b0… market for seal… kg    land use   
-#> 8 cheries-b… rubber    2f7b77a7-1556-5c1b-b0… seal production… kg    land use   
+#>   companies_id           clustered activity_uuid_produc…¹ ei_activity_name unit 
+#>   <chr>                  <chr>     <chr>                  <chr>            <chr>
+#> 1 fleischerei-stiefsohn… stove     0a242b09-772a-5edf-8e… cookstove produ… unit 
+#> 2 fleischerei-stiefsohn… oven      be06d25c-73dc-55fb-96… microwave oven … unit 
+#> 3 pecheries-basques_fra… steel     977d997e-c257-5033-ba… market for stee… kg   
+#> 4 hoche-butter-gmbh_deu… aged che… ebb8475e-ff57-5e4e-93… cheese producti… kg   
+#> 5 vicquelin-espaces-ver… aged che… ebb8475e-ff57-5e4e-93… cheese producti… kg   
+#> 6 bst-procontrol-gmbh_0… cheese    ebb8475e-ff57-5e4e-93… market for chee… kg   
+#> 7 leider-gmbh_000000050… cream     2f7b77a7-1556-5c1b-b0… market for seal… kg   
+#> 8 cheries-baqu_neu31654… rubber    2f7b77a7-1556-5c1b-b0… seal production… kg   
 #> # ℹ abbreviated name: ¹​activity_uuid_product_uuid
+#> # ℹ 1 more variable: tilt_sector <chr>
 #> 
 #> $sector_profile_upstream_products.csv.gz
 #> # A tibble: 74 × 10
