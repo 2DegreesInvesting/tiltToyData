@@ -17,7 +17,9 @@
 #' toy_path(toy_files()[[1]])
 #'
 toy_files <- function(pattern = NULL) {
-  list.files(system.file("extdata", package = "tiltToyData"), pattern = pattern)
+  extdata <- system.file("extdata", package = "tiltToyData")
+  paths <- dir_ls(extdata, regexp = pattern, type = "file")
+  path_file(paths)
 }
 
 #' @export

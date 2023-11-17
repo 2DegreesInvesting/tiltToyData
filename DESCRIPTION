@@ -10,15 +10,19 @@ Description: Toy datasets for 'TILT'.
 License: MIT + file LICENSE
 URL: https://2degreesinvesting.github.io/tiltToyData/, https://github.com/2DegreesInvesting/tiltToyData
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    tiltIndicator (>= 0.0.0.9102)
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
+    fs,
     lifecycle,
     readr,
     rlang,
     utils,
     withr
 BugReports: https://github.com/2DegreesInvesting/tiltToyData/issues
+Remotes: 
+    2DegreesInvesting/tiltIndicator
