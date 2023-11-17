@@ -13,13 +13,20 @@ local_cutoff <- function(cutoff, .local_envir = parent.frame()) {
   local_options(op, .local_envir = .local_envir)
 }
 
-needs_company_id <- function() {
-  packageVersion("tiltIndicator") <= company_id_cutoff()
-}
-
 company_id_cutoff <- function() {
   getOption(
     "tiltToyData.company_id_cutoff", default = c(tiltIndicator = "0.0.0.9102")
   )
 }
 
+compatible_path <- function(file) {
+  if (needs_company_id()) {
+    file.path(toy_path("deprecated"), file)
+  } else {
+    toy_path(file)
+  }
+}
+
+needs_company_id <- function() {
+  packageVersion("tiltIndicator") <= company_id_cutoff()
+}
