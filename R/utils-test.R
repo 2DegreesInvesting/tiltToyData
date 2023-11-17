@@ -15,7 +15,8 @@ local_cutoff <- function(cutoff, .local_envir = parent.frame()) {
 
 company_id_cutoff <- function() {
   getOption(
-    "tiltToyData.company_id_cutoff", default = c(tiltIndicator = "0.0.0.9102")
+    "tiltToyData.company_id_cutoff",
+    default = c(tiltIndicator = "0.0.0.9102")
   )
 }
 
