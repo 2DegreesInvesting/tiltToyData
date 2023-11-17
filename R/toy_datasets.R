@@ -45,7 +45,7 @@ toy_sector_profile_companies <- function() {
 #' @rdname toy_files
 #' @export
 toy_sector_profile_upstream_companies <- function() {
-  toy_path(toy_file("sector_profile_upstream_companies"))
+  compatible_path(toy_file("sector_profile_upstream_companies"))
 }
 
 #' @rdname toy_files
