@@ -1,12 +1,41 @@
 local_snapshot <- function(.local_envir = parent.frame()) {
-  op <- append(read_quietly(), print_widely())
+  use_released_data <- "0"
+  op <- list(
+    readr.show_col_types = FALSE,
+    width = 1000,
+    tiltToyData.company_id_cutoff = use_released_data
+  )
   local_options(op, .local_envir = .local_envir)
 }
 
-read_quietly <- function() {
-  list(readr.show_col_types = FALSE)
+local_cutoff <- function(cutoff, .local_envir = parent.frame()) {
+  op <- list(tiltToyData.company_id_cutoff = cutoff)
+  local_options(op, .local_envir = .local_envir)
 }
 
-print_widely <- function() {
-  list(width = 1000)
+company_id_cutoff <- function() {
+  getOption(
+    "tiltToyData.company_id_cutoff",
+    default = c(tiltIndicator = "0.0.0.9102")
+  )
+}
+
+compatible_companies_path <- function(file) {
+  if (needs_company_id()) {
+    warning_deprecated_company_id()
+    file.path(toy_path("deprecated"), file)
+  } else {
+    toy_path(file)
+  }
+}
+
+warning_deprecated_company_id <- function() {
+  rlang::warn(c(
+      "Using deprecated data with `company_id` for backward compatibility.",
+      i = "Upgrade the titlIndicator to use new data with `companies_id`."
+    ), class = "deprecated_company_id")
+}
+
+needs_company_id <- function() {
+  packageVersion("tiltIndicator") <= company_id_cutoff()
 }

@@ -3,7 +3,7 @@
     Code
       as.data.frame(data)
     Output
-                                                       activity_uuid_product_uuid   clustered                               company_id unit
+                                                       activity_uuid_product_uuid   clustered                             companies_id unit
       1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa       stove fleischerei-stiefsohn_00000005219477-001 unit
       2 be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200-4b08-9dec-9c7c0e3585bc        oven fleischerei-stiefsohn_00000005219477-001 unit
       3 977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-eca5-482d-a829-c18e46a52db4       steel        pecheries-basques_fra316541-00101   kg
@@ -466,7 +466,7 @@
     Code
       as.data.frame(data)
     Output
-                                       company_id          company_name           clustered                                     activity_uuid_product_uuid isic_4digit           tilt_sector         tilt_subsector type              sector           subsector
+                                     companies_id          company_name           clustered                                     activity_uuid_product_uuid isic_4digit           tilt_sector         tilt_subsector type              sector           subsector
       1  fleischerei-stiefsohn_00000005219477-001 fleischerei-stiefsohn               steel   0faa7ecb-fef2-5117-8993-387c1236-001e-49b5-aa3d-810c0214f9ce        2410                  <NA>                   <NA>  ipr            industry      iron and steel
       2  fleischerei-stiefsohn_00000005219477-001 fleischerei-stiefsohn               steel   0faa7ecb-fef2-5117-8993-387c1236-001e-49b5-aa3d-810c0214f9ce        2410                  <NA>                   <NA>  weo               total      iron and steel
       3         pecheries-basques_fra316541-00101     pecheries-basques            nitrogen 03fbf989-9a1a-5e3d-a5bd-15f36f89b3-af52-4826-97f7-cc35f80f226f        2029                  <NA>                   <NA>  ipr            industry           chemicals
@@ -501,7 +501,7 @@
     Code
       as.data.frame(data)
     Output
-                                      company_id   clustered                                                activity_uuid_product_uuid                       ei_activity_name unit tilt_sector
+                                    companies_id   clustered                                                activity_uuid_product_uuid                       ei_activity_name unit tilt_sector
       1 fleischerei-stiefsohn_00000005219477-001       stove 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa       cookstove production or electric unit      energy
       2 fleischerei-stiefsohn_00000005219477-001        oven be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200-4b08-9dec-9c7c0e3585bc              microwave oven production unit      energy
       3        pecheries-basques_fra316541-00101       steel 977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-eca5-482d-a829-c18e46a52db4       market for steel, chromium steel   kg      energy
