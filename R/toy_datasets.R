@@ -15,7 +15,13 @@
 #'
 #' toy_sector_profile_upstream_products()
 toy_emissions_profile_any_companies <- function() {
-  toy_path(toy_file("emissions_profile_any_companies"))
+  file <- toy_file("emissions_profile_any_companies")
+
+  if (needs_company_id()) {
+    file.path(toy_path("deprecated"), file)
+  } else {
+    toy_path(file)
+  }
 }
 
 #' @rdname toy_files
