@@ -22,10 +22,18 @@ company_id_cutoff <- function() {
 
 compatible_companies_path <- function(file) {
   if (needs_company_id()) {
+    warning_deprecated_company_id()
     file.path(toy_path("deprecated"), file)
   } else {
     toy_path(file)
   }
+}
+
+warning_deprecated_company_id <- function() {
+  rlang::warn(c(
+      "Using deprecated data with `company_id` for backward compatibility.",
+      i = "Upgrade the titlIndicator to use new data with `companies_id`."
+    ), class = "deprecated_company_id")
 }
 
 needs_company_id <- function() {
