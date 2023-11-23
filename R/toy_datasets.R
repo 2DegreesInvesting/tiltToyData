@@ -32,6 +32,12 @@ toy_emissions_profile_upstream_products <- function() {
 
 #' @rdname toy_files
 #' @export
+toy_sector_profile_any_scenarios <- function() {
+  toy_path(toy_file("sector_profile_any_scenarios"))
+}
+
+#' @rdname toy_files
+#' @export
 toy_sector_profile_companies <- function() {
   compatible_companies_path(toy_file("sector_profile_companies"))
 }
