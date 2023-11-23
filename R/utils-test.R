@@ -23,7 +23,7 @@ company_id_cutoff <- function() {
 compatible_companies_path <- function(file) {
   out <- toy_path(file)
 
-  is_emissions <- grepl("^emissions", fs::path_file(file))
+  is_emissions <- grepl("^emissions", path_file(file))
   if (needs_company_id() && is_emissions) {
     warning_retired_company_id()
     out <- toy_path(file)
