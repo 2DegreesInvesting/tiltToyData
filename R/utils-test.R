@@ -23,18 +23,28 @@ company_id_cutoff <- function() {
 compatible_companies_path <- function(file) {
   out <- toy_path(file)
 
-  is_emissions <- grepl("^emissions", path_file(file))
-  if (needs_company_id() && is_emissions) {
+  if (needs_retired_companies(file)) {
     warning_retired_company_id()
-    out <- toy_path(file)
   }
 
-  if (needs_company_id() && !is_emissions) {
+  if (needs_deprecated_companies(file)) {
     warning_deprecated_company_id()
     out <- file.path(toy_path("deprecated"), file)
   }
 
   out
+}
+
+needs_retired_companies <- function(file) {
+  needs_company_id() && is_emissions(file)
+}
+
+needs_deprecated_companies <- function(file) {
+  needs_company_id() && !is_emissions(file)
+}
+
+is_emissions <- function(file) {
+  grepl("^emissions", path_file(file))
 }
 
 warning_retired_company_id <- function() {
