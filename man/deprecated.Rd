@@ -4,9 +4,16 @@
 \title{Deprecated}
 \description{
 \ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#deprecated}{\figure{lifecycle-deprecated.svg}{options: alt='[Deprecated]'}}}{\strong{[Deprecated]}}
-
-The column \code{company_id} is now deprecated in all \code{toy_*companies()}. The
-latest data uses \code{companies_id} and is available to you automatically when
-you update the tiltIndicator package.
+\itemize{
+\item The column \code{company_id} is now deprecated in all
+\code{toy_sector_profile*companies()}. The latest data uses \code{companies_id} and is
+available to you automatically when you update the tiltIndicator package.
+\item The data accessible via \code{toy_emissions_profile_any_companies()} up to
+v0.0.0.9004 is now deprecated, and the previously deprecated data with
+\code{company_id} is now retired.
+}
+}
+\examples{
+fs::dir_ls(toy_path("deprecated"))
 }
 \keyword{internal}
