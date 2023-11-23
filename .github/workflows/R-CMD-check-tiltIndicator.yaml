@@ -48,6 +48,7 @@ jobs:
         working-directory: tiltIndicator
 
     - name: Install tiltToyData
+      working-directory: tiltToyData
       run: |
         Rscript -e "install.packages('pak')"
         Rscript -e "pak::local_install(dependencies = TRUE)"
