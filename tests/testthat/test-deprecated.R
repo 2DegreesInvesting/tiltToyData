@@ -1,11 +1,11 @@
-test_that("`*emissions*companies` with old tiltIndicator yields deprecated data", {
+test_that("`*emissions*companies` with old tiltIndicator warns `company_id` is retired", {
   local_cutoff(c(extreemely_high = "999"))
 
   expect_warning(
     path <- toy_emissions_profile_any_companies(),
-    class = "deprecated_company_id"
+    class = "retired_company_id"
   )
-  expect_true(grepl("deprecated", path))
+  expect_false(grepl("deprecated", path))
 })
 
 test_that("`*emissions*companies` with new tiltIndicator yields released data", {

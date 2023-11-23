@@ -21,12 +21,28 @@ company_id_cutoff <- function() {
 }
 
 compatible_companies_path <- function(file) {
-  if (needs_company_id()) {
-    warning_deprecated_company_id()
-    file.path(toy_path("deprecated"), file)
-  } else {
-    toy_path(file)
+  out <- toy_path(file)
+
+  is_emissions <- grepl("^emissions", fs::path_file(file))
+  if (needs_company_id() && is_emissions) {
+    warning_retired_company_id()
+    out <- toy_path(file)
   }
+
+  if (needs_company_id() && !is_emissions) {
+    warning_deprecated_company_id()
+    out <- file.path(toy_path("deprecated"), file)
+  }
+
+  out
+}
+
+warning_retired_company_id <- function() {
+  rlang::warn(c(
+      "Using data that is incompatible with your version of tiltIndicator.",
+      x = "Old titlIndicator used `company_id` but it's now now retired.",
+      i = "Upgrade the titlIndicator to use new data with `companies_id`."
+    ), class = "retired_company_id")
 }
 
 warning_deprecated_company_id <- function() {
