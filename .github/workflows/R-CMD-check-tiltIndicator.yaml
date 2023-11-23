@@ -24,6 +24,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        path: tiltToyData
 
     - uses: actions/checkout@v3
       with:
@@ -42,7 +44,7 @@ jobs:
       with:
         extra-packages: any::rcmdcheck
         needs: check
-        working-directory: /github/workspace/tiltIndicator
+        working-directory: tiltIndicator
 
     - name: Install tiltToyData
       run: |
@@ -52,4 +54,4 @@ jobs:
     - uses: r-lib/actions/check-r-package@v2
       with:
         upload-snapshots: true
-        working-directory: /github/workspace/tiltIndicator
+        working-directory: tiltIndicator
