@@ -4,7 +4,6 @@
 \alias{toy_emissions_profile_any_companies}
 \alias{toy_emissions_profile_products}
 \alias{toy_emissions_profile_upstream_products}
-\alias{toy_sector_profile_any_scenarios}
 \alias{toy_sector_profile_companies}
 \alias{toy_sector_profile_upstream_companies}
 \alias{toy_sector_profile_upstream_products}
@@ -17,8 +16,6 @@ toy_emissions_profile_any_companies()
 toy_emissions_profile_products()
 
 toy_emissions_profile_upstream_products()
-
-toy_sector_profile_any_scenarios()
 
 toy_sector_profile_companies()
 
