@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltToyData 0.0.0.9004 (2023-11-23)
+
+* Retire `companies$company_id` (#11).
+
 # tiltToyData 0.0.0.9003 (2023-11-17)
 
 * Rename `company_id` to `companies_id` in a backward compatible way (#10). The
