@@ -31,26 +31,38 @@ library(readr)
 options(readr.show_col_types = FALSE)
 
 toy_files()
-#> [1] "emissions_profile_any_companies.csv.gz"              
-#> [2] "emissions_profile_products.csv.gz"                   
-#> [3] "emissions_profile_products_ecoinvent.csv.gz"         
-#> [4] "emissions_profile_upstream_products.csv.gz"          
-#> [5] "emissions_profile_upstream_products_ecoinvent.csv.gz"
-#> [6] "sector_profile_any_scenarios.csv.gz"                 
-#> [7] "sector_profile_companies.csv.gz"                     
-#> [8] "sector_profile_upstream_companies.csv.gz"            
-#> [9] "sector_profile_upstream_products.csv.gz"
+#> [1] "emissions_profile_any_companies.csv.gz"    
+#> [2] "emissions_profile_products.csv.gz"         
+#> [3] "emissions_profile_upstream_products.csv.gz"
+#> [4] "sector_profile_any_scenarios.csv.gz"       
+#> [5] "sector_profile_companies.csv.gz"           
+#> [6] "sector_profile_upstream_companies.csv.gz"  
+#> [7] "sector_profile_upstream_products.csv.gz"
 
 read_csv(toy_emissions_profile_products())
-#> # A tibble: 5 × 7
-#>   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit
-#>           <dbl> <chr>          <chr>          <chr>       <dbl>
-#> 1        176.   Industry       Other          unit         2560
-#> 2         58.1  Industry       Other          unit         2560
-#> 3          4.95 Steel & Metals Steel          kg           2870
-#> 4         12.5  Agriculture    Agriculture    kg           1780
-#> 5          2.07 Industry       Other          kg           2679
-#> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
+#> # A tibble: 18 × 10
+#>    activity_uuid_product_uuid        co2_footprint ei_activity_name ei_geography
+#>    <chr>                                     <dbl> <chr>            <chr>       
+#>  1 d9704463-45e6-5aa5-9982-6cc6a982…             0 iron-nickel-chr… RER         
+#>  2 109e6c01-6942-56c9-b74a-f2145b22…             0 market for deep… GLO         
+#>  3 ae4b2ccd-fc85-507a-a674-4190bb82…             0 market for shed… GLO         
+#>  4 d9704463-45e6-5aa5-9982-6cc6a982…             0 iron-nickel-chr… RER         
+#>  5 109e6c01-6942-56c9-b74a-f2145b22…             0 market for deep… GLO         
+#>  6 ae4b2ccd-fc85-507a-a674-4190bb82…             0 market for shed… GLO         
+#>  7 d9704463-45e6-5aa5-9982-6cc6a982…             0 iron-nickel-chr… RER         
+#>  8 109e6c01-6942-56c9-b74a-f2145b22…             0 market for deep… GLO         
+#>  9 ae4b2ccd-fc85-507a-a674-4190bb82…             0 market for shed… GLO         
+#> 10 d9704463-45e6-5aa5-9982-6cc6a982…             0 iron-nickel-chr… RER         
+#> 11 109e6c01-6942-56c9-b74a-f2145b22…             0 market for deep… GLO         
+#> 12 ae4b2ccd-fc85-507a-a674-4190bb82…             0 market for shed… GLO         
+#> 13 d9704463-45e6-5aa5-9982-6cc6a982…             0 iron-nickel-chr… RER         
+#> 14 109e6c01-6942-56c9-b74a-f2145b22…             0 market for deep… GLO         
+#> 15 ae4b2ccd-fc85-507a-a674-4190bb82…             0 market for shed… GLO         
+#> 16 d9704463-45e6-5aa5-9982-6cc6a982…             0 iron-nickel-chr… RER         
+#> 17 109e6c01-6942-56c9-b74a-f2145b22…             0 market for deep… GLO         
+#> 18 ae4b2ccd-fc85-507a-a674-4190bb82…             0 market for shed… GLO         
+#> # ℹ 6 more variables: isic_4digit <dbl>, tilt_sector <chr>,
+#> #   tilt_subsector <chr>, unit <chr>, grouped_by <chr>, profile_ranking <dbl>
 
 toy_files() |>
   lapply(\(x) read_csv(toy_path(x))) |>
@@ -73,17 +85,6 @@ toy_files() |>
 #> # ℹ 2 more variables: main_activity <chr>, unit <chr>
 #> 
 #> $emissions_profile_products.csv.gz
-#> # A tibble: 5 × 7
-#>   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit
-#>           <dbl> <chr>          <chr>          <chr>       <dbl>
-#> 1        176.   Industry       Other          unit         2560
-#> 2         58.1  Industry       Other          unit         2560
-#> 3          4.95 Steel & Metals Steel          kg           2870
-#> 4         12.5  Agriculture    Agriculture    kg           1780
-#> 5          2.07 Industry       Other          kg           2679
-#> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
-#> 
-#> $emissions_profile_products_ecoinvent.csv.gz
 #> # A tibble: 18 × 10
 #>    activity_uuid_product_uuid        co2_footprint ei_activity_name ei_geography
 #>    <chr>                                     <dbl> <chr>            <chr>       
@@ -109,24 +110,6 @@ toy_files() |>
 #> #   tilt_subsector <chr>, unit <chr>, grouped_by <chr>, profile_ranking <dbl>
 #> 
 #> $emissions_profile_upstream_products.csv.gz
-#> # A tibble: 33 × 7
-#>    input_co2_footprint input_tilt_sector input_tilt_subsector input_unit
-#>                  <dbl> <chr>             <chr>                <chr>     
-#>  1             7.07e+0 Inudstry          Other                kg        
-#>  2             3.99e+1 Inudstry          Other                kwh       
-#>  3             5.12e-1 Inudstry          Other                kg        
-#>  4             1.24e+0 Inudstry          Other                kg        
-#>  5             2.12e+1 Inudstry          Other                kwh       
-#>  6             1.24e-9 Inudstry          Other                kg        
-#>  7             7   e-9 Inudstry          Other                kg        
-#>  8             1.04e+0 Inudstry          Other                kg        
-#>  9             1.12e+0 Inudstry          Other                kg        
-#> 10             3.51e+0 Inudstry          Other                kg        
-#> # ℹ 23 more rows
-#> # ℹ 3 more variables: input_isic_4digit <dbl>,
-#> #   input_activity_uuid_product_uuid <chr>, activity_uuid_product_uuid <chr>
-#> 
-#> $emissions_profile_upstream_products_ecoinvent.csv.gz
 #> # A tibble: 96 × 11
 #>    activity_uuid_product_uuid                ei_geography input_activity_uuid_…¹
 #>    <chr>                                     <chr>        <chr>                 

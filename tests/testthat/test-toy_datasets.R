@@ -4,18 +4,6 @@ test_that("emissions_profile_any_companies hasn't changed", {
   expect_snapshot(as.data.frame(data))
 })
 
-test_that("emissions_profile_products_ecoinvent hasn't changed", {
-  local_snapshot()
-  data <- read_csv(toy_emissions_profile_products_ecoinvent())
-  expect_snapshot(as.data.frame(data))
-})
-
-test_that("emissions_profile_upstream_products_ecoinvent hasn't changed", {
-  local_snapshot()
-  data <- read_csv(toy_emissions_profile_upstream_products_ecoinvent())
-  expect_snapshot(as.data.frame(data))
-})
-
 test_that("emissions_profile_products hasn't changed", {
   local_snapshot()
   data <- read_csv(toy_emissions_profile_products())
