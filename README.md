@@ -42,12 +42,12 @@ toy_files()
 read_csv(toy_emissions_profile_products())
 #> # A tibble: 5 × 7
 #>   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit
-#>           <dbl> <chr>          <chr>          <chr>       <dbl>
-#> 1        176.   Industry       Other          unit         2560
-#> 2         58.1  Industry       Other          unit         2560
-#> 3          4.95 Steel & Metals Steel          kg           2870
-#> 4         12.5  Agriculture    Agriculture    kg           1780
-#> 5          2.07 Industry       Other          kg           2679
+#>           <dbl> <chr>          <chr>          <chr> <chr>      
+#> 1        176.   Industry       Other          unit  '2560'     
+#> 2         58.1  Industry       Other          unit  '2560'     
+#> 3          4.95 Steel & Metals Steel          kg    '2870'     
+#> 4         12.5  Agriculture    Agriculture    kg    '1780'     
+#> 5          2.07 Industry       Other          kg    '2679'     
 #> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
 
 toy_files() |>
@@ -70,12 +70,12 @@ toy_files() |>
 #> $emissions_profile_products.csv.gz
 #> # A tibble: 5 × 7
 #>   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit
-#>           <dbl> <chr>          <chr>          <chr>       <dbl>
-#> 1        176.   Industry       Other          unit         2560
-#> 2         58.1  Industry       Other          unit         2560
-#> 3          4.95 Steel & Metals Steel          kg           2870
-#> 4         12.5  Agriculture    Agriculture    kg           1780
-#> 5          2.07 Industry       Other          kg           2679
+#>           <dbl> <chr>          <chr>          <chr> <chr>      
+#> 1        176.   Industry       Other          unit  '2560'     
+#> 2         58.1  Industry       Other          unit  '2560'     
+#> 3          4.95 Steel & Metals Steel          kg    '2870'     
+#> 4         12.5  Agriculture    Agriculture    kg    '1780'     
+#> 5          2.07 Industry       Other          kg    '2679'     
 #> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
 #> 
 #> $emissions_profile_upstream_products.csv.gz
@@ -93,7 +93,7 @@ toy_files() |>
 #>  9             1.12e+0 Inudstry          Other                kg        
 #> 10             3.51e+0 Inudstry          Other                kg        
 #> # ℹ 23 more rows
-#> # ℹ 3 more variables: input_isic_4digit <dbl>,
+#> # ℹ 3 more variables: input_isic_4digit <chr>,
 #> #   input_activity_uuid_product_uuid <chr>, activity_uuid_product_uuid <chr>
 #> 
 #> $sector_profile_any_scenarios.csv.gz
@@ -115,17 +115,17 @@ toy_files() |>
 #> $sector_profile_companies.csv.gz
 #> # A tibble: 28 × 10
 #>    companies_id        company_name clustered activity_uuid_produc…¹ isic_4digit
-#>    <chr>               <chr>        <chr>     <chr>                        <dbl>
-#>  1 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89…        2410
-#>  2 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89…        2410
-#>  3 pecheries-basques_… pecheries-b… nitrogen  03fbf989-9a1a-5e3d-a5…        2029
-#>  4 pecheries-basques_… pecheries-b… nitrogen  03fbf989-9a1a-5e3d-a5…        2029
-#>  5 hoche-butter-gmbh_… hoche-butte… waste     <NA>                            NA
-#>  6 hoche-butter-gmbh_… hoche-butte… waste     <NA>                            NA
-#>  7 hoche-butter-gmbh_… hoche-butte… car       <NA>                            NA
-#>  8 hoche-butter-gmbh_… hoche-butte… car       <NA>                            NA
-#>  9 hoche-butter-gmbh_… hoche-butte… heater    <NA>                            NA
-#> 10 hoche-butter-gmbh_… hoche-butte… heater    <NA>                            NA
+#>    <chr>               <chr>        <chr>     <chr>                  <chr>      
+#>  1 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89… '2410'     
+#>  2 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89… '2410'     
+#>  3 pecheries-basques_… pecheries-b… nitrogen  03fbf989-9a1a-5e3d-a5… '2029'     
+#>  4 pecheries-basques_… pecheries-b… nitrogen  03fbf989-9a1a-5e3d-a5… '2029'     
+#>  5 hoche-butter-gmbh_… hoche-butte… waste     <NA>                   <NA>       
+#>  6 hoche-butter-gmbh_… hoche-butte… waste     <NA>                   <NA>       
+#>  7 hoche-butter-gmbh_… hoche-butte… car       <NA>                   <NA>       
+#>  8 hoche-butter-gmbh_… hoche-butte… car       <NA>                   <NA>       
+#>  9 hoche-butter-gmbh_… hoche-butte… heater    <NA>                   <NA>       
+#> 10 hoche-butter-gmbh_… hoche-butte… heater    <NA>                   <NA>       
 #> # ℹ 18 more rows
 #> # ℹ abbreviated name: ¹​activity_uuid_product_uuid
 #> # ℹ 5 more variables: tilt_sector <chr>, tilt_subsector <chr>, type <chr>,
@@ -163,7 +163,7 @@ toy_files() |>
 #> # ℹ 64 more rows
 #> # ℹ abbreviated names: ¹​input_activity_uuid_product_uuid,
 #> #   ²​input_reference_product_name
-#> # ℹ 7 more variables: input_unit <chr>, input_isic_4digit <dbl>,
+#> # ℹ 7 more variables: input_unit <chr>, input_isic_4digit <chr>,
 #> #   input_tilt_sector <chr>, input_tilt_subsector <chr>, type <chr>,
 #> #   sector <chr>, subsector <chr>
 ```
