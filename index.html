@@ -94,12 +94,12 @@
 <span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_emissions_profile_products</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 5 × 7</span></span>
 <span><span class="co">#&gt;   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit</span></span>
-<span><span class="co">#&gt;           &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;          &lt;chr&gt;       &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt; 1        176.   Industry       Other          unit         2560</span></span>
-<span><span class="co">#&gt; 2         58.1  Industry       Other          unit         2560</span></span>
-<span><span class="co">#&gt; 3          4.95 Steel &amp; Metals Steel          kg           2870</span></span>
-<span><span class="co">#&gt; 4         12.5  Agriculture    Agriculture    kg           1780</span></span>
-<span><span class="co">#&gt; 5          2.07 Industry       Other          kg           2679</span></span>
+<span><span class="co">#&gt;           &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;          &lt;chr&gt; &lt;chr&gt;      </span></span>
+<span><span class="co">#&gt; 1        176.   Industry       Other          unit  '2560'     </span></span>
+<span><span class="co">#&gt; 2         58.1  Industry       Other          unit  '2560'     </span></span>
+<span><span class="co">#&gt; 3          4.95 Steel &amp; Metals Steel          kg    '2870'     </span></span>
+<span><span class="co">#&gt; 4         12.5  Agriculture    Agriculture    kg    '1780'     </span></span>
+<span><span class="co">#&gt; 5          2.07 Industry       Other          kg    '2679'     </span></span>
 <span><span class="co">#&gt; # ℹ 2 more variables: activity_uuid_product_uuid &lt;chr&gt;, ei_activity_name &lt;chr&gt;</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/toy_files.html">toy_files</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
@@ -122,12 +122,12 @@
 <span><span class="co">#&gt; $emissions_profile_products.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 5 × 7</span></span>
 <span><span class="co">#&gt;   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit</span></span>
-<span><span class="co">#&gt;           &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;          &lt;chr&gt;       &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt; 1        176.   Industry       Other          unit         2560</span></span>
-<span><span class="co">#&gt; 2         58.1  Industry       Other          unit         2560</span></span>
-<span><span class="co">#&gt; 3          4.95 Steel &amp; Metals Steel          kg           2870</span></span>
-<span><span class="co">#&gt; 4         12.5  Agriculture    Agriculture    kg           1780</span></span>
-<span><span class="co">#&gt; 5          2.07 Industry       Other          kg           2679</span></span>
+<span><span class="co">#&gt;           &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;          &lt;chr&gt; &lt;chr&gt;      </span></span>
+<span><span class="co">#&gt; 1        176.   Industry       Other          unit  '2560'     </span></span>
+<span><span class="co">#&gt; 2         58.1  Industry       Other          unit  '2560'     </span></span>
+<span><span class="co">#&gt; 3          4.95 Steel &amp; Metals Steel          kg    '2870'     </span></span>
+<span><span class="co">#&gt; 4         12.5  Agriculture    Agriculture    kg    '1780'     </span></span>
+<span><span class="co">#&gt; 5          2.07 Industry       Other          kg    '2679'     </span></span>
 <span><span class="co">#&gt; # ℹ 2 more variables: activity_uuid_product_uuid &lt;chr&gt;, ei_activity_name &lt;chr&gt;</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $emissions_profile_upstream_products.csv.gz</span></span>
@@ -145,7 +145,7 @@
 <span><span class="co">#&gt;  9             1.12e+0 Inudstry          Other                kg        </span></span>
 <span><span class="co">#&gt; 10             3.51e+0 Inudstry          Other                kg        </span></span>
 <span><span class="co">#&gt; # ℹ 23 more rows</span></span>
-<span><span class="co">#&gt; # ℹ 3 more variables: input_isic_4digit &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; # ℹ 3 more variables: input_isic_4digit &lt;chr&gt;,</span></span>
 <span><span class="co">#&gt; #   input_activity_uuid_product_uuid &lt;chr&gt;, activity_uuid_product_uuid &lt;chr&gt;</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $sector_profile_any_scenarios.csv.gz</span></span>
@@ -167,17 +167,17 @@
 <span><span class="co">#&gt; $sector_profile_companies.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 28 × 10</span></span>
 <span><span class="co">#&gt;    companies_id        company_name clustered activity_uuid_produc…¹ isic_4digit</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;               &lt;chr&gt;        &lt;chr&gt;     &lt;chr&gt;                        &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89…        2410</span></span>
-<span><span class="co">#&gt;  2 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89…        2410</span></span>
-<span><span class="co">#&gt;  3 pecheries-basques_… pecheries-b… nitrogen  03fbf989-9a1a-5e3d-a5…        2029</span></span>
-<span><span class="co">#&gt;  4 pecheries-basques_… pecheries-b… nitrogen  03fbf989-9a1a-5e3d-a5…        2029</span></span>
-<span><span class="co">#&gt;  5 hoche-butter-gmbh_… hoche-butte… waste     &lt;NA&gt;                            NA</span></span>
-<span><span class="co">#&gt;  6 hoche-butter-gmbh_… hoche-butte… waste     &lt;NA&gt;                            NA</span></span>
-<span><span class="co">#&gt;  7 hoche-butter-gmbh_… hoche-butte… car       &lt;NA&gt;                            NA</span></span>
-<span><span class="co">#&gt;  8 hoche-butter-gmbh_… hoche-butte… car       &lt;NA&gt;                            NA</span></span>
-<span><span class="co">#&gt;  9 hoche-butter-gmbh_… hoche-butte… heater    &lt;NA&gt;                            NA</span></span>
-<span><span class="co">#&gt; 10 hoche-butter-gmbh_… hoche-butte… heater    &lt;NA&gt;                            NA</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;               &lt;chr&gt;        &lt;chr&gt;     &lt;chr&gt;                  &lt;chr&gt;      </span></span>
+<span><span class="co">#&gt;  1 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89… '2410'     </span></span>
+<span><span class="co">#&gt;  2 fleischerei-stiefs… fleischerei… steel     0faa7ecb-fef2-5117-89… '2410'     </span></span>
+<span><span class="co">#&gt;  3 pecheries-basques_… pecheries-b… nitrogen  03fbf989-9a1a-5e3d-a5… '2029'     </span></span>
+<span><span class="co">#&gt;  4 pecheries-basques_… pecheries-b… nitrogen  03fbf989-9a1a-5e3d-a5… '2029'     </span></span>
+<span><span class="co">#&gt;  5 hoche-butter-gmbh_… hoche-butte… waste     &lt;NA&gt;                   &lt;NA&gt;       </span></span>
+<span><span class="co">#&gt;  6 hoche-butter-gmbh_… hoche-butte… waste     &lt;NA&gt;                   &lt;NA&gt;       </span></span>
+<span><span class="co">#&gt;  7 hoche-butter-gmbh_… hoche-butte… car       &lt;NA&gt;                   &lt;NA&gt;       </span></span>
+<span><span class="co">#&gt;  8 hoche-butter-gmbh_… hoche-butte… car       &lt;NA&gt;                   &lt;NA&gt;       </span></span>
+<span><span class="co">#&gt;  9 hoche-butter-gmbh_… hoche-butte… heater    &lt;NA&gt;                   &lt;NA&gt;       </span></span>
+<span><span class="co">#&gt; 10 hoche-butter-gmbh_… hoche-butte… heater    &lt;NA&gt;                   &lt;NA&gt;       </span></span>
 <span><span class="co">#&gt; # ℹ 18 more rows</span></span>
 <span><span class="co">#&gt; # ℹ abbreviated name: ¹​activity_uuid_product_uuid</span></span>
 <span><span class="co">#&gt; # ℹ 5 more variables: tilt_sector &lt;chr&gt;, tilt_subsector &lt;chr&gt;, type &lt;chr&gt;,</span></span>
@@ -215,7 +215,7 @@
 <span><span class="co">#&gt; # ℹ 64 more rows</span></span>
 <span><span class="co">#&gt; # ℹ abbreviated names: ¹​input_activity_uuid_product_uuid,</span></span>
 <span><span class="co">#&gt; #   ²​input_reference_product_name</span></span>
-<span><span class="co">#&gt; # ℹ 7 more variables: input_unit &lt;chr&gt;, input_isic_4digit &lt;dbl&gt;,</span></span>
+<span><span class="co">#&gt; # ℹ 7 more variables: input_unit &lt;chr&gt;, input_isic_4digit &lt;chr&gt;,</span></span>
 <span><span class="co">#&gt; #   input_tilt_sector &lt;chr&gt;, input_tilt_subsector &lt;chr&gt;, type &lt;chr&gt;,</span></span>
 <span><span class="co">#&gt; #   sector &lt;chr&gt;, subsector &lt;chr&gt;</span></span></code></pre></div>
 </div>
