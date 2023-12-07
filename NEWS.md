@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltToyData 0.0.0.9005 (2023-12-07)
+
+* Add single quotes around values of `*isic*`  (#17).
+
 # tiltToyData 0.0.0.9004 (2023-11-23)
 
 * Retire `companies$company_id` (#11).
