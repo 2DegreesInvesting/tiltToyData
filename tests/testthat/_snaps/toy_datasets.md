@@ -3,16 +3,83 @@
     Code
       as.data.frame(data)
     Output
-                                                       activity_uuid_product_uuid   clustered                             companies_id unit
-      1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4d0-4cce-93b4-0745344da5fa       stove fleischerei-stiefsohn_00000005219477-001 unit
-      2 be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-2200-4b08-9dec-9c7c0e3585bc        oven fleischerei-stiefsohn_00000005219477-001 unit
-      3 977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-eca5-482d-a829-c18e46a52db4       steel        pecheries-basques_fra316541-00101   kg
-      4 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa aged cheese    hoche-butter-gmbh_deu422723-693847001   kg
-      5 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa aged cheese  vicquelin-espaces-verts_fra697272-00101   kg
-      6 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b6c-40d6-ac36-4c70c4623efa      cheese   bst-procontrol-gmbh_00000005104947-001   kg
-      7 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb-4c66-86eb-2253ef8ee54d       cream           leider-gmbh_00000005064318-001   kg
-      8 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6feb-4c66-86eb-2253ef8ee54d      rubber             cheries-baqu_neu316541-00101   kg
-      9                                                                      <NA>       apple       ca-coity-trg-aua-gmbh_00000384-001 <NA>
+                   activity_uuid_product_uuid                    clustered                         companies_id     country                                              ei_activity_name          main_activity unit
+      1  76269c17-78d6-420b-991a-aa38c51b45b7                         tent               soot_asianpiedstarling     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      2  76269c17-78d6-420b-991a-aa38c51b45b7       table hire for parties              frightening_chrysomelid       spain market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      3  76269c17-78d6-420b-991a-aa38c51b45b7  surface finishing, galvanic                     hyperbrutal_flea     germany      market for deep drawing, steel, 10000 kN press, automode            distributor   kg
+      4  76269c17-78d6-420b-991a-aa38c51b45b7          surface engineering                     hyperbrutal_flea     germany      market for deep drawing, steel, 10000 kN press, automode            distributor   kg
+      5  76269c17-78d6-420b-991a-aa38c51b45b7                         tent                     flexible_dolphin     austria market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      6  76269c17-78d6-420b-991a-aa38c51b45b7                         tent              paramilitary_racerunner     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      7  76269c17-78d6-420b-991a-aa38c51b45b7         open space amenities                     level_meadowhawk      france market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      8  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb                         tent heartrending_attwatersprairiechicken     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      9  76269c17-78d6-420b-991a-aa38c51b45b7                         tent         traumatophobic_hanumanmonkey     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      10 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                   preliterary_toucan     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      11 76269c17-78d6-420b-991a-aa38c51b45b7                camper patios               translunar_eelelephant       spain market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      12 76269c17-78d6-420b-991a-aa38c51b45b7 forged nickel alloy products                 coherent_hatchetfish     germany                         iron-nickel-chromium alloy production manufacturer/ producer   kg
+      13 76269c17-78d6-420b-991a-aa38c51b45b7  exhibitions, stand fittings                     lustered_serpent     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      14 76269c17-78d6-420b-991a-aa38c51b45b7     sheds, construction site    disposable_chinesecrocodilelizard     austria market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      15 76269c17-78d6-420b-991a-aa38c51b45b7  exhibitions, stand fittings                      illbred_rockrat     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      16 76269c17-78d6-420b-991a-aa38c51b45b7  exhibitions, stand fittings                belligerent_arcticfox     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      17 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                   protactium_cricket     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      18 76269c17-78d6-420b-991a-aa38c51b45b7               porches, metal                      mycologic_tegus netherlands market for shed, large, wood, non-insulated, fire-unprotected               retailer   m2
+      19 76269c17-78d6-420b-991a-aa38c51b45b7                         tent        refreshing_irukandjijellyfish     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      20 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                  stegophilic_meerkat     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      21 76269c17-78d6-420b-991a-aa38c51b45b7              garden fittings                       macabre_cougar netherlands market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      22 76269c17-78d6-420b-991a-aa38c51b45b7  exhibitions, stand fittings            agrostographical_finwhale     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      23 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb                         tent                    semihistoric_bull     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      24 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                unfooled_bighornsheep     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      25 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                   shared_belugawhale     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      26 76269c17-78d6-420b-991a-aa38c51b45b7              garden fittings             deteriorative_illadopsis netherlands market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      27 76269c17-78d6-420b-991a-aa38c51b45b7           furniture, camping             carnivoral_frenchbulldog     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      28 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                 upperclass_brownbear     austria market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      29 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                   sugared_needlefish     austria market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      30 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                  thoroughbred_avians     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      31 76269c17-78d6-420b-991a-aa38c51b45b7              garden fittings                    unchanged_fireant     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      32 76269c17-78d6-420b-991a-aa38c51b45b7              garden fittings                   damageable_gharial netherlands market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      33 76269c17-78d6-420b-991a-aa38c51b45b7  exhibitions, stand fittings                         unfit_boubou     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      34 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb                         tent            obeliskoid_hectorsdolphin     austria market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      35 76269c17-78d6-420b-991a-aa38c51b45b7              garden fittings              poorly_africanfisheagle netherlands market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      36 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                    impeccable_drongo     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      37 76269c17-78d6-420b-991a-aa38c51b45b7         prefabricated houses                    cannibalistic_koi       spain market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      38 76269c17-78d6-420b-991a-aa38c51b45b7         open space amenities                          pygmy_thrip      france market for shed, large, wood, non-insulated, fire-unprotected               retailer   m2
+      39 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                   canophilic_katydid     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      40 76269c17-78d6-420b-991a-aa38c51b45b7                         tent         insectivorous_xantusmurrelet     austria market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      41 76269c17-78d6-420b-991a-aa38c51b45b7              garden fittings                   considerate_turtle netherlands market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      42 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                  lowkey_gordonsetter netherlands market for shed, large, wood, non-insulated, fire-unprotected               retailer   m2
+      43 76269c17-78d6-420b-991a-aa38c51b45b7              caravan annexes                  lowkey_gordonsetter netherlands market for shed, large, wood, non-insulated, fire-unprotected               retailer   m2
+      44 76269c17-78d6-420b-991a-aa38c51b45b7       prefabricated cottages                  troglodytic_seriema netherlands market for shed, large, wood, non-insulated, fire-unprotected  agent/ representative   m2
+      45 76269c17-78d6-420b-991a-aa38c51b45b7   prefabricated summerhouses                  troglodytic_seriema netherlands market for shed, large, wood, non-insulated, fire-unprotected  agent/ representative   m2
+      46 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                      marine_tapeworm     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      47 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                       sardonic_pewee     austria market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      48 76269c17-78d6-420b-991a-aa38c51b45b7                         tent            cannibalistic_gallowaycow     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      49 76269c17-78d6-420b-991a-aa38c51b45b7                 nickel alloy                      utilizable_ibex     germany                         iron-nickel-chromium alloy production manufacturer/ producer   kg
+      50 76269c17-78d6-420b-991a-aa38c51b45b7                         tent             superconservative_fulmar     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      51 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                     dramatisable_kid     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      52 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                    allpowerful_sloth     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      53 76269c17-78d6-420b-991a-aa38c51b45b7      living space containers                     feminine_meerkat     germany market for shed, large, wood, non-insulated, fire-unprotected               retailer   m2
+      54 76269c17-78d6-420b-991a-aa38c51b45b7         prefabricated houses                    scheelite_gadwall       spain market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      55 76269c17-78d6-420b-991a-aa38c51b45b7               porches, metal                  locustal_arcticwolf     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      56 76269c17-78d6-420b-991a-aa38c51b45b7              garden fittings                  depletive_bandicoot      france market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      57 76269c17-78d6-420b-991a-aa38c51b45b7                         tent              genetic_xenotarsosaurus     austria market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      58 76269c17-78d6-420b-991a-aa38c51b45b7        deep-drawn metal part                    humanoid_elkhound     germany      market for deep drawing, steel, 10000 kN press, automode  agent/ representative   kg
+      59 76269c17-78d6-420b-991a-aa38c51b45b7                  drawn parts                    humanoid_elkhound     germany      market for deep drawing, steel, 10000 kN press, automode  agent/ representative   kg
+      60 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                      tinfoil_terrier     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      61 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                    enchanting_bonobo     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      62 76269c17-78d6-420b-991a-aa38c51b45b7         prefabricated houses                   hermitish_pheasant netherlands market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      63 76269c17-78d6-420b-991a-aa38c51b45b7                         tent          bibliographic_senegalpython     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      64 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                   obtuse_anemonecrab     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      65 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                         giant_toucan     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      66 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                   famous_frigatebird     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      67 833caa78-30df-4374-900f-7f88ab44075b              garden fittings                      weak_meadowlark netherlands market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      68 76269c17-78d6-420b-991a-aa38c51b45b7         prefabricated houses                      illicit_pelican netherlands market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      69 833caa78-30df-4374-900f-7f88ab44075b              garden fittings                         arrogant_ewe netherlands market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      70 833caa78-30df-4374-900f-7f88ab44075b                         tent  pseudoeconomical_easternglasslizard     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      71 833caa78-30df-4374-900f-7f88ab44075b                         tent                     charterable_wren     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      72 76269c17-78d6-420b-991a-aa38c51b45b7  exhibitions, stand fittings            defamatory_xoloitzcuintli     germany market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      73 76269c17-78d6-420b-991a-aa38c51b45b7                         tent            discomfortable_chupacabra     austria market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
+      74 76269c17-78d6-420b-991a-aa38c51b45b7         nickel alloy flanges   threpterophilic_neonbluehermitcrab     germany                         iron-nickel-chromium alloy production manufacturer/ producer   kg
+      75 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                    vixenly_zebrafish     germany market for shed, large, wood, non-insulated, fire-unprotected             wholesaler   m2
+      76 76269c17-78d6-420b-991a-aa38c51b45b7                         tent                      cellular_kawala     austria market for shed, large, wood, non-insulated, fire-unprotected            distributor   m2
 
 # emissions_profile_products_ecoinvent hasn't changed
 
