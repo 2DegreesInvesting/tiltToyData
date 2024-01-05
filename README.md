@@ -84,7 +84,7 @@ toy_files() |>
 #> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
 #> 
 #> $emissions_profile_products_ecoinvent.csv.gz
-#> # A tibble: 18 × 10
+#> # A tibble: 18 × 8
 #>    activity_uuid_product_uuid        co2_footprint ei_activity_name ei_geography
 #>    <chr>                                     <dbl> <chr>            <chr>       
 #>  1 833caa78-30df-4374-900f-7f88ab44…        14.1   iron-nickel-chr… RER         
@@ -105,8 +105,8 @@ toy_files() |>
 #> 16 833caa78-30df-4374-900f-7f88ab44…        12.7   iron-nickel-chr… RER         
 #> 17 76269c17-78d6-420b-991a-aa38c51b…         0.675 market for deep… GLO         
 #> 18 bf94b5a7-b7a2-46d1-bb95-84bc560b…       435.    market for shed… GLO         
-#> # ℹ 6 more variables: isic_4digit <chr>, tilt_sector <chr>,
-#> #   tilt_subsector <chr>, unit <chr>, grouped_by <chr>, profile_ranking <dbl>
+#> # ℹ 4 more variables: isic_4digit <chr>, tilt_sector <chr>,
+#> #   tilt_subsector <chr>, unit <chr>
 #> 
 #> $emissions_profile_upstream_products.csv.gz
 #> # A tibble: 33 × 7
@@ -127,7 +127,7 @@ toy_files() |>
 #> #   input_activity_uuid_product_uuid <chr>, activity_uuid_product_uuid <chr>
 #> 
 #> $emissions_profile_upstream_products_ecoinvent.csv.gz
-#> # A tibble: 96 × 11
+#> # A tibble: 96 × 9
 #>    activity_uuid_product_uuid           ei_geography input_activity_uuid_produ…¹
 #>    <chr>                                <chr>        <chr>                      
 #>  1 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          bdc93cd8-00b4-5b3e-993e-b7…
@@ -142,10 +142,9 @@ toy_files() |>
 #> 10 833caa78-30df-4374-900f-7f88ab44075b RER          7361f7fb-5cf2-598c-823a-a4…
 #> # ℹ 86 more rows
 #> # ℹ abbreviated name: ¹​input_activity_uuid_product_uuid
-#> # ℹ 8 more variables: input_co2_footprint <dbl>, input_isic_4digit <chr>,
+#> # ℹ 6 more variables: input_co2_footprint <dbl>, input_isic_4digit <chr>,
 #> #   input_reference_product_name <chr>, input_tilt_sector <chr>,
-#> #   input_tilt_subsector <chr>, input_unit <chr>, grouped_by <chr>,
-#> #   profile_ranking <dbl>
+#> #   input_tilt_subsector <chr>, input_unit <chr>
 #> 
 #> $sector_profile_any_scenarios.csv.gz
 #> # A tibble: 388 × 8
