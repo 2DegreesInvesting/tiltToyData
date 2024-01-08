@@ -20,6 +20,18 @@ toy_emissions_profile_any_companies <- function() {
 
 #' @rdname toy_files
 #' @export
+toy_emissions_profile_products_ecoinvent <- function() {
+  toy_path(toy_file("emissions_profile_products_ecoinvent"))
+}
+
+#' @rdname toy_files
+#' @export
+toy_emissions_profile_upstream_products_ecoinvent <- function() {
+  toy_path(toy_file("emissions_profile_upstream_products_ecoinvent"))
+}
+
+#' @rdname toy_files
+#' @export
 toy_emissions_profile_products <- function() {
   toy_path(toy_file("emissions_profile_products"))
 }

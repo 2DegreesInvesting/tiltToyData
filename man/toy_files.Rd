@@ -2,6 +2,8 @@
 % Please edit documentation in R/toy_datasets.R, R/toy_files.R
 \name{toy_emissions_profile_any_companies}
 \alias{toy_emissions_profile_any_companies}
+\alias{toy_emissions_profile_products_ecoinvent}
+\alias{toy_emissions_profile_upstream_products_ecoinvent}
 \alias{toy_emissions_profile_products}
 \alias{toy_emissions_profile_upstream_products}
 \alias{toy_sector_profile_any_scenarios}
@@ -13,6 +15,10 @@
 \title{Paths to toy datasets}
 \usage{
 toy_emissions_profile_any_companies()
+
+toy_emissions_profile_products_ecoinvent()
+
+toy_emissions_profile_upstream_products_ecoinvent()
 
 toy_emissions_profile_products()
 
