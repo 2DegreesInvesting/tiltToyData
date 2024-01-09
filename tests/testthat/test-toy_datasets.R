@@ -15,13 +15,13 @@ test_that("*isic* don't have two consecutive single quotes", {
 
   datasets <- lapply(toy_path(toy_files()), \(x) read_csv(x, n_max = 3))
 
-  some_has_two_consecutive_double_quotes <- datasets |>
+  is_single_quoted_twice <- datasets |>
     map(\(x) select(x, matches("isic"))) |>
     map(\(x)map(x, \(x) any(grepl("''", x)))) |>
     unlist() |>
     any()
 
-  expect_false(some_has_two_consecutive_double_quotes)
+  expect_false(is_single_quoted_twice)
 })
 
 test_that("emissions_profile_upstream_products_ecoinvent hasn't changed", {
