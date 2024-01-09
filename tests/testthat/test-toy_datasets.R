@@ -11,6 +11,8 @@ test_that("emissions_profile_products_ecoinvent hasn't changed", {
 })
 
 test_that("*isic* don't have two consecutive single quotes", {
+  local_snapshot()
+
   datasets <- lapply(toy_path(toy_files()), \(x) read_csv(x, n_max = 3))
 
   some_has_two_consecutive_double_quotes <- datasets |>
