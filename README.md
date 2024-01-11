@@ -31,15 +31,13 @@ library(readr)
 options(readr.show_col_types = FALSE)
 
 toy_files()
-#> [1] "emissions_profile_any_companies.csv.gz"              
-#> [2] "emissions_profile_products.csv.gz"                   
-#> [3] "emissions_profile_products_ecoinvent.csv.gz"         
-#> [4] "emissions_profile_upstream_products.csv.gz"          
-#> [5] "emissions_profile_upstream_products_ecoinvent.csv.gz"
-#> [6] "sector_profile_any_scenarios.csv.gz"                 
-#> [7] "sector_profile_companies.csv.gz"                     
-#> [8] "sector_profile_upstream_companies.csv.gz"            
-#> [9] "sector_profile_upstream_products.csv.gz"
+#> [1] "emissions_profile_any_companies.csv.gz"    
+#> [2] "emissions_profile_products.csv.gz"         
+#> [3] "emissions_profile_upstream_products.csv.gz"
+#> [4] "sector_profile_any_scenarios.csv.gz"       
+#> [5] "sector_profile_companies.csv.gz"           
+#> [6] "sector_profile_upstream_companies.csv.gz"  
+#> [7] "sector_profile_upstream_products.csv.gz"
 
 read_csv(toy_emissions_profile_products())
 #> # A tibble: 5 × 7
@@ -56,21 +54,18 @@ toy_files() |>
   lapply(\(x) read_csv(toy_path(x))) |>
   setNames(toy_files())
 #> $emissions_profile_any_companies.csv.gz
-#> # A tibble: 76 × 7
-#>    activity_uuid_product_uuid    clustered companies_id country ei_activity_name
-#>    <chr>                         <chr>     <chr>        <chr>   <chr>           
-#>  1 76269c17-78d6-420b-991a-aa38… tent      soot_asianp… germany market for shed…
-#>  2 76269c17-78d6-420b-991a-aa38… table hi… frightening… spain   market for shed…
-#>  3 76269c17-78d6-420b-991a-aa38… surface … hyperbrutal… germany market for deep…
-#>  4 76269c17-78d6-420b-991a-aa38… surface … hyperbrutal… germany market for deep…
-#>  5 76269c17-78d6-420b-991a-aa38… tent      flexible_do… austria market for shed…
-#>  6 76269c17-78d6-420b-991a-aa38… tent      paramilitar… germany market for shed…
-#>  7 76269c17-78d6-420b-991a-aa38… open spa… level_meado… france  market for shed…
-#>  8 bf94b5a7-b7a2-46d1-bb95-84bc… tent      heartrendin… germany market for shed…
-#>  9 76269c17-78d6-420b-991a-aa38… tent      traumatopho… germany market for shed…
-#> 10 76269c17-78d6-420b-991a-aa38… tent      preliterary… germany market for shed…
-#> # ℹ 66 more rows
-#> # ℹ 2 more variables: main_activity <chr>, unit <chr>
+#> # A tibble: 9 × 4
+#>   activity_uuid_product_uuid                        clustered companies_id unit 
+#>   <chr>                                             <chr>     <chr>        <chr>
+#> 1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4… stove     fleischerei… unit 
+#> 2 be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-22… oven      fleischerei… unit 
+#> 3 977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-ec… steel     pecheries-b… kg   
+#> 4 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b… aged che… hoche-butte… kg   
+#> 5 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b… aged che… vicquelin-e… kg   
+#> 6 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b… cheese    bst-procont… kg   
+#> 7 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6f… cream     leider-gmbh… kg   
+#> 8 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6f… rubber    cheries-baq… kg   
+#> 9 <NA>                                              apple     ca-coity-tr… <NA> 
 #> 
 #> $emissions_profile_products.csv.gz
 #> # A tibble: 5 × 7
@@ -82,31 +77,6 @@ toy_files() |>
 #> 4         12.5  Agriculture    Agriculture    kg    '1780'     
 #> 5          2.07 Industry       Other          kg    '2679'     
 #> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
-#> 
-#> $emissions_profile_products_ecoinvent.csv.gz
-#> # A tibble: 18 × 8
-#>    activity_uuid_product_uuid        co2_footprint ei_activity_name ei_geography
-#>    <chr>                                     <dbl> <chr>            <chr>       
-#>  1 833caa78-30df-4374-900f-7f88ab44…        14.1   iron-nickel-chr… RER         
-#>  2 bf94b5a7-b7a2-46d1-bb95-84bc560b…         0.419 market for deep… GLO         
-#>  3 bf94b5a7-b7a2-46d1-bb95-84bc560b…       481.    market for shed… GLO         
-#>  4 833caa78-30df-4374-900f-7f88ab44…         9.47  iron-nickel-chr… RER         
-#>  5 bf94b5a7-b7a2-46d1-bb95-84bc560b…         0.648 market for deep… GLO         
-#>  6 bf94b5a7-b7a2-46d1-bb95-84bc560b…       276.    market for shed… GLO         
-#>  7 833caa78-30df-4374-900f-7f88ab44…        13.6   iron-nickel-chr… RER         
-#>  8 76269c17-78d6-420b-991a-aa38c51b…         0.405 market for deep… GLO         
-#>  9 76269c17-78d6-420b-991a-aa38c51b…       447.    market for shed… GLO         
-#> 10 833caa78-30df-4374-900f-7f88ab44…        14.7   iron-nickel-chr… RER         
-#> 11 833caa78-30df-4374-900f-7f88ab44…         0.390 market for deep… GLO         
-#> 12 bf94b5a7-b7a2-46d1-bb95-84bc560b…       442.    market for shed… GLO         
-#> 13 76269c17-78d6-420b-991a-aa38c51b…        14.1   iron-nickel-chr… RER         
-#> 14 76269c17-78d6-420b-991a-aa38c51b…         0.884 market for deep… GLO         
-#> 15 76269c17-78d6-420b-991a-aa38c51b…       321.    market for shed… GLO         
-#> 16 833caa78-30df-4374-900f-7f88ab44…        12.7   iron-nickel-chr… RER         
-#> 17 76269c17-78d6-420b-991a-aa38c51b…         0.675 market for deep… GLO         
-#> 18 bf94b5a7-b7a2-46d1-bb95-84bc560b…       435.    market for shed… GLO         
-#> # ℹ 4 more variables: isic_4digit <chr>, tilt_sector <chr>,
-#> #   tilt_subsector <chr>, unit <chr>
 #> 
 #> $emissions_profile_upstream_products.csv.gz
 #> # A tibble: 33 × 7
@@ -125,26 +95,6 @@ toy_files() |>
 #> # ℹ 23 more rows
 #> # ℹ 3 more variables: input_isic_4digit <chr>,
 #> #   input_activity_uuid_product_uuid <chr>, activity_uuid_product_uuid <chr>
-#> 
-#> $emissions_profile_upstream_products_ecoinvent.csv.gz
-#> # A tibble: 96 × 9
-#>    activity_uuid_product_uuid           ei_geography input_activity_uuid_produ…¹
-#>    <chr>                                <chr>        <chr>                      
-#>  1 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          bdc93cd8-00b4-5b3e-993e-b7…
-#>  2 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          fdb1f848-173f-5fe1-96a2-58…
-#>  3 76269c17-78d6-420b-991a-aa38c51b45b7 RER          95fcd1bb-4dc6-516a-a3b2-30…
-#>  4 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          daef2f9a-4108-52ae-90a7-fe…
-#>  5 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          3b190359-a32e-5294-af63-98…
-#>  6 833caa78-30df-4374-900f-7f88ab44075b RER          2c92cdcd-29df-53ba-a209-77…
-#>  7 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          9392c694-12a6-5cd7-a421-d4…
-#>  8 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          c18c6cc9-4a26-5c47-9ea9-86…
-#>  9 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          c4ec0b1e-2a3b-5700-871c-2a…
-#> 10 833caa78-30df-4374-900f-7f88ab44075b RER          7361f7fb-5cf2-598c-823a-a4…
-#> # ℹ 86 more rows
-#> # ℹ abbreviated name: ¹​input_activity_uuid_product_uuid
-#> # ℹ 6 more variables: input_co2_footprint <dbl>, input_isic_4digit <chr>,
-#> #   input_reference_product_name <chr>, input_tilt_sector <chr>,
-#> #   input_tilt_subsector <chr>, input_unit <chr>
 #> 
 #> $sector_profile_any_scenarios.csv.gz
 #> # A tibble: 388 × 8

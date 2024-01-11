@@ -27,15 +27,3 @@ toy_files <- function(pattern = NULL) {
 toy_path <- function(file) {
   system.file("extdata", file, package = "tiltToyData", mustWork = TRUE)
 }
-
-#' Paths to deprecated datasets
-#'
-#' @inherit toy_path
-#' @keywords internal
-#' @export
-#'
-#' @examples
-#' list.files(deprecated_path(""))
-deprecated_path <- function(file) {
-  system.file("extdata", "deprecated", file, package = "tiltToyData", mustWork = TRUE)
-}
