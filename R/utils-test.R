@@ -65,3 +65,8 @@ warning_deprecated_company_id <- function() {
 needs_company_id <- function() {
   packageVersion("tiltIndicator") <= company_id_cutoff()
 }
+
+format_robust_snapshot <- function(data) {
+  row.names(data) <- NULL
+  lapply(names(data), function(x) as.data.frame(data)[x])
+}
