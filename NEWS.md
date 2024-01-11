@@ -2,8 +2,31 @@
 
 # tiltToyData 0.0.0.9006 (2024-01-11)
 
-* New toy datasets for emissions profile (#19)
+* New version of `toy_emissions_profile_any_companies()`.
 
+* New datasets `toy_emissions_profile_products_ecoinvent()` and
+`toy_emissions_profile_upstream_products_ecoinvent()` *pretend* to have all the
+products that exist in the 'Ecoinvent' database. Because they are toy datasets
+they actually have only a few products that exist in 'Ecoinvent' and not in
+'Europages'.
+
+Features:
+
+* Fake `companies_id`.
+* Fake `activity_uuid_product_uuid`.
+* Random mapping between fake `activity_uuid_product_uuid` and other columns.
+* Noisy `*co2_footprint`, jittered to the right by 50%-100% on average.
+* New columns:
+    * Compared to the previous version of `toy_emissions_profile_any_companies()`,
+    the new version gains three columns: `country`, `ei_activity_name`, and
+    `main_activity.
+    * Compared to `toy_emissions_profile_products()`, the new dataset
+    `toy_emissions_profile_products_ecoinvent()` gains one column:
+    `ei_geography`.
+    * Compared to `toy_emissions_profile_upstrem_products()`, the new dataset
+    `toy_emissions_profile_upstream_products_ecoinvent()` gains four columns:
+    `ei_activity_name`, `ei_geography`, `input_ei_activity_name`,
+    `input_reference_product_name`.
 
 # tiltToyData 0.0.0.9005 (2023-12-07)
 
