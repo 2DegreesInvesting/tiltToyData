@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltToyData 0.0.0.9006 (2024-01-11)
+
+* New toy datasets for emissions profile (#19)
+
+
 # tiltToyData 0.0.0.9005 (2023-12-07)
 
 * Add single quotes around values of `*isic*`  (#17).
