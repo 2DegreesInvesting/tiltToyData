@@ -26,7 +26,7 @@
     
     <a class="navbar-brand me-2" href="index.html">tiltToyData</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9005</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9006</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,15 +83,13 @@
 <span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>readr.show_col_types <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/toy_files.html">toy_files</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "emissions_profile_any_companies.csv.gz"              </span></span>
-<span><span class="co">#&gt; [2] "emissions_profile_products.csv.gz"                   </span></span>
-<span><span class="co">#&gt; [3] "emissions_profile_products_ecoinvent.csv.gz"         </span></span>
-<span><span class="co">#&gt; [4] "emissions_profile_upstream_products.csv.gz"          </span></span>
-<span><span class="co">#&gt; [5] "emissions_profile_upstream_products_ecoinvent.csv.gz"</span></span>
-<span><span class="co">#&gt; [6] "sector_profile_any_scenarios.csv.gz"                 </span></span>
-<span><span class="co">#&gt; [7] "sector_profile_companies.csv.gz"                     </span></span>
-<span><span class="co">#&gt; [8] "sector_profile_upstream_companies.csv.gz"            </span></span>
-<span><span class="co">#&gt; [9] "sector_profile_upstream_products.csv.gz"</span></span>
+<span><span class="co">#&gt; [1] "emissions_profile_any_companies.csv.gz"    </span></span>
+<span><span class="co">#&gt; [2] "emissions_profile_products.csv.gz"         </span></span>
+<span><span class="co">#&gt; [3] "emissions_profile_upstream_products.csv.gz"</span></span>
+<span><span class="co">#&gt; [4] "sector_profile_any_scenarios.csv.gz"       </span></span>
+<span><span class="co">#&gt; [5] "sector_profile_companies.csv.gz"           </span></span>
+<span><span class="co">#&gt; [6] "sector_profile_upstream_companies.csv.gz"  </span></span>
+<span><span class="co">#&gt; [7] "sector_profile_upstream_products.csv.gz"</span></span>
 <span></span>
 <span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_emissions_profile_products</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 5 × 7</span></span>
@@ -108,21 +106,18 @@
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span>\<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_path</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/stats/setNames.html" class="external-link">setNames</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_files</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; $emissions_profile_any_companies.csv.gz</span></span>
-<span><span class="co">#&gt; # A tibble: 76 × 7</span></span>
-<span><span class="co">#&gt;    activity_uuid_product_uuid    clustered companies_id country ei_activity_name</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;                         &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;   &lt;chr&gt;           </span></span>
-<span><span class="co">#&gt;  1 76269c17-78d6-420b-991a-aa38… tent      soot_asianp… germany market for shed…</span></span>
-<span><span class="co">#&gt;  2 76269c17-78d6-420b-991a-aa38… table hi… frightening… spain   market for shed…</span></span>
-<span><span class="co">#&gt;  3 76269c17-78d6-420b-991a-aa38… surface … hyperbrutal… germany market for deep…</span></span>
-<span><span class="co">#&gt;  4 76269c17-78d6-420b-991a-aa38… surface … hyperbrutal… germany market for deep…</span></span>
-<span><span class="co">#&gt;  5 76269c17-78d6-420b-991a-aa38… tent      flexible_do… austria market for shed…</span></span>
-<span><span class="co">#&gt;  6 76269c17-78d6-420b-991a-aa38… tent      paramilitar… germany market for shed…</span></span>
-<span><span class="co">#&gt;  7 76269c17-78d6-420b-991a-aa38… open spa… level_meado… france  market for shed…</span></span>
-<span><span class="co">#&gt;  8 bf94b5a7-b7a2-46d1-bb95-84bc… tent      heartrendin… germany market for shed…</span></span>
-<span><span class="co">#&gt;  9 76269c17-78d6-420b-991a-aa38… tent      traumatopho… germany market for shed…</span></span>
-<span><span class="co">#&gt; 10 76269c17-78d6-420b-991a-aa38… tent      preliterary… germany market for shed…</span></span>
-<span><span class="co">#&gt; # ℹ 66 more rows</span></span>
-<span><span class="co">#&gt; # ℹ 2 more variables: main_activity &lt;chr&gt;, unit &lt;chr&gt;</span></span>
+<span><span class="co">#&gt; # A tibble: 9 × 4</span></span>
+<span><span class="co">#&gt;   activity_uuid_product_uuid                        clustered companies_id unit </span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;                                             &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;</span></span>
+<span><span class="co">#&gt; 1 0a242b09-772a-5edf-8e82-9cb4ba52a258_ae39ee61-d4… stove     fleischerei… unit </span></span>
+<span><span class="co">#&gt; 2 be06d25c-73dc-55fb-965b-0f300453e380_98b48ff2-22… oven      fleischerei… unit </span></span>
+<span><span class="co">#&gt; 3 977d997e-c257-5033-ba39-d0edeeef4ba2_0ace02fa-ec… steel     pecheries-b… kg   </span></span>
+<span><span class="co">#&gt; 4 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b… aged che… hoche-butte… kg   </span></span>
+<span><span class="co">#&gt; 5 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b… aged che… vicquelin-e… kg   </span></span>
+<span><span class="co">#&gt; 6 ebb8475e-ff57-5e4e-937b-b5788186a5ca_ccee034c-8b… cheese    bst-procont… kg   </span></span>
+<span><span class="co">#&gt; 7 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6f… cream     leider-gmbh… kg   </span></span>
+<span><span class="co">#&gt; 8 2f7b77a7-1556-5c1b-b0aa-c4534ddc8885_38d493e9-6f… rubber    cheries-baq… kg   </span></span>
+<span><span class="co">#&gt; 9 &lt;NA&gt;                                              apple     ca-coity-tr… &lt;NA&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $emissions_profile_products.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 5 × 7</span></span>
@@ -134,31 +129,6 @@
 <span><span class="co">#&gt; 4         12.5  Agriculture    Agriculture    kg    '1780'     </span></span>
 <span><span class="co">#&gt; 5          2.07 Industry       Other          kg    '2679'     </span></span>
 <span><span class="co">#&gt; # ℹ 2 more variables: activity_uuid_product_uuid &lt;chr&gt;, ei_activity_name &lt;chr&gt;</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $emissions_profile_products_ecoinvent.csv.gz</span></span>
-<span><span class="co">#&gt; # A tibble: 18 × 8</span></span>
-<span><span class="co">#&gt;    activity_uuid_product_uuid        co2_footprint ei_activity_name ei_geography</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;                                     &lt;dbl&gt; &lt;chr&gt;            &lt;chr&gt;       </span></span>
-<span><span class="co">#&gt;  1 833caa78-30df-4374-900f-7f88ab44…        14.1   iron-nickel-chr… RER         </span></span>
-<span><span class="co">#&gt;  2 bf94b5a7-b7a2-46d1-bb95-84bc560b…         0.419 market for deep… GLO         </span></span>
-<span><span class="co">#&gt;  3 bf94b5a7-b7a2-46d1-bb95-84bc560b…       481.    market for shed… GLO         </span></span>
-<span><span class="co">#&gt;  4 833caa78-30df-4374-900f-7f88ab44…         9.47  iron-nickel-chr… RER         </span></span>
-<span><span class="co">#&gt;  5 bf94b5a7-b7a2-46d1-bb95-84bc560b…         0.648 market for deep… GLO         </span></span>
-<span><span class="co">#&gt;  6 bf94b5a7-b7a2-46d1-bb95-84bc560b…       276.    market for shed… GLO         </span></span>
-<span><span class="co">#&gt;  7 833caa78-30df-4374-900f-7f88ab44…        13.6   iron-nickel-chr… RER         </span></span>
-<span><span class="co">#&gt;  8 76269c17-78d6-420b-991a-aa38c51b…         0.405 market for deep… GLO         </span></span>
-<span><span class="co">#&gt;  9 76269c17-78d6-420b-991a-aa38c51b…       447.    market for shed… GLO         </span></span>
-<span><span class="co">#&gt; 10 833caa78-30df-4374-900f-7f88ab44…        14.7   iron-nickel-chr… RER         </span></span>
-<span><span class="co">#&gt; 11 833caa78-30df-4374-900f-7f88ab44…         0.390 market for deep… GLO         </span></span>
-<span><span class="co">#&gt; 12 bf94b5a7-b7a2-46d1-bb95-84bc560b…       442.    market for shed… GLO         </span></span>
-<span><span class="co">#&gt; 13 76269c17-78d6-420b-991a-aa38c51b…        14.1   iron-nickel-chr… RER         </span></span>
-<span><span class="co">#&gt; 14 76269c17-78d6-420b-991a-aa38c51b…         0.884 market for deep… GLO         </span></span>
-<span><span class="co">#&gt; 15 76269c17-78d6-420b-991a-aa38c51b…       321.    market for shed… GLO         </span></span>
-<span><span class="co">#&gt; 16 833caa78-30df-4374-900f-7f88ab44…        12.7   iron-nickel-chr… RER         </span></span>
-<span><span class="co">#&gt; 17 76269c17-78d6-420b-991a-aa38c51b…         0.675 market for deep… GLO         </span></span>
-<span><span class="co">#&gt; 18 bf94b5a7-b7a2-46d1-bb95-84bc560b…       435.    market for shed… GLO         </span></span>
-<span><span class="co">#&gt; # ℹ 4 more variables: isic_4digit &lt;chr&gt;, tilt_sector &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   tilt_subsector &lt;chr&gt;, unit &lt;chr&gt;</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $emissions_profile_upstream_products.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 33 × 7</span></span>
@@ -177,26 +147,6 @@
 <span><span class="co">#&gt; # ℹ 23 more rows</span></span>
 <span><span class="co">#&gt; # ℹ 3 more variables: input_isic_4digit &lt;chr&gt;,</span></span>
 <span><span class="co">#&gt; #   input_activity_uuid_product_uuid &lt;chr&gt;, activity_uuid_product_uuid &lt;chr&gt;</span></span>
-<span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $emissions_profile_upstream_products_ecoinvent.csv.gz</span></span>
-<span><span class="co">#&gt; # A tibble: 96 × 9</span></span>
-<span><span class="co">#&gt;    activity_uuid_product_uuid           ei_geography input_activity_uuid_produ…¹</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;                                &lt;chr&gt;        &lt;chr&gt;                      </span></span>
-<span><span class="co">#&gt;  1 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          bdc93cd8-00b4-5b3e-993e-b7…</span></span>
-<span><span class="co">#&gt;  2 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          fdb1f848-173f-5fe1-96a2-58…</span></span>
-<span><span class="co">#&gt;  3 76269c17-78d6-420b-991a-aa38c51b45b7 RER          95fcd1bb-4dc6-516a-a3b2-30…</span></span>
-<span><span class="co">#&gt;  4 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          daef2f9a-4108-52ae-90a7-fe…</span></span>
-<span><span class="co">#&gt;  5 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          3b190359-a32e-5294-af63-98…</span></span>
-<span><span class="co">#&gt;  6 833caa78-30df-4374-900f-7f88ab44075b RER          2c92cdcd-29df-53ba-a209-77…</span></span>
-<span><span class="co">#&gt;  7 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          9392c694-12a6-5cd7-a421-d4…</span></span>
-<span><span class="co">#&gt;  8 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          c18c6cc9-4a26-5c47-9ea9-86…</span></span>
-<span><span class="co">#&gt;  9 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb RER          c4ec0b1e-2a3b-5700-871c-2a…</span></span>
-<span><span class="co">#&gt; 10 833caa78-30df-4374-900f-7f88ab44075b RER          7361f7fb-5cf2-598c-823a-a4…</span></span>
-<span><span class="co">#&gt; # ℹ 86 more rows</span></span>
-<span><span class="co">#&gt; # ℹ abbreviated name: ¹​input_activity_uuid_product_uuid</span></span>
-<span><span class="co">#&gt; # ℹ 6 more variables: input_co2_footprint &lt;dbl&gt;, input_isic_4digit &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   input_reference_product_name &lt;chr&gt;, input_tilt_sector &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   input_tilt_subsector &lt;chr&gt;, input_unit &lt;chr&gt;</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $sector_profile_any_scenarios.csv.gz</span></span>
 <span><span class="co">#&gt; # A tibble: 388 × 8</span></span>
