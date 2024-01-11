@@ -1,6 +1,6 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
-# tiltToyData 0.0.0.9006 (2024-01-11)
+# tiltToyData 0.0.0.9007 (2024-01-11)
 
 * New version of `toy_emissions_profile_any_companies()`.
 
