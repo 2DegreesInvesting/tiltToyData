@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">tiltToyData</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9006</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9007</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,8 +45,19 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.0.0.9006" id="tilttoydata-0009006-2024-01-11">tiltToyData 0.0.0.9006 (2024-01-11)<a class="anchor" aria-label="anchor" href="#tilttoydata-0009006-2024-01-11"></a></h2>
-<ul><li>New toy datasets for emissions profile (<a href="https://github.com/2DegreesInvesting/tiltToyData/issues/19" class="external-link">#19</a>)</li>
+<h2 class="pkg-version" data-toc-text="0.0.0.9007" id="tilttoydata-0009007-2024-01-11">tiltToyData 0.0.0.9007 (2024-01-11)<a class="anchor" aria-label="anchor" href="#tilttoydata-0009007-2024-01-11"></a></h2>
+<ul><li><p>New version of <code><a href="../reference/toy_files.html">toy_emissions_profile_any_companies()</a></code>.</p></li>
+<li><p>New datasets <code><a href="../reference/toy_files.html">toy_emissions_profile_products_ecoinvent()</a></code> and <code><a href="../reference/toy_files.html">toy_emissions_profile_upstream_products_ecoinvent()</a></code> <em>pretend</em> to have all the products that exist in the ‘Ecoinvent’ database. Because they are toy datasets they actually have only a few products that exist in ‘Ecoinvent’ and not in ‘Europages’.</p></li>
+</ul><p>Features:</p>
+<ul><li>Fake <code>companies_id</code>.</li>
+<li>Fake <code>activity_uuid_product_uuid</code>.</li>
+<li>Random mapping between fake <code>activity_uuid_product_uuid</code> and other columns.</li>
+<li>Noisy <code>*co2_footprint</code>, jittered to the right by 50%-100% on average.</li>
+<li>New columns:
+<ul><li>Compared to the previous version of <code><a href="../reference/toy_files.html">toy_emissions_profile_any_companies()</a></code>, the new version gains three columns: <code>country</code>, <code>ei_activity_name</code>, and `main_activity.</li>
+<li>Compared to <code><a href="../reference/toy_files.html">toy_emissions_profile_products()</a></code>, the new dataset <code><a href="../reference/toy_files.html">toy_emissions_profile_products_ecoinvent()</a></code> gains one column: <code>ei_geography</code>.</li>
+<li>Compared to <code>toy_emissions_profile_upstrem_products()</code>, the new dataset <code><a href="../reference/toy_files.html">toy_emissions_profile_upstream_products_ecoinvent()</a></code> gains four columns: <code>ei_activity_name</code>, <code>ei_geography</code>, <code>input_ei_activity_name</code>, <code>input_reference_product_name</code>.</li>
+</ul></li>
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.0.0.9005" id="tilttoydata-0009005-2023-12-07">tiltToyData 0.0.0.9005 (2023-12-07)<a class="anchor" aria-label="anchor" href="#tilttoydata-0009005-2023-12-07"></a></h2>
