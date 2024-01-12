@@ -2,8 +2,10 @@
 "_PACKAGE"
 
 ## usethis namespace: start
+#' @importFrom dplyr anti_join
 #' @importFrom dplyr matches
 #' @importFrom dplyr select
+#' @importFrom dplyr semi_join
 #' @importFrom fs dir_ls
 #' @importFrom fs path_file
 #' @importFrom lifecycle deprecated
