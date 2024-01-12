@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltToyData 0.0.0.9008 (2024-01-12)
+
+* Update `toy_emissions_profile*` datasets. Now each `activity_uuid_product_uuid`
+in `toy_emissions_profile_any_companies()` also exists in
+`toy_emissions_profile_products_ecoinvent()` and
+`toy_emissions_profile_upstream_products_ecoinvent()` (#25).
+
 # tiltToyData 0.0.0.9007 (2024-01-11)
 
 * New version of `toy_emissions_profile_any_companies()`.
