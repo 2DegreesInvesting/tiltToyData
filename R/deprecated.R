@@ -11,3 +11,31 @@
 #' @name deprecated
 #' @aliases NULL
 NULL
+
+#' Deprecated `toy_emissions_profile*()`
+#'
+#' @description
+#' `r lifecycle::badge("deprecated")`
+#'
+#' @export
+#' @keywords internal
+#' @examples
+#' toy_emissions_profile_products()
+#' # ->
+#' toy_emissions_profile_products_ecoinvent()
+#'
+#' toy_emissions_profile_upstream_products()
+#' # ->
+#' toy_emissions_profile_upstream_products_ecoinvent()
+toy_emissions_profile_products <- function() {
+  lifecycle::deprecate_warn("0.0.0.9009", "toy_emissions_profile_products()", "toy_emissions_profile_products_ecoinvent()")
+  toy_path(toy_file("emissions_profile_products"))
+}
+
+#' @rdname toy_emissions_profile_products
+#' @export
+#' @keywords internal
+toy_emissions_profile_upstream_products <- function() {
+  lifecycle::deprecate_warn("0.0.0.9009", "toy_emissions_profile_upstream_products()", "toy_emissions_profile_upstream_products_ecoinvent()")
+  toy_path(toy_file("emissions_profile_upstream_products"))
+}

@@ -41,7 +41,7 @@ options(readr.show_col_types = FALSE)
 
 toy_files()
 
-read_csv(toy_emissions_profile_products())
+read_csv(toy_emissions_profile_products_ecoinvent())
 
 toy_files() |>
   lapply(\(x) read_csv(toy_path(x))) |>

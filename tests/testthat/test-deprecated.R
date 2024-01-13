@@ -48,3 +48,19 @@ test_that("`*sector*companies` with new tiltIndicator yields released data", {
   path <- toy_sector_profile_upstream_companies()
   expect_false(grepl("deprecated", path))
 })
+
+test_that("emissions_profile_products is deprecated", {
+  local_options(readr.show_col_types = FALSE)
+  expect_snapshot({
+    data <- read_csv(toy_emissions_profile_products())
+    expect_s3_class(data, "data.frame")
+  })
+})
+
+test_that("emissions_profile_upstream_products is deprecated", {
+  local_options(readr.show_col_types = FALSE)
+  expect_snapshot({
+    data <- read_csv(toy_emissions_profile_upstream_products())
+    expect_s3_class(data, "data.frame")
+  })
+})
