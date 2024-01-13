@@ -1,5 +1,13 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltToyData 0.0.0.9009 (2024-01-13)
+
+* `toy_emissions_profile_products()` and
+`toy_emissions_profile_upstream_products()` are now deprecated. They will
+continue to work for a while but you'll get a message warning you that you
+should instead use `toy_emissions_profile_products_ecoinvent()` and
+`toy_emissions_profile_upstream_products_ecoinvent()`, respectively (#26).
+
 # tiltToyData 0.0.0.9008 (2024-01-12)
 
 * Update `toy_emissions_profile*` datasets. Now each `activity_uuid_product_uuid`
