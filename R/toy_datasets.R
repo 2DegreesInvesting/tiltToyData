@@ -3,9 +3,9 @@
 #' @examples
 #' toy_emissions_profile_any_companies()
 #'
-#' toy_emissions_profile_products()
+#' toy_emissions_profile_products_ecoinvent()
 #'
-#' toy_emissions_profile_upstream_products()
+#' toy_emissions_profile_upstream_products_ecoinvent()
 #'
 #' toy_sector_profile_any_scenarios()
 #'
@@ -28,18 +28,6 @@ toy_emissions_profile_products_ecoinvent <- function() {
 #' @export
 toy_emissions_profile_upstream_products_ecoinvent <- function() {
   toy_path(toy_file("emissions_profile_upstream_products_ecoinvent"))
-}
-
-#' @rdname toy_files
-#' @export
-toy_emissions_profile_products <- function() {
-  toy_path(toy_file("emissions_profile_products"))
-}
-
-#' @rdname toy_files
-#' @export
-toy_emissions_profile_upstream_products <- function() {
-  toy_path(toy_file("emissions_profile_upstream_products"))
 }
 
 #' @rdname toy_files

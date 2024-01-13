@@ -4,8 +4,6 @@
 \alias{toy_emissions_profile_any_companies}
 \alias{toy_emissions_profile_products_ecoinvent}
 \alias{toy_emissions_profile_upstream_products_ecoinvent}
-\alias{toy_emissions_profile_products}
-\alias{toy_emissions_profile_upstream_products}
 \alias{toy_sector_profile_any_scenarios}
 \alias{toy_sector_profile_companies}
 \alias{toy_sector_profile_upstream_companies}
@@ -19,10 +17,6 @@ toy_emissions_profile_any_companies()
 toy_emissions_profile_products_ecoinvent()
 
 toy_emissions_profile_upstream_products_ecoinvent()
-
-toy_emissions_profile_products()
-
-toy_emissions_profile_upstream_products()
 
 toy_sector_profile_any_scenarios()
 
@@ -53,9 +47,9 @@ datasets and \code{toy_path()} to retrieve the path to one example.
 \examples{
 toy_emissions_profile_any_companies()
 
-toy_emissions_profile_products()
+toy_emissions_profile_products_ecoinvent()
 
-toy_emissions_profile_upstream_products()
+toy_emissions_profile_upstream_products_ecoinvent()
 
 toy_sector_profile_any_scenarios()
 

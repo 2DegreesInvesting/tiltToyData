@@ -41,16 +41,30 @@ toy_files()
 #> [8] "sector_profile_upstream_companies.csv.gz"            
 #> [9] "sector_profile_upstream_products.csv.gz"
 
-read_csv(toy_emissions_profile_products())
-#> # A tibble: 5 × 7
-#>   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit
-#>           <dbl> <chr>          <chr>          <chr> <chr>      
-#> 1        176.   Industry       Other          unit  '2560'     
-#> 2         58.1  Industry       Other          unit  '2560'     
-#> 3          4.95 Steel & Metals Steel          kg    '2870'     
-#> 4         12.5  Agriculture    Agriculture    kg    '1780'     
-#> 5          2.07 Industry       Other          kg    '2679'     
-#> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
+read_csv(toy_emissions_profile_products_ecoinvent())
+#> # A tibble: 18 × 8
+#>    activity_uuid_product_uuid        co2_footprint ei_activity_name ei_geography
+#>    <chr>                                     <dbl> <chr>            <chr>       
+#>  1 833caa78-30df-4374-900f-7f88ab44…        11.1   iron-nickel-chr… RER         
+#>  2 76269c17-78d6-420b-991a-aa38c51b…         0.487 market for deep… GLO         
+#>  3 76269c17-78d6-420b-991a-aa38c51b…       479.    market for shed… GLO         
+#>  4 833caa78-30df-4374-900f-7f88ab44…        11.6   iron-nickel-chr… RER         
+#>  5 833caa78-30df-4374-900f-7f88ab44…         0.531 market for deep… GLO         
+#>  6 76269c17-78d6-420b-991a-aa38c51b…       329.    market for shed… GLO         
+#>  7 76269c17-78d6-420b-991a-aa38c51b…        14.1   iron-nickel-chr… RER         
+#>  8 833caa78-30df-4374-900f-7f88ab44…         0.468 market for deep… GLO         
+#>  9 bf94b5a7-b7a2-46d1-bb95-84bc560b…       464.    market for shed… GLO         
+#> 10 bf94b5a7-b7a2-46d1-bb95-84bc560b…         7.77  iron-nickel-chr… RER         
+#> 11 76269c17-78d6-420b-991a-aa38c51b…         0.401 market for deep… GLO         
+#> 12 833caa78-30df-4374-900f-7f88ab44…       218.    market for shed… GLO         
+#> 13 833caa78-30df-4374-900f-7f88ab44…        10.7   iron-nickel-chr… RER         
+#> 14 bf94b5a7-b7a2-46d1-bb95-84bc560b…         0.596 market for deep… GLO         
+#> 15 bf94b5a7-b7a2-46d1-bb95-84bc560b…       429.    market for shed… GLO         
+#> 16 76269c17-78d6-420b-991a-aa38c51b…        14.0   iron-nickel-chr… RER         
+#> 17 bf94b5a7-b7a2-46d1-bb95-84bc560b…         0.518 market for deep… GLO         
+#> 18 bf94b5a7-b7a2-46d1-bb95-84bc560b…       382.    market for shed… GLO         
+#> # ℹ 4 more variables: isic_4digit <chr>, tilt_sector <chr>,
+#> #   tilt_subsector <chr>, unit <chr>
 
 toy_files() |>
   lapply(\(x) read_csv(toy_path(x))) |>
