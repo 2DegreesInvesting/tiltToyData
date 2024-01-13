@@ -93,16 +93,30 @@
 <span><span class="co">#&gt; [8] "sector_profile_upstream_companies.csv.gz"            </span></span>
 <span><span class="co">#&gt; [9] "sector_profile_upstream_products.csv.gz"</span></span>
 <span></span>
-<span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_emissions_profile_products</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 5 × 7</span></span>
-<span><span class="co">#&gt;   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit</span></span>
-<span><span class="co">#&gt;           &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;          &lt;chr&gt; &lt;chr&gt;      </span></span>
-<span><span class="co">#&gt; 1        176.   Industry       Other          unit  '2560'     </span></span>
-<span><span class="co">#&gt; 2         58.1  Industry       Other          unit  '2560'     </span></span>
-<span><span class="co">#&gt; 3          4.95 Steel &amp; Metals Steel          kg    '2870'     </span></span>
-<span><span class="co">#&gt; 4         12.5  Agriculture    Agriculture    kg    '1780'     </span></span>
-<span><span class="co">#&gt; 5          2.07 Industry       Other          kg    '2679'     </span></span>
-<span><span class="co">#&gt; # ℹ 2 more variables: activity_uuid_product_uuid &lt;chr&gt;, ei_activity_name &lt;chr&gt;</span></span>
+<span><span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_emissions_profile_products_ecoinvent</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 18 × 8</span></span>
+<span><span class="co">#&gt;    activity_uuid_product_uuid        co2_footprint ei_activity_name ei_geography</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;                                     &lt;dbl&gt; &lt;chr&gt;            &lt;chr&gt;       </span></span>
+<span><span class="co">#&gt;  1 833caa78-30df-4374-900f-7f88ab44…        11.1   iron-nickel-chr… RER         </span></span>
+<span><span class="co">#&gt;  2 76269c17-78d6-420b-991a-aa38c51b…         0.487 market for deep… GLO         </span></span>
+<span><span class="co">#&gt;  3 76269c17-78d6-420b-991a-aa38c51b…       479.    market for shed… GLO         </span></span>
+<span><span class="co">#&gt;  4 833caa78-30df-4374-900f-7f88ab44…        11.6   iron-nickel-chr… RER         </span></span>
+<span><span class="co">#&gt;  5 833caa78-30df-4374-900f-7f88ab44…         0.531 market for deep… GLO         </span></span>
+<span><span class="co">#&gt;  6 76269c17-78d6-420b-991a-aa38c51b…       329.    market for shed… GLO         </span></span>
+<span><span class="co">#&gt;  7 76269c17-78d6-420b-991a-aa38c51b…        14.1   iron-nickel-chr… RER         </span></span>
+<span><span class="co">#&gt;  8 833caa78-30df-4374-900f-7f88ab44…         0.468 market for deep… GLO         </span></span>
+<span><span class="co">#&gt;  9 bf94b5a7-b7a2-46d1-bb95-84bc560b…       464.    market for shed… GLO         </span></span>
+<span><span class="co">#&gt; 10 bf94b5a7-b7a2-46d1-bb95-84bc560b…         7.77  iron-nickel-chr… RER         </span></span>
+<span><span class="co">#&gt; 11 76269c17-78d6-420b-991a-aa38c51b…         0.401 market for deep… GLO         </span></span>
+<span><span class="co">#&gt; 12 833caa78-30df-4374-900f-7f88ab44…       218.    market for shed… GLO         </span></span>
+<span><span class="co">#&gt; 13 833caa78-30df-4374-900f-7f88ab44…        10.7   iron-nickel-chr… RER         </span></span>
+<span><span class="co">#&gt; 14 bf94b5a7-b7a2-46d1-bb95-84bc560b…         0.596 market for deep… GLO         </span></span>
+<span><span class="co">#&gt; 15 bf94b5a7-b7a2-46d1-bb95-84bc560b…       429.    market for shed… GLO         </span></span>
+<span><span class="co">#&gt; 16 76269c17-78d6-420b-991a-aa38c51b…        14.0   iron-nickel-chr… RER         </span></span>
+<span><span class="co">#&gt; 17 bf94b5a7-b7a2-46d1-bb95-84bc560b…         0.518 market for deep… GLO         </span></span>
+<span><span class="co">#&gt; 18 bf94b5a7-b7a2-46d1-bb95-84bc560b…       382.    market for shed… GLO         </span></span>
+<span><span class="co">#&gt; # ℹ 4 more variables: isic_4digit &lt;chr&gt;, tilt_sector &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   tilt_subsector &lt;chr&gt;, unit &lt;chr&gt;</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/toy_files.html">toy_files</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span>\<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">read_csv</a></span><span class="op">(</span><span class="fu"><a href="reference/toy_files.html">toy_path</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span></span>
