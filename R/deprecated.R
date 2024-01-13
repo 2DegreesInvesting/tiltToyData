@@ -12,7 +12,7 @@
 #' @aliases NULL
 NULL
 
-#' Deprecated `toy_emissions_profile*()`
+#' Deprecated `toy_emissions_profile*_products()`
 #'
 #' @description
 #' `r lifecycle::badge("deprecated")`

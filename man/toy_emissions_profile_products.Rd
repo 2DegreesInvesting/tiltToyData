@@ -3,7 +3,7 @@
 \name{toy_emissions_profile_products}
 \alias{toy_emissions_profile_products}
 \alias{toy_emissions_profile_upstream_products}
-\title{Deprecated \verb{toy_emissions_profile*()}}
+\title{Deprecated \verb{toy_emissions_profile*_products()}}
 \usage{
 toy_emissions_profile_products()
 
