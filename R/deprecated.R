@@ -29,7 +29,11 @@ NULL
 #' @export
 #' @keywords internal
 toy_emissions_profile_products <- function() {
-  lifecycle::deprecate_warn("0.0.0.9009", "toy_emissions_profile_products()", "toy_emissions_profile_products_ecoinvent()")
+  lifecycle::deprecate_warn(
+    "0.0.0.9009",
+    "toy_emissions_profile_products()",
+    "toy_emissions_profile_products_ecoinvent()"
+  )
   deprecated_path("emissions_profile_products.csv.gz")
 }
 
@@ -37,6 +41,10 @@ toy_emissions_profile_products <- function() {
 #' @export
 #' @keywords internal
 toy_emissions_profile_upstream_products <- function() {
-  lifecycle::deprecate_warn("0.0.0.9009", "toy_emissions_profile_upstream_products()", "toy_emissions_profile_upstream_products_ecoinvent()")
+  lifecycle::deprecate_warn(
+    "0.0.0.9009",
+    "toy_emissions_profile_upstream_products()",
+    "toy_emissions_profile_upstream_products_ecoinvent()"
+  )
   deprecated_path("emissions_profile_upstream_products.csv.gz")
 }
