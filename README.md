@@ -31,15 +31,18 @@ library(readr)
 options(readr.show_col_types = FALSE)
 
 toy_files()
-#> [1] "emissions_profile_any_companies.csv.gz"              
-#> [2] "emissions_profile_products.csv.gz"                   
-#> [3] "emissions_profile_products_ecoinvent.csv.gz"         
-#> [4] "emissions_profile_upstream_products.csv.gz"          
-#> [5] "emissions_profile_upstream_products_ecoinvent.csv.gz"
-#> [6] "sector_profile_any_scenarios.csv.gz"                 
-#> [7] "sector_profile_companies.csv.gz"                     
-#> [8] "sector_profile_upstream_companies.csv.gz"            
-#> [9] "sector_profile_upstream_products.csv.gz"
+#>  [1] "ecoinvent_activities.csv.gz"                         
+#>  [2] "ecoinvent_europages.csv.gz"                          
+#>  [3] "ecoinvent_inputs.csv.gz"                             
+#>  [4] "emissions_profile_any_companies.csv.gz"              
+#>  [5] "emissions_profile_products_ecoinvent.csv.gz"         
+#>  [6] "emissions_profile_upstream_products_ecoinvent.csv.gz"
+#>  [7] "europages_companies.csv.gz"                          
+#>  [8] "isic_name.csv.gz"                                    
+#>  [9] "sector_profile_any_scenarios.csv.gz"                 
+#> [10] "sector_profile_companies.csv.gz"                     
+#> [11] "sector_profile_upstream_companies.csv.gz"            
+#> [12] "sector_profile_upstream_products.csv.gz"
 
 read_csv(toy_emissions_profile_products_ecoinvent())
 #> # A tibble: 18 × 8
@@ -69,6 +72,57 @@ read_csv(toy_emissions_profile_products_ecoinvent())
 toy_files() |>
   lapply(\(x) read_csv(toy_path(x))) |>
   setNames(toy_files())
+#> $ecoinvent_activities.csv.gz
+#> # A tibble: 100 × 5
+#>    activity_uuid_product_…¹ activity_name geography reference_product_name unit 
+#>    <chr>                    <chr>         <chr>     <chr>                  <chr>
+#>  1 dabb3812-eee9-5d2b-bc23… bark chips, … CH        residual hardwood, wet m3   
+#>  2 3b34f2a3-abfb-5681-ac78… market for n… GLO       nitrous oxide          kg   
+#>  3 3a2ab192-109a-5fa4-b9d9… market for s… CH        sawdust, wet, measure… kg   
+#>  4 16e0e4f7-a44f-55d5-ae85… market for s… CH        sewage sludge, 70% wa… kg   
+#>  5 732c6740-c4fb-598d-89a0… phenolic res… RER       phenolic resin         kg   
+#>  6 32ab1519-ba6d-5432-9c5d… treatment of… CN        sewage sludge, 97% wa… kg   
+#>  7 d08ed49a-25fd-5766-bafc… heat and pow… US-WECC   electricity, high vol… kWh  
+#>  8 6632b6ca-fdb9-5d16-a1b1… treatment of… Europe w… organic nitrogen fert… kg   
+#>  9 a73e89c1-abd9-54a1-8c44… catch crop g… CH        ryegrass silage        kg   
+#> 10 da6fd7f1-4ee6-5491-81a9… nuclear fuel… RoW       nuclear fuel element,… kg   
+#> # ℹ 90 more rows
+#> # ℹ abbreviated name: ¹​activity_uuid_product_uuid
+#> 
+#> $ecoinvent_europages.csv.gz
+#> # A tibble: 100 × 8
+#>    ep_id      country main_activity clustered activity_uuid_produc…¹ multi_match
+#>    <chr>      <chr>   <chr>         <chr>     <chr>                  <lgl>      
+#>  1 0b0ae0f9e… germany service prov… air puri… bcdcd9f2-a3d9-58a3-b2… TRUE       
+#>  2 0b0ae0f9e… germany service prov… air puri… 68a453fd-c49c-5358-9e… TRUE       
+#>  3 0dde317dd… france  missing       aircraft… d7739cef-e1e3-5084-97… TRUE       
+#>  4 0dde317dd… france  missing       aircraft… b2559f83-c1b9-51a9-a2… TRUE       
+#>  5 0dde317dd… germany missing       aircraft… d7739cef-e1e3-5084-97… TRUE       
+#>  6 0dde317dd… germany missing       aircraft… b2559f83-c1b9-51a9-a2… TRUE       
+#>  7 0dde317dd… germany service prov… aircraft… d7739cef-e1e3-5084-97… TRUE       
+#>  8 0dde317dd… germany service prov… aircraft… b2559f83-c1b9-51a9-a2… TRUE       
+#>  9 f622bd01b… france  service prov… aircraft… 39ff049a-3abf-51e6-a7… TRUE       
+#> 10 f622bd01b… france  service prov… aircraft… 1c0ee497-bffd-55f5-99… TRUE       
+#> # ℹ 90 more rows
+#> # ℹ abbreviated name: ¹​activity_uuid_product_uuid
+#> # ℹ 2 more variables: completion <chr>, category <chr>
+#> 
+#> $ecoinvent_inputs.csv.gz
+#> # A tibble: 52 × 3
+#>    input_activity_uuid_product_uuid             exchange_name exchange_unit_name
+#>    <chr>                                        <chr>         <chr>             
+#>  1 7ac71fd7-a65b-5f2c-9289-7335f9945c11_fef44c… aluminium, w… kg                
+#>  2 3b190359-a32e-5294-af63-983f38ce6525_759b89… electricity,… kWh               
+#>  3 62b803ad-e3ff-516b-947d-f08eea52c702_fbb039… copper, cath… kg                
+#>  4 372a1991-e0af-5fbf-8611-295a535373ad_9ba482… reinforcing … kg                
+#>  5 531db396-1434-54e5-b6c4-c2b4323471cb_751b5e… stone wool, … kg                
+#>  6 c93a2afc-7e58-50b6-af0e-586f71a3de0e_bfd577… waste minera… kg                
+#>  7 3a29c9e0-4183-588d-95a9-502b55d2c513_bfd577… waste minera… kg                
+#>  8 2330b528-6e31-5a99-9801-73834e2a835f_6f2eb4… waste wood, … kg                
+#>  9 79d6450d-f9ad-5619-89c3-05c8d7622af3_b0f4c2… diesel, burn… MJ                
+#> 10 044043d2-bdfc-55f1-9d2d-e8431d5266c7_8cb650… steel, low-a… kg                
+#> # ℹ 42 more rows
+#> 
 #> $emissions_profile_any_companies.csv.gz
 #> # A tibble: 76 × 7
 #>    activity_uuid_product_uuid    clustered companies_id country ei_activity_name
@@ -85,17 +139,6 @@ toy_files() |>
 #> 10 76269c17-78d6-420b-991a-aa38… tent      fascist_mai… germany market for shed…
 #> # ℹ 66 more rows
 #> # ℹ 2 more variables: main_activity <chr>, unit <chr>
-#> 
-#> $emissions_profile_products.csv.gz
-#> # A tibble: 5 × 7
-#>   co2_footprint tilt_sector    tilt_subsector unit  isic_4digit
-#>           <dbl> <chr>          <chr>          <chr> <chr>      
-#> 1        176.   Industry       Other          unit  '2560'     
-#> 2         58.1  Industry       Other          unit  '2560'     
-#> 3          4.95 Steel & Metals Steel          kg    '2870'     
-#> 4         12.5  Agriculture    Agriculture    kg    '1780'     
-#> 5          2.07 Industry       Other          kg    '2679'     
-#> # ℹ 2 more variables: activity_uuid_product_uuid <chr>, ei_activity_name <chr>
 #> 
 #> $emissions_profile_products_ecoinvent.csv.gz
 #> # A tibble: 18 × 8
@@ -122,24 +165,6 @@ toy_files() |>
 #> # ℹ 4 more variables: isic_4digit <chr>, tilt_sector <chr>,
 #> #   tilt_subsector <chr>, unit <chr>
 #> 
-#> $emissions_profile_upstream_products.csv.gz
-#> # A tibble: 33 × 7
-#>    input_co2_footprint input_tilt_sector input_tilt_subsector input_unit
-#>                  <dbl> <chr>             <chr>                <chr>     
-#>  1             7.07e+0 Inudstry          Other                kg        
-#>  2             3.99e+1 Inudstry          Other                kwh       
-#>  3             5.12e-1 Inudstry          Other                kg        
-#>  4             1.24e+0 Inudstry          Other                kg        
-#>  5             2.12e+1 Inudstry          Other                kwh       
-#>  6             1.24e-9 Inudstry          Other                kg        
-#>  7             7   e-9 Inudstry          Other                kg        
-#>  8             1.04e+0 Inudstry          Other                kg        
-#>  9             1.12e+0 Inudstry          Other                kg        
-#> 10             3.51e+0 Inudstry          Other                kg        
-#> # ℹ 23 more rows
-#> # ℹ 3 more variables: input_isic_4digit <chr>,
-#> #   input_activity_uuid_product_uuid <chr>, activity_uuid_product_uuid <chr>
-#> 
 #> $emissions_profile_upstream_products_ecoinvent.csv.gz
 #> # A tibble: 96 × 11
 #>    activity_uuid_product_…¹ ei_activity_name ei_geography input_activity_uuid_…²
@@ -160,6 +185,30 @@ toy_files() |>
 #> # ℹ 7 more variables: input_co2_footprint <dbl>, input_ei_activity_name <chr>,
 #> #   input_isic_4digit <chr>, input_reference_product_name <chr>,
 #> #   input_tilt_sector <chr>, input_tilt_subsector <chr>, input_unit <chr>
+#> 
+#> $europages_companies.csv.gz
+#> # A tibble: 3 × 7
+#>   company_name country company_city postcode address  main_activity companies_id
+#>   <chr>        <chr>   <chr>           <dbl> <chr>    <chr>         <chr>       
+#> 1 company C    austria voitsberg        8570 ruhmann… service prov… id3         
+#> 2 company B    germany berlin          13353 sprenge… distributor   id2         
+#> 3 company A    germany frankfurt       60316 wittels… manufacturer… id1         
+#> 
+#> $isic_name.csv.gz
+#> # A tibble: 182 × 2
+#>    isic_4digit isic_4digit_name_ecoinvent                                      
+#>    <chr>       <chr>                                                           
+#>  1 0111        Growing of cereals (except rice), leguminous crops and oil seeds
+#>  2 0112        Growing of rice                                                 
+#>  3 0113        Growing of vegetables and melons, roots and tubers              
+#>  4 0114        Growing of sugar cane                                           
+#>  5 0116        Growing of fibre crops                                          
+#>  6 0119        Growing of other non-perennial crops                            
+#>  7 0121        Growing of grapes                                               
+#>  8 0122        Growing of tropical and subtropical fruits                      
+#>  9 0123        Growing of citrus fruits                                        
+#> 10 0124        Growing of pome fruits and stone fruits                         
+#> # ℹ 172 more rows
 #> 
 #> $sector_profile_any_scenarios.csv.gz
 #> # A tibble: 388 × 8
