@@ -6124,3 +6124,707 @@
       74                     total energy supply
       
 
+# europages_companies hasn't changed
+
+    Code
+      format_robust_snapshot(data)
+    Output
+      [[1]]
+        company_name
+      1    company C
+      2    company B
+      3    company A
+      
+      [[2]]
+        country
+      1 austria
+      2 germany
+      3 germany
+      
+      [[3]]
+        company_city
+      1    voitsberg
+      2       berlin
+      3    frankfurt
+      
+      [[4]]
+        postcode
+      1     8570
+      2    13353
+      3    60316
+      
+      [[5]]
+                                        address
+      1       ruhmannstrasse 1 | 8570 voitsberg
+      2       sprengelstrasse 15 | 13353 berlin
+      3 wittelsbacherallee 37 | 60316 frankfurt
+      
+      [[6]]
+                 main_activity
+      1       service provider
+      2            distributor
+      3 manufacturer/ producer
+      
+      [[7]]
+        companies_id
+      1          id3
+      2          id2
+      3          id1
+      
+
+# ecoinvent_activities hasn't changed
+
+    Code
+      format_robust_snapshot(data)
+    Output
+      [[1]]
+                                                         activity_uuid_product_uuid
+      1   dabb3812-eee9-5d2b-bc23-0f9a38e6f71e_bded6c5a-4dca-497e-bdd9-fcd343012087
+      2   3b34f2a3-abfb-5681-ac78-60c8fada5b16_61c1d37e-ad50-4159-b379-cfe3976720bf
+      3   3a2ab192-109a-5fa4-b9d9-7ed5421ce5c6_dfaef357-a79e-4846-aabc-848b1ab59fbb
+      4   16e0e4f7-a44f-55d5-ae85-b2a614f42095_d5d05133-2092-451a-b9fa-c782a6ce3786
+      5   732c6740-c4fb-598d-89a0-f8d0a443913f_0d84cdfe-bcf2-4821-8f34-d93b9f611c11
+      6   32ab1519-ba6d-5432-9c5d-c82d26d1564a_618cf05a-8af0-4638-b40d-5a5d15ca971e
+      7   d08ed49a-25fd-5766-bafc-3cb505dac2e8_66c93e71-f32b-4591-901c-55395db5c132
+      8   6632b6ca-fdb9-5d16-a1b1-599bb8bff19b_60e40c5e-8a0e-52f7-8c7f-2664ac536903
+      9   a73e89c1-abd9-54a1-8c44-17547de7e7ef_f1efe0d9-811f-4bf7-af7b-81aff81f5568
+      10  da6fd7f1-4ee6-5491-81a9-2e42ce8968dd_f6ba241a-2732-47fb-bff3-ca4a3e30faa3
+      11  59abf99d-3a33-5d9c-a8d7-a2fc6b146250_3103a12f-4541-4c57-88e1-79d331927a66
+      12  25bb2c21-f6f5-58e1-b110-9025bfb6a70f_aa0d7c65-0f57-49ed-a01e-01f2b4bc4ac4
+      13  7bc57d51-d238-5ed5-970d-d8e6f2d47dc1_66c93e71-f32b-4591-901c-55395db5c132
+      14  a25fd054-f122-5de8-864c-d431bdf452b9_66c93e71-f32b-4591-901c-55395db5c132
+      15  c6588bbf-2571-50e5-b3fb-c187d3ceb09b_bd9f3f8b-c561-4604-b683-4e53f704bd02
+      16  0d5b2bcc-f4cd-5c9f-b39e-52407016c78b_71e2f1db-a2c5-44d0-8337-dfff15be974d
+      17  37692790-c50b-5967-9e40-57d50862e6ba_42baed81-24d1-4aed-a120-cc7d35ddac10
+      18  00299986-0b1a-5f9c-b1c7-a919ac63f737_d4ee8f39-342b-4443-bbb9-c49b6801b5d6
+      19  5ce73ef2-3846-5a51-bd31-812805640425_66c93e71-f32b-4591-901c-55395db5c132
+      20  7dff266a-227e-5b61-b4b5-89b6d3c319c1_5321a299-0c03-4bfc-9dda-d020456f6b2e
+      21  f4fc142e-1a69-5bcd-9cbf-820ab64855c3_66c93e71-f32b-4591-901c-55395db5c132
+      22  ad20db3a-415e-5e39-b222-854caf996375_03cc9df9-29e5-4ee0-8bff-a70999caffbf
+      23  deb82648-4de3-5bf1-8843-3ae09d10cfce_4c2bb0f0-422d-4fb3-bcfe-a36ef1b55874
+      24  d75ddb25-1efc-554d-936e-bbfe99ee910a_4c2b6470-79f6-40e4-b6c0-08a769c9ab04
+      25  f43779f5-10a6-5638-a755-b0e01d79e149_d51e5a32-c20a-4da6-8d58-31f344b50c00
+      26  e817e4b1-9760-5069-8029-02d8606d3f4f_63bf19bc-8cbc-4d14-906e-abfa110dbb5f
+      27  05040ba1-9a93-5c05-b8d5-75cdeb9f218a_66c93e71-f32b-4591-901c-55395db5c132
+      28  ad7bb6b7-d973-54fa-9964-53290b4f10d3_1458c180-5333-475e-88d2-7886d76e779e
+      29  eb037ccb-a1b4-5260-8351-eb3e9144e038_9b9edcf3-0539-4642-9516-0df642a5c41a
+      30  45f0b140-b492-52bc-af64-d4808958700d_c0939534-d461-46e6-b433-f4cdad1f5ef7
+      31  d13c608c-dd58-50e0-b796-adf07d1a1f3f_6666335b-58fd-4687-9e8e-4235d8dd7b20
+      32  e53851f7-5ca5-5f07-8c2c-c65d5eee38b5_42d2fd94-f9c8-4903-ac72-a4fe5af22233
+      33  8802cfa2-5c70-524f-b489-e32298fffbff_77ab9d43-1562-49e6-b42e-faa4e9f69e2b
+      34  beae5ed7-95b6-5435-92d0-11abfea400d2_02db23d4-0c70-4c90-98b6-2aa65ef4b268
+      35  d2625fae-fc2b-52f6-a2c5-ada2292d0a8a_9e2fbebe-7357-4057-b7c6-3c4d7cfa5285
+      36  21157467-225d-5fc9-b50c-6c5069a1fadb_4aeb3a6c-81f4-4f6e-80b6-797b812e0792
+      37  7e44cc11-9b59-5b65-9add-ea6f073c4004_dca5d4c8-0e53-4f11-9df5-418e30a0e49f
+      38  b6f5e662-3bcc-55e0-afd0-5b965db396ab_780b9e94-60a4-411e-9cc5-02948676003b
+      39  46a156a7-9eb2-568f-a96d-120fe63a892a_019600be-f3ce-4399-9e31-19cdc087ed5f
+      40  f7e64fb7-17f2-598c-8dd6-9ce1ff477c83_318bc688-5b2f-56fa-8bab-3c071c0f52bb
+      41  20c37d85-04ca-585e-a554-0f2e8d06abc6_c1fd4059-c24f-4e05-b3f5-82651ec0dbfa
+      42  2dd21cc0-1558-5414-ac97-4b603d3b6e69_4c2bb0f0-422d-4fb3-bcfe-a36ef1b55874
+      43  5f2b7b6e-fe4b-5623-aa7f-fc6752f2495c_66c93e71-f32b-4591-901c-55395db5c132
+      44  50d9539b-9086-56a7-ace3-f60930692c66_b1489e93-5758-49fb-979e-455555779aec
+      45  d2e79c32-e80c-5acb-b9a6-133c722cf60b_6d2c81d0-5546-4bc3-a4f4-3e88606d539d
+      46  c6588bbf-2571-50e5-b3fb-c187d3ceb09b_86e1bf02-e86a-479b-9051-710271dbd745
+      47  da43b5f7-098f-5c96-8ad7-749cf54b0844_e8a17c52-fef4-4297-994b-e7536c00dfab
+      48  7c68b8dc-2ec6-57d1-956f-7bdb9fa4eeb5_d11b6468-c23b-4139-bd97-2dd8542a7ead
+      49  7eae8cab-8770-5099-ad70-b05970f4813c_760a7b1e-b405-4f8a-ad37-f032f36c02c0
+      50  65852e20-d63e-53cd-aeab-d48d4a348f40_b3c58f5d-5815-487c-8b9c-4366e00d22dc
+      51  4dedd231-3053-55b8-8173-1334b060493a_5981c7be-0137-5e12-8ff5-d4f0649f3953
+      52  d7fd7d25-dbeb-5c28-a1da-db0a178b1f89_66c93e71-f32b-4591-901c-55395db5c132
+      53  d06d4f2b-95a1-571b-ac15-c7faefc17deb_3990b197-a303-4c36-ae1c-c2ddebaad744
+      54  69fa6126-09e6-5b9c-8d29-ef8a9e7b570f_71e2f1db-a2c5-44d0-8337-dfff15be974d
+      55  87f75ecd-76c5-5df1-992e-0abc12517b60_9cdb112b-0d90-4d76-9cec-412b0c67d8bb
+      56  bd3f4a80-74c2-5b57-855a-138be4d487e1_71e2f1db-a2c5-44d0-8337-dfff15be974d
+      57  e98cc1f8-7102-52b4-a0e2-258048b62df0_1fe6463a-08c8-406e-b05c-d5ad845da6be
+      58  757f2746-e008-5940-ac95-c2c863b5746c_51981001-f60a-4dce-ae66-c0aeef64015e
+      59  2b5d35d4-4a18-5f0e-8abe-1bbfb71b6ec1_5321a299-0c03-4bfc-9dda-d020456f6b2e
+      60  b6056dfc-791f-5227-9f42-3991f8a9a2de_d69294d7-8d64-4915-a896-9996a014c410
+      61  c2a5b114-86f6-5722-8a81-9da06c1f59de_2cfef82e-cb0d-4864-8163-9651fc6c25eb
+      62  543550dd-7f17-5f78-b997-ae1410671af4_b419e26a-249f-4286-a6f8-188e7dfba951
+      63  b90dcf52-3e8c-5fb5-9b2b-38561d800000_71e2f1db-a2c5-44d0-8337-dfff15be974d
+      64  c0ce968c-0a52-5be2-b269-7cbf2719cfd2_dd80f0f2-f4d5-40f0-9035-09c1a7f3f07b
+      65  1c08e879-f4d0-5a32-b018-4eba4e0afe32_96525009-1ff7-4f3c-aeb9-44ffd9a063ed
+      66  0251cf86-6218-5d0b-af7f-398bf5033051_4ded4b10-8c5a-41bf-9098-0194fc46b639
+      67  6d97aa8e-2744-5312-8b96-6b05efb78696_1c5d51e7-9762-5fbb-b707-03198c65b424
+      68  57783e35-3d86-5584-8ac7-09abd5815032_66c93e71-f32b-4591-901c-55395db5c132
+      69  09bad9e0-3511-5fc1-bce7-cb8b26b30d38_d13ae29b-7d6a-55d2-8380-86343a80fed8
+      70  d33aefb0-dc39-57ef-937f-096e854adfa6_66c93e71-f32b-4591-901c-55395db5c132
+      71  439ff853-795a-5eaf-9ff2-b8bc4944a1f7_858164b0-44f1-4118-b6cb-47054faa21ef
+      72  d305faf9-d271-502a-98f4-05d30b2029c1_0ace02fa-eca5-482d-a829-c18e46a52db4
+      73  42aaf878-3f5a-5255-898e-e9fb167af89e_d69294d7-8d64-4915-a896-9996a014c410
+      74  ab153c21-a8af-5657-aebb-1bef8208fd55_71d0cff1-7f13-4476-94a9-4eaaec98d225
+      75  f43edcb3-07d9-57c8-be3b-a272f7d3f57a_0b4d69f9-6b39-4232-948b-62b7b4f0d3d8
+      76  2fb684b4-22da-5e05-8f68-c38f58be95a6_7310faf6-857d-4013-8fa4-043200a2c0e7
+      77  1d3cd7b5-27d6-5e64-bd8a-3f7542c4630e_a498d9fb-9402-4374-b2e2-3f85f5d98f43
+      78  71704499-dcd8-58d3-bfac-b7a715fe8c01_518565e9-8537-42b5-869b-2df9bcfbb849
+      79  95bac83a-e8e9-54a5-996c-fef0438e9222_01d3bb5a-645e-485c-9661-cdcebf93385c
+      80  d6459f77-552d-5ae1-89b5-8b1bc6b77f3d_d7d5b411-031a-4735-acee-3f9658cf74c4
+      81  2e729135-26e3-57e0-987b-ea356eb02098_bd6aab7d-fe7d-4396-b209-448ffb557a61
+      82  267766d2-9be1-5a31-87e0-e0ca2b8132b7_8b54f6c4-5a2c-4816-8691-7941b290407a
+      83  1d511a21-72db-5825-8e05-0e2a6a049150_08c64e0a-dbf8-47a7-86dc-c281f357e9cd
+      84  e6b2b5d5-4af7-5ab8-9d47-17bfc162b584_eee95138-58c8-4172-9b1f-754ba074325d
+      85  2954d2d9-daf4-5f48-aca0-d8e7a3030ef9_66c93e71-f32b-4591-901c-55395db5c132
+      86  f8126f1d-bd2e-532a-8f51-df12fc1fe86c_d69294d7-8d64-4915-a896-9996a014c410
+      87  d0d3d392-dfd0-5081-af0c-d21d915a54d9_66c93e71-f32b-4591-901c-55395db5c132
+      88  7c0fc742-7d36-5857-9223-70ee56290ab7_22cdac63-419a-4980-ad99-5c0caff0a614
+      89  4138554f-b8e0-5203-ad46-f9d4885714ba_42761d87-05d9-4877-b21e-001ecf0c747d
+      90  f554d916-f5ab-5dd6-87ec-434145417dbe_90c3c146-16ab-4e66-9cb5-424629767a3b
+      91  304cb2e9-4421-5e77-b4cc-7a7cdbd550c6_960bec1c-d3f1-496a-86d8-f8168245e465
+      92  9d1d0815-9c2e-5fe5-9086-62832054c117_08182e61-7e1a-4e55-8aad-aaf8de6fa678
+      93  86e8a078-d06c-54de-b7ff-839ba6ef2bb0_d69294d7-8d64-4915-a896-9996a014c410
+      94  e82e017b-983b-5910-97b7-cdbe8f3151da_1c5d51e7-9762-5fbb-b707-03198c65b424
+      95  cefcc481-449d-5334-9450-b603fc7afbee_66c93e71-f32b-4591-901c-55395db5c132
+      96  7023df75-302b-5f29-85d2-9b9303eb3402_66c93e71-f32b-4591-901c-55395db5c132
+      97  08bd37b2-dcaa-5232-9caf-a07a11839c36_609fae33-2e89-4b99-8129-b1f80a6dda33
+      98  afec84c8-ae65-525b-a298-210bcae9bf24_66c93e71-f32b-4591-901c-55395db5c132
+      99  81fafab0-3c11-5fcb-afb8-1429d725fb9f_66c93e71-f32b-4591-901c-55395db5c132
+      100 7e1103c0-e852-5e9d-b2a0-f143da5b3a8f_66c93e71-f32b-4591-901c-55395db5c132
+      
+      [[2]]
+                                                                                               activity_name
+      1                   bark chips, wet, measured as dry mass to generic market for residual hardwood, wet
+      2                                                                             market for nitrous oxide
+      3                                                        market for sawdust, wet, measured as dry mass
+      4                            market for sewage sludge, 70% water, WWT, WW from maize starch production
+      5                                                                            phenolic resin production
+      6   treatment of sewage sludge, 97% water, WWT, WW from ammonium paratungstate production, landfarming
+      7                heat and power co-generation, natural gas, conventional power plant, 100MW electrical
+      8               treatment of sewage sludge, 97% water, WWT, rainwater mineral oil storage, landfarming
+      9                   catch crop growing, ryegrass, September-April, organic fertiliser 40 kg N, one cut
+      10                         nuclear fuel element production, for pressure water reactor, UO2 3.8% & MOX
+      11                                                            battery cell production, Li-ion, LiMn2O4
+      12                                                            impact extrusion of aluminium, 4 strokes
+      13                                                           electricity, high voltage, production mix
+      14                                                electricity production, wind, 1-3MW turbine, onshore
+      15                                                                                 oxidation of butane
+      16                                                               heat and power co-generation, lignite
+      17                                                                         market for waste paperboard
+      18                                                                           concrete block production
+      19                                                             heat and power co-generation, hard coal
+      20                                                     nutrient supply from ammonium nitrate phosphate
+      21                                                                   electricity production, hard coal
+      22                                                     tomato production, processing grade, open field
+      23                                              land already in use, perennial cropland to annual crop
+      24                                       maleic anhydride production by catalytic oxidation of benzene
+      25                                                                    market for waste graphical paper
+      26                                              market for sulfidic tailings, from gold mine operation
+      27                                                           electricity, high voltage, import from HR
+      28                                                           lath, softwood, raw, kiln drying to u=20%
+      29                                           land already in use, perennial cropland to perennial crop
+      30     treatment of sewage sludge, 70% water, WWT, WW from concrete production, municipal incineration
+      31                              treatment of fly ash and scrubber sludge, hazardous waste incineration
+      32                               treatment of wastewater from PV cell production, wastewater treatment
+      33                 fuel cell production, solid oxide, with micro gas turbine, 180kW electrical, future
+      34                                    transport, freight, aircraft, dedicated freight, very short haul
+      35                                                       uranium production, centrifuge, enriched 3.9%
+      36                                                                               market for fatty acid
+      37                                                                              breadcrumbs production
+      38                                   treatment of wastewater from grass refinery, wastewater treatment
+      39                   shavings, hardwood, measured as dry mass to generic market for residual wood, dry
+      40                treatment of sewage sludge, 97% water, WWT, WW from concrete production, landfarming
+      41                                                                          dichloromethane production
+      42       market for land tenure, arable land, measured as carbon net primary productivity, annual crop
+      43                                                           electricity, high voltage, production mix
+      44                                            market for crust from Parkes process for lead production
+      45                                                    market for bark chips, wet, measured as dry mass
+      46                                                                                 oxidation of butane
+      47                                       treatment of used refrigeration machine, R134a as refrigerant
+      48                                                      polystyrene foam slab for perimeter insulation
+      49                                                                         flattened bamboo production
+      50                   heat production, natural gas, at boiler atmospheric low-NOx non-modulating <100kW
+      51                                                                             chlorpropham production
+      52                                     electricity production, natural gas, combined cycle power plant
+      53                                                                                 market for kerosene
+      54             treatment of sewage sludge, 75% water, WWT, WW from GGBFS production, sanitary landfill
+      55                                                                       market for waste polyurethane
+      56           treatment of sewage sludge, 75% water, WWT, WW from PV cell production, sanitary landfill
+      57                                                                           cationic resin production
+      58                                                      bamboo forestry, sustainable forest management
+      59                                                 market for inorganic phosphorus fertiliser, as P2O5
+      60                                                                 market for electricity, low voltage
+      61                                                     NMC111 hydroxide production, for Li-ion battery
+      62                                                                         market for titanium dioxide
+      63                                              heat production, propane, at industrial furnace >100kW
+      64                                                    heat and power co-generation, biogas, gas engine
+      65                                                                         woven bamboo mat production
+      66                                   market for machine operation, diesel, < 18.64 kW, low load factor
+      67                                                                  natural gas, burned in gas turbine
+      68                                                           electricity, high voltage, production mix
+      69                                market for waste polyethylene terephthalate, for recycling, unsorted
+      70                                                   heat and power co-generation, wood chips, 6667 kW
+      71                      aluminium scrap, post-consumer, prepared for melting, Recycled Content cut-off
+      72                                                               transport, freight train, electricity
+      73                                                                 market for electricity, low voltage
+      74                                                                              ferronickel production
+      75                                                copper mine operation and beneficiation, sulfide ore
+      76                                       market for anode, silicon coated graphite, for Li-ion battery
+      77                                                                         market for ammonium nitrate
+      78                                                                           laterite quarry operation
+      79                                                                 orange production, processing grade
+      80                                                                        market for skidding, skidder
+      81                                                                            market for fish residues
+      82                                                             glazing production, triple, U<0.5 W/m2K
+      83                                                                                horn meal production
+      84                                 concrete, all types to generic market for concrete, normal strength
+      85                                                                   electricity production, hard coal
+      86                     electricity production, photovoltaic, 570kWp open ground installation, multi-Si
+      87                                                       electricity production, hydro, pumped storage
+      88                                                                             market for soybean meal
+      89                                                                          trawler maintenance, steel
+      90                                                      maintenance, electric scooter, without battery
+      91                                                                                  skidder production
+      92                                                                           market for cobalt sulfate
+      93                     electricity production, photovoltaic, 570kWp open ground installation, multi-Si
+      94                                                                  natural gas, burned in gas turbine
+      95                                                           electricity, high voltage, import from CR
+      96                                                             electricity production, deep geothermal
+      97                                           natural gas pressure reduction, from high to low pressure
+      98                                                 electricity production, wind, >3MW turbine, onshore
+      99                                                          market group for electricity, high voltage
+      100                                            electricity production, nuclear, pressure water reactor
+      
+      [[3]]
+                           geography
+      1                           CH
+      2                          GLO
+      3                           CH
+      4                           CH
+      5                          RER
+      6                           CN
+      7                      US-WECC
+      8   Europe without Switzerland
+      9                           CH
+      10                         RoW
+      11                         RoW
+      12                         RER
+      13                          BN
+      14                       CN-SC
+      15                         RoW
+      16                          SI
+      17                          IT
+      18                         RoW
+      19                          TR
+      20                          CN
+      21                      US-MRO
+      22                          IT
+      23                       BR-GO
+      24                         RoW
+      25                          HR
+      26                          CN
+      27                          SI
+      28  Europe without Switzerland
+      29                          VN
+      30                         GLO
+      31                         RoW
+      32                         RoW
+      33                         RoW
+      34                         GLO
+      35                          NL
+      36                         GLO
+      37                         RER
+      38                          CH
+      39  Europe without Switzerland
+      40                         RoW
+      41                         RER
+      42                       BR-SC
+      43                          SG
+      44                         GLO
+      45                         RoW
+      46                         RoW
+      47                         GLO
+      48                         RoW
+      49                          PH
+      50  Europe without Switzerland
+      51                         GLO
+      52                          IT
+      53                         RoW
+      54                         RoW
+      55                          IE
+      56                         GLO
+      57                         RoW
+      58                          CO
+      59                          RS
+      60                          IL
+      61                          CN
+      62                         RER
+      63                         RoW
+      64                     US-SERC
+      65                          CO
+      66                         GLO
+      67                          IQ
+      68                          HU
+      69                         RoW
+      70                       IN-AP
+      71                         GLO
+      72                         RoW
+      73                          AU
+      74                         GLO
+      75                          CN
+      76                          CN
+      77                          CN
+      78                          IN
+      79                          BR
+      80                         GLO
+      81                         GLO
+      82                         RER
+      83                         RoW
+      84                          PE
+      85                       IN-PB
+      86                          ES
+      87                          RO
+      88                          BR
+      89                         RoW
+      90                         GLO
+      91                         GLO
+      92                         RoW
+      93                       CA-SK
+      94                         RoW
+      95                          PA
+      96                          HU
+      97                          MX
+      98                       CN-SA
+      99                         RER
+      100                         DE
+      
+      [[4]]
+                                                                         reference_product_name
+      1                                                                  residual hardwood, wet
+      2                                                                           nitrous oxide
+      3                                                      sawdust, wet, measured as dry mass
+      4                          sewage sludge, 70% water, WWT, WW from maize starch production
+      5                                                                          phenolic resin
+      6                sewage sludge, 97% water, WWT, WW from ammonium paratungstate production
+      7                                                               electricity, high voltage
+      8                                                       organic nitrogen fertiliser, as N
+      9                                                                         ryegrass silage
+      10                       nuclear fuel element, for pressure water reactor, UO2 3.8% & MOX
+      11                                                          battery cell, Li-ion, LiMn2O4
+      12                                               impact extrusion of aluminium, 4 strokes
+      13                                                              electricity, high voltage
+      14                                                              electricity, high voltage
+      15                                                                         methyl acetate
+      16                                   heat, district or industrial, other than natural gas
+      17                                                                       waste paperboard
+      18                                                                         concrete block
+      19                                                              electricity, high voltage
+      20                                               inorganic phosphorus fertiliser, as P2O5
+      21                                                              electricity, high voltage
+      22                                                               tomato, processing grade
+      23     land tenure, arable land, measured as carbon net primary productivity, annual crop
+      24                                                                       maleic anhydride
+      25                                                                  waste graphical paper
+      26                                            sulfidic tailings, from gold mine operation
+      27                                                              electricity, high voltage
+      28                                           sawnwood, lath, softwood, raw, dried (u=20%)
+      29  land tenure, arable land, measured as carbon net primary productivity, perennial crop
+      30                             sewage sludge, 70% water, WWT, WW from concrete production
+      31                                                            fly ash and scrubber sludge
+      32                                                     wastewater from PV cell production
+      33               fuel cell, solid oxide, with micro gas turbine, 180kW electrical, future
+      34                                          transport, freight, aircraft, very short haul
+      35                                       uranium, enriched 3.9%, per separative work unit
+      36                                                                             fatty acid
+      37                                                                            breadcrumbs
+      38                                                         wastewater from grass refinery
+      39                                                                     residual wood, dry
+      40                                                   organic potassium fertiliser, as K2O
+      41                                                                        dichloromethane
+      42     land tenure, arable land, measured as carbon net primary productivity, annual crop
+      43                                                              electricity, high voltage
+      44                                          crust from Parkes process for lead production
+      45                                                  bark chips, wet, measured as dry mass
+      46                                                                    methyl ethyl ketone
+      47                                       used refrigeration machine, R134a as refrigerant
+      48                                         polystyrene foam slab for perimeter insulation
+      49                                                                       flattened bamboo
+      50                                              heat, central or small-scale, natural gas
+      51                                                                           chlorpropham
+      52                                                              electricity, high voltage
+      53                                                                               kerosene
+      54                                   heat, district or industrial, other than natural gas
+      55                                                                     waste polyurethane
+      56                                   heat, district or industrial, other than natural gas
+      57                                                                         cationic resin
+      58                                                                            bamboo culm
+      59                                               inorganic phosphorus fertiliser, as P2O5
+      60                                                               electricity, low voltage
+      61                                                              sodium sulfate, anhydrite
+      62                                                                       titanium dioxide
+      63                                   heat, district or industrial, other than natural gas
+      64                                   heat, central or small-scale, other than natural gas
+      65                                                                       woven bamboo mat
+      66                                 machine operation, diesel, < 18.64 kW, low load factor
+      67                                                     natural gas, burned in gas turbine
+      68                                                              electricity, high voltage
+      69                              waste polyethylene terephthalate, for recycling, unsorted
+      70                                                              electricity, high voltage
+      71                                   aluminium scrap, post-consumer, prepared for melting
+      72                                                               transport, freight train
+      73                                                               electricity, low voltage
+      74                                                                            ferronickel
+      75                                                        copper concentrate, sulfide ore
+      76                                     anode, silicon coated graphite, for Li-ion battery
+      77                                                                       ammonium nitrate
+      78                                                                      laterite, mineral
+      79                                                               orange, processing grade
+      80                                                                      skidding, skidder
+      81                                                                          fish residues
+      82                                                           glazing, triple, U<0.5 W/m2K
+      83                                                                              horn meal
+      84                                                              concrete, normal strength
+      85                                                              electricity, high voltage
+      86                                                               electricity, low voltage
+      87                                                              electricity, high voltage
+      88                                                                           soybean meal
+      89                                                             trawler maintenance, steel
+      90                                         maintenance, electric scooter, without battery
+      91                                                                                skidder
+      92                                                                         cobalt sulfate
+      93                                                               electricity, low voltage
+      94                                                     natural gas, burned in gas turbine
+      95                                                              electricity, high voltage
+      96                                                              electricity, high voltage
+      97                                                              natural gas, low pressure
+      98                                                              electricity, high voltage
+      99                                                              electricity, high voltage
+      100                                                             electricity, high voltage
+      
+      [[5]]
+                   unit
+      1              m3
+      2              kg
+      3              kg
+      4              kg
+      5              kg
+      6              kg
+      7             kWh
+      8              kg
+      9              kg
+      10             kg
+      11             kg
+      12             kg
+      13            kWh
+      14            kWh
+      15             kg
+      16             MJ
+      17             kg
+      18             kg
+      19            kWh
+      20             kg
+      21            kWh
+      22             kg
+      23             kg
+      24             kg
+      25             kg
+      26             kg
+      27            kWh
+      28             m3
+      29             kg
+      30             kg
+      31             kg
+      32             m3
+      33           unit
+      34  metric ton*km
+      35           unit
+      36             kg
+      37             kg
+      38             m3
+      39             m3
+      40             kg
+      41             kg
+      42             kg
+      43            kWh
+      44             kg
+      45             kg
+      46             kg
+      47           unit
+      48             kg
+      49             kg
+      50             MJ
+      51             kg
+      52            kWh
+      53             kg
+      54             MJ
+      55             kg
+      56             MJ
+      57             kg
+      58             kg
+      59             kg
+      60            kWh
+      61             kg
+      62             kg
+      63             MJ
+      64             MJ
+      65             kg
+      66           hour
+      67             MJ
+      68            kWh
+      69             kg
+      70            kWh
+      71             kg
+      72  metric ton*km
+      73            kWh
+      74             kg
+      75             kg
+      76             kg
+      77             kg
+      78             kg
+      79             kg
+      80           hour
+      81             kg
+      82             m2
+      83             kg
+      84             m3
+      85            kWh
+      86            kWh
+      87            kWh
+      88             kg
+      89             kg
+      90           unit
+      91           unit
+      92             kg
+      93            kWh
+      94             MJ
+      95            kWh
+      96            kWh
+      97             m3
+      98            kWh
+      99            kWh
+      100           kWh
+      
+
+# ecoinvent_inputs hasn't changed
+
+    Code
+      format_robust_snapshot(data)
+    Output
+      [[1]]
+                                                 input_activity_uuid_product_uuid
+      1 7ac71fd7-a65b-5f2c-9289-7335f9945c11_fef44ccb-917e-4c8d-bb35-a1898827b659
+      2 3b190359-a32e-5294-af63-983f38ce6525_759b89bd-3aa6-42ad-b767-5bb9ef5d331d
+      3 62b803ad-e3ff-516b-947d-f08eea52c702_fbb039f7-f9cc-46d2-b631-313ddb125c1a
+      4 372a1991-e0af-5fbf-8611-295a535373ad_9ba48284-0f03-4fec-800d-de77833b12f6
+      5 531db396-1434-54e5-b6c4-c2b4323471cb_751b5ee2-aa63-456c-8d7d-1af517fb7032
+      6 c93a2afc-7e58-50b6-af0e-586f71a3de0e_bfd577e2-82b4-4166-af2b-3bda540931f6
+      
+      [[2]]
+                      exchange_name
+      1    aluminium, wrought alloy
+      2 electricity, medium voltage
+      3             copper, cathode
+      4           reinforcing steel
+      5          stone wool, packed
+      6          waste mineral wool
+      
+      [[3]]
+        exchange_unit_name
+      1                 kg
+      2                kWh
+      3                 kg
+      4                 kg
+      5                 kg
+      6                 kg
+      
+
+# ecoinvent_europages hasn't changed
+
+    Code
+      format_robust_snapshot(data)
+    Output
+      [[1]]
+                                           ep_id
+      1 0b0ae0f9eb119090c2ff57778f605898e5854f01
+      2 0b0ae0f9eb119090c2ff57778f605898e5854f01
+      3 0dde317dd17ad7169b1590b4f49a0ab99d4b7ee8
+      4 0dde317dd17ad7169b1590b4f49a0ab99d4b7ee8
+      5 0dde317dd17ad7169b1590b4f49a0ab99d4b7ee8
+      6 0dde317dd17ad7169b1590b4f49a0ab99d4b7ee8
+      
+      [[2]]
+        country
+      1 germany
+      2 germany
+      3  france
+      4  france
+      5 germany
+      6 germany
+      
+      [[3]]
+           main_activity
+      1 service provider
+      2 service provider
+      3          missing
+      4          missing
+      5          missing
+      6          missing
+      
+      [[4]]
+               clustered
+      1    air purifiers
+      2    air purifiers
+      3 aircraft engines
+      4 aircraft engines
+      5 aircraft engines
+      6 aircraft engines
+      
+      [[5]]
+                                                       activity_uuid_product_uuid
+      1 bcdcd9f2-a3d9-58a3-b204-c6fa665a8e49_1d8da2ef-019e-4fc8-9e15-11bd37949f61
+      2 68a453fd-c49c-5358-9ee6-553b70ff43a8_1d8da2ef-019e-4fc8-9e15-11bd37949f61
+      3 d7739cef-e1e3-5084-974f-f5f139975486_8eea8087-3f23-44e6-8acf-c15f2f21a528
+      4 b2559f83-c1b9-51a9-a232-bc4d56729e0c_8eea8087-3f23-44e6-8acf-c15f2f21a528
+      5 d7739cef-e1e3-5084-974f-f5f139975486_8eea8087-3f23-44e6-8acf-c15f2f21a528
+      6 b2559f83-c1b9-51a9-a232-bc4d56729e0c_8eea8087-3f23-44e6-8acf-c15f2f21a528
+      
+      [[6]]
+        multi_match
+      1        TRUE
+      2        TRUE
+      3        TRUE
+      4        TRUE
+      5        TRUE
+      6        TRUE
+      
+      [[7]]
+        completion
+      1        low
+      2        low
+      3       high
+      4       high
+      5       high
+      6       high
+      
+      [[8]]
+          category
+      1 ep_product
+      2 ep_product
+      3 ep_product
+      4 ep_product
+      5 ep_product
+      6 ep_product
+      
+
+# isic_name hasn't changed
+
+    Code
+      format_robust_snapshot(data)
+    Output
+      [[1]]
+        isic_4digit
+      1        0111
+      2        0112
+      3        0113
+      4        0114
+      5        0116
+      6        0119
+      
+      [[2]]
+                                              isic_4digit_name_ecoinvent
+      1 Growing of cereals (except rice), leguminous crops and oil seeds
+      2                                                  Growing of rice
+      3               Growing of vegetables and melons, roots and tubers
+      4                                            Growing of sugar cane
+      5                                           Growing of fibre crops
+      6                             Growing of other non-perennial crops
+      
+

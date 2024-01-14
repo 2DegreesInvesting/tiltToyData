@@ -54,6 +54,36 @@ test_that("sector_profile_upstream_products hasn't changed", {
   expect_snapshot(format_robust_snapshot(data))
 })
 
+test_that("europages_companies hasn't changed", {
+  local_snapshot()
+  data <- read_csv(toy_europages_companies()) |> head()
+  expect_snapshot(format_robust_snapshot(data))
+})
+
+test_that("ecoinvent_activities hasn't changed", {
+  local_snapshot()
+  data <- read_csv(toy_ecoinvent_activities() |> head())
+  expect_snapshot(format_robust_snapshot(data))
+})
+
+test_that("ecoinvent_inputs hasn't changed", {
+  local_snapshot()
+  data <- read_csv(toy_ecoinvent_inputs()) |> head()
+  expect_snapshot(format_robust_snapshot(data))
+})
+
+test_that("ecoinvent_europages hasn't changed", {
+  local_snapshot()
+  data <- read_csv(toy_ecoinvent_europages()) |> head()
+  expect_snapshot(format_robust_snapshot(data))
+})
+
+test_that("isic_name hasn't changed", {
+  local_snapshot()
+  data <- read_csv(toy_isic_name()) |> head()
+  expect_snapshot(format_robust_snapshot(data))
+})
+
 test_that("in emissions, some `*uuid` in `companies` also exist in `co2`", {
   local_options(readr.show_col_types = FALSE)
 
