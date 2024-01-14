@@ -3,22 +3,23 @@
 # tiltToyData 0.0.0.9009 (2024-01-13)
 
 * `toy_emissions_profile_products()` and
-`toy_emissions_profile_upstream_products()` are now deprecated. They will
+`toy_emissions_profile_upstream_products()` are now deprecated (#26). They will
 continue to work for a while but you'll get a message warning you that you
 should instead use `toy_emissions_profile_products_ecoinvent()` and
-`toy_emissions_profile_upstream_products_ecoinvent()`, respectively (#26).
+`toy_emissions_profile_upstream_products_ecoinvent()`, respectively.
 
 # tiltToyData 0.0.0.9008 (2024-01-12)
 
-* Update `toy_emissions_profile*` datasets. Now each `activity_uuid_product_uuid`
+* Update `toy_emissions_profile*` datasets (#25). Now each `activity_uuid_product_uuid`
 in `toy_emissions_profile_any_companies()` also exists in
 `toy_emissions_profile_products_ecoinvent()` and
-`toy_emissions_profile_upstream_products_ecoinvent()` (#25).
+`toy_emissions_profile_upstream_products_ecoinvent()`.
 
 # tiltToyData 0.0.0.9007 (2024-01-11)
 
-* New version of `toy_emissions_profile_any_companies()`.
+One update and two new datasets (#19):
 
+* New version of `toy_emissions_profile_any_companies()`.
 * New datasets `toy_emissions_profile_products_ecoinvent()` and
 `toy_emissions_profile_upstream_products_ecoinvent()` *pretend* to have all the
 products that exist in the 'Ecoinvent' database. Because they are toy datasets
@@ -45,7 +46,7 @@ Features:
 
 # tiltToyData 0.0.0.9005 (2023-12-07)
 
-* Add single quotes around values of `*isic*`  (#17).
+* Add single quotes around values of `*isic*` (#17).
 
 # tiltToyData 0.0.0.9004 (2023-11-23)
 
@@ -60,7 +61,7 @@ tiltIndicator package.
 
 # tiltToyData 0.0.0.9002 (2023-08-29)
 
-* The files "emissions_profile_products.csv.gz" and "emissions_profile_upstream_products.csv.gz" gain the columns `tilt_subsector` and `input_tilt_subsector`, respectively. These columns come from raw data in tiltIndicator v0.0.0.9088 (i.e. right before all toy datasets moved to tiltToyData (@kalashsinghal #6).
+* The files "emissions_profile_products.csv.gz" and "emissions_profile_upstream_products.csv.gz" gain the columns `tilt_subsector` and `input_tilt_subsector`, respectively (@kalashsinghal #6). These columns come from raw data in tiltIndicator v0.0.0.9088 (i.e. right before all toy datasets moved to tiltToyData.
 
 # tiltToyData 0.0.0.9001 (2023-08-21)
 
