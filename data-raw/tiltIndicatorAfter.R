@@ -8,7 +8,8 @@ tiltIndicatorAfter::ecoinvent_activities |>
 tiltIndicatorAfter::ecoinvent_inputs |>
   readr::write_csv("inst/extdata/ecoinvent_inputs.csv.gz")
 
-tiltIndicatorAfter::matches_mapper |> head(100) |>
+tiltIndicatorAfter::matches_mapper |>
+  head(100) |>
   readr::write_csv("inst/extdata/ecoinvent_europages.csv.gz")
 
 tiltIndicatorAfter::isic_name |>
