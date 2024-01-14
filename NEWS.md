@@ -46,7 +46,7 @@ Features:
 
 # tiltToyData 0.0.0.9005 (2023-12-07)
 
-* Add single quotes around values of `*isic*`  (#17).
+* Add single quotes around values of `*isic*` (#17).
 
 # tiltToyData 0.0.0.9004 (2023-11-23)
 
@@ -61,7 +61,7 @@ tiltIndicator package.
 
 # tiltToyData 0.0.0.9002 (2023-08-29)
 
-* The files "emissions_profile_products.csv.gz" and "emissions_profile_upstream_products.csv.gz" gain the columns `tilt_subsector` and `input_tilt_subsector`, respectively. These columns come from raw data in tiltIndicator v0.0.0.9088 (i.e. right before all toy datasets moved to tiltToyData (@kalashsinghal #6).
+* The files "emissions_profile_products.csv.gz" and "emissions_profile_upstream_products.csv.gz" gain the columns `tilt_subsector` and `input_tilt_subsector`, respectively (@kalashsinghal #6). These columns come from raw data in tiltIndicator v0.0.0.9088 (i.e. right before all toy datasets moved to tiltToyData.
 
 # tiltToyData 0.0.0.9001 (2023-08-21)
 
