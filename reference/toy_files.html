@@ -71,6 +71,16 @@ datasets and <code>toy_path()</code> to retrieve the path to one example.</p>
 <span></span>
 <span><span class="fu">toy_sector_profile_upstream_products</span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
+<span><span class="fu">toy_europages_companies</span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">toy_ecoinvent_activities</span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">toy_ecoinvent_inputs</span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">toy_ecoinvent_europages</span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">toy_isic_name</span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
 <span><span class="fu">toy_files</span><span class="op">(</span>pattern <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">toy_path</span><span class="op">(</span><span class="va">file</span><span class="op">)</span></span></code></pre></div>
@@ -116,17 +126,37 @@ available files are returned. listed.</p></dd>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">toy_sector_profile_upstream_products</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/home/runner/work/_temp/Library/tiltToyData/extdata/sector_profile_upstream_products.csv.gz"</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">toy_europages_companies</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/home/runner/work/_temp/Library/tiltToyData/extdata/europages_companies.csv.gz"</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">toy_ecoinvent_activities</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/home/runner/work/_temp/Library/tiltToyData/extdata/ecoinvent_activities.csv.gz"</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">toy_ecoinvent_inputs</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/home/runner/work/_temp/Library/tiltToyData/extdata/ecoinvent_inputs.csv.gz"</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">toy_ecoinvent_europages</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/home/runner/work/_temp/Library/tiltToyData/extdata/ecoinvent_europages.csv.gz"</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu">toy_isic_name</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/home/runner/work/_temp/Library/tiltToyData/extdata/isic_name.csv.gz"</span>
 <span class="r-in"><span><span class="fu">toy_files</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "emissions_profile_any_companies.csv.gz"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [2] "emissions_profile_products_ecoinvent.csv.gz"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [3] "emissions_profile_upstream_products_ecoinvent.csv.gz"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "sector_profile_any_scenarios.csv.gz"                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [5] "sector_profile_companies.csv.gz"                     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [6] "sector_profile_upstream_companies.csv.gz"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [7] "sector_profile_upstream_products.csv.gz"             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "ecoinvent_activities.csv.gz"                         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [2] "ecoinvent_europages.csv.gz"                          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [3] "ecoinvent_inputs.csv.gz"                             </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [4] "emissions_profile_any_companies.csv.gz"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [5] "emissions_profile_products_ecoinvent.csv.gz"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [6] "emissions_profile_upstream_products_ecoinvent.csv.gz"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] "europages_companies.csv.gz"                          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [8] "isic_name.csv.gz"                                    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [9] "sector_profile_any_scenarios.csv.gz"                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [10] "sector_profile_companies.csv.gz"                     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [11] "sector_profile_upstream_companies.csv.gz"            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [12] "sector_profile_upstream_products.csv.gz"             </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">toy_path</span><span class="op">(</span><span class="fu">toy_files</span><span class="op">(</span><span class="op">)</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/home/runner/work/_temp/Library/tiltToyData/extdata/emissions_profile_any_companies.csv.gz"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/home/runner/work/_temp/Library/tiltToyData/extdata/ecoinvent_activities.csv.gz"</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
