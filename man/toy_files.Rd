@@ -8,6 +8,11 @@
 \alias{toy_sector_profile_companies}
 \alias{toy_sector_profile_upstream_companies}
 \alias{toy_sector_profile_upstream_products}
+\alias{toy_europages_companies}
+\alias{toy_ecoinvent_activities}
+\alias{toy_ecoinvent_inputs}
+\alias{toy_ecoinvent_europages}
+\alias{toy_isic_name}
 \alias{toy_files}
 \alias{toy_path}
 \title{Paths to toy datasets}
@@ -25,6 +30,16 @@ toy_sector_profile_companies()
 toy_sector_profile_upstream_companies()
 
 toy_sector_profile_upstream_products()
+
+toy_europages_companies()
+
+toy_ecoinvent_activities()
+
+toy_ecoinvent_inputs()
+
+toy_ecoinvent_europages()
+
+toy_isic_name()
 
 toy_files(pattern = NULL)
 
@@ -58,6 +73,16 @@ toy_sector_profile_companies()
 toy_sector_profile_upstream_companies()
 
 toy_sector_profile_upstream_products()
+
+toy_europages_companies()
+
+toy_ecoinvent_activities()
+
+toy_ecoinvent_inputs()
+
+toy_ecoinvent_europages()
+
+toy_isic_name()
 toy_files()
 
 toy_path(toy_files()[[1]])
