@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltToyData 0.0.0.9010 (2024-01-15)
+
+* New toy datasets from tiltIndicatorAfter v0.0.0.9016 (#30). Note these datasets
+don't match the new `*products_ecoinvent()` but it's a stepping stone towards
+those matching datasets since it makes the upcoming update a relatively smaller
+change.
+
 # tiltToyData 0.0.0.9009 (2024-01-13)
 
 * `toy_emissions_profile_products()` and
