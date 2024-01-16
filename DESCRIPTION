@@ -7,7 +7,7 @@ Authors@R: c(
     person("2 Degrees Investing Initiative", , , "contact@2degrees-investing.org", role = c("cph", "fnd"))
   )
 Description: Toy datasets for 'TILT'.
-License: MIT + file LICENSE
+License: GPL (>= 3)
 URL: https://2degreesinvesting.github.io/tiltToyData/, https://github.com/2DegreesInvesting/tiltToyData
 Suggests: 
     testthat (>= 3.0.0),
@@ -15,7 +15,7 @@ Suggests:
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.0
 Imports: 
     dplyr,
     fs,
