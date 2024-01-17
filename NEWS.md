@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltToyData 0.0.0.9011 (2024-01-17)
+
+* Change license to GPLv3 (39025a8).
+
 # tiltToyData 0.0.0.9010 (2024-01-15)
 
 * New toy datasets from tiltIndicatorAfter v0.0.0.9016 (#30). Note these datasets
