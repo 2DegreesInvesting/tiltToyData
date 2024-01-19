@@ -5,23 +5,37 @@
 
 <!-- badges: start -->
 
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![tiltToyData status
+badge](https://2degreesinvesting.r-universe.dev/badges/tiltToyData)](https://2degreesinvesting.r-universe.dev/tiltToyData)
+[![R-CMD-check](https://github.com/2DegreesInvesting/tiltToyData/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/2DegreesInvesting/tiltToyData/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/2DegreesInvesting/tiltToyData/branch/main/graph/badge.svg)](https://app.codecov.io/gh/2DegreesInvesting/tiltToyData?branch=main)
-[![R-CMD-check](https://github.com/2DegreesInvesting/tiltToyData/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/2DegreesInvesting/tiltToyData/actions/workflows/R-CMD-check.yaml)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 The goal of tiltToyData is to provide toy datasets for TILT.
 
 ## Installation
 
-You can install the development version of tiltToyData like so:
+You can install the latest release from
+[r-universe](https://r-universe.dev/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("2DegreesInvesting/tiltToyData")
+# install.packages("pak")
+pak::repo_add(r_universe = "https://2degreesinvesting.r-universe.dev")
+install.packages("tiltToyData")
 ```
+
+Or the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("2DegreesInvesting/tiltToyData")
+```
+
+Having trouble? Try it on a fresh new project on <https://posit.cloud/>
+(free).
 
 ## Example
 
