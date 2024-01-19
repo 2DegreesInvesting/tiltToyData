@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltToyData 0.0.0.9200 (2024-01-19)
+
+* GitHub release.
+
 # tiltToyData 0.0.0.9011 (2024-01-17)
 
 * Change license to GPLv3 (39025a8).
