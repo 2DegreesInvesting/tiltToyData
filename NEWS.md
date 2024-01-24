@@ -1,4 +1,12 @@
-<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
+
+# tiltToyData 0.0.0.9201 (2024-01-24)
+
+- Update Sector Profile toy datasets (#52)
+* `toy_sector_profile_companies()`
+* `toy_sector_profile_upstream_companies()`
+* `toy_sector_profile_upstream_products()`
+* `toy_sector_profile_any_scenarios()`
 
 # tiltToyData 0.0.0.9200 (2024-01-19)
 
