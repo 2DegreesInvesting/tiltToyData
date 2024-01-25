@@ -563,172 +563,52 @@
       format_robust_snapshot(data)
     Output
       [[1]]
-                   activity_uuid_product_uuid
-      1  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      2  833caa78-30df-4374-900f-7f88ab44075b
-      3  76269c17-78d6-420b-991a-aa38c51b45b7
-      4  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      5  833caa78-30df-4374-900f-7f88ab44075b
-      6  76269c17-78d6-420b-991a-aa38c51b45b7
-      7  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      8  833caa78-30df-4374-900f-7f88ab44075b
-      9  76269c17-78d6-420b-991a-aa38c51b45b7
-      10 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      11 833caa78-30df-4374-900f-7f88ab44075b
-      12 76269c17-78d6-420b-991a-aa38c51b45b7
-      13 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      14 833caa78-30df-4374-900f-7f88ab44075b
-      15 76269c17-78d6-420b-991a-aa38c51b45b7
-      16 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      17 833caa78-30df-4374-900f-7f88ab44075b
-      18 76269c17-78d6-420b-991a-aa38c51b45b7
+                  activity_uuid_product_uuid
+      1 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      2 833caa78-30df-4374-900f-7f88ab44075b
+      3 76269c17-78d6-420b-991a-aa38c51b45b7
       
       [[2]]
-         co2_footprint
-      1     10.3571241
-      2      0.6926969
-      3    302.7862251
-      4     10.3571241
-      5      0.6926969
-      6    302.7862251
-      7     10.3571241
-      8      0.6926969
-      9    302.7862251
-      10    10.3571241
-      11     0.6926969
-      12   302.7862251
-      13    10.3571241
-      14     0.6926969
-      15   302.7862251
-      16    10.3571241
-      17     0.6926969
-      18   302.7862251
+        co2_footprint
+      1    10.3571241
+      2     0.6926969
+      3   302.7862251
       
       [[3]]
-                                                      ei_activity_name
-      1                          iron-nickel-chromium alloy production
-      2       market for deep drawing, steel, 10000 kN press, automode
-      3  market for shed, large, wood, non-insulated, fire-unprotected
-      4                          iron-nickel-chromium alloy production
-      5       market for deep drawing, steel, 10000 kN press, automode
-      6  market for shed, large, wood, non-insulated, fire-unprotected
-      7                          iron-nickel-chromium alloy production
-      8       market for deep drawing, steel, 10000 kN press, automode
-      9  market for shed, large, wood, non-insulated, fire-unprotected
-      10                         iron-nickel-chromium alloy production
-      11      market for deep drawing, steel, 10000 kN press, automode
-      12 market for shed, large, wood, non-insulated, fire-unprotected
-      13                         iron-nickel-chromium alloy production
-      14      market for deep drawing, steel, 10000 kN press, automode
-      15 market for shed, large, wood, non-insulated, fire-unprotected
-      16                         iron-nickel-chromium alloy production
-      17      market for deep drawing, steel, 10000 kN press, automode
-      18 market for shed, large, wood, non-insulated, fire-unprotected
+                                                     ei_activity_name
+      1                         iron-nickel-chromium alloy production
+      2      market for deep drawing, steel, 10000 kN press, automode
+      3 market for shed, large, wood, non-insulated, fire-unprotected
       
       [[4]]
-         ei_geography
-      1           RER
-      2           GLO
-      3           GLO
-      4           RER
-      5           GLO
-      6           GLO
-      7           RER
-      8           GLO
-      9           GLO
-      10          RER
-      11          GLO
-      12          GLO
-      13          RER
-      14          GLO
-      15          GLO
-      16          RER
-      17          GLO
-      18          GLO
+        ei_geography
+      1          RER
+      2          GLO
+      3          GLO
       
       [[5]]
-         isic_4digit
-      1       '2410'
-      2       '2591'
-      3       '4100'
-      4       '2410'
-      5       '2591'
-      6       '4100'
-      7       '2410'
-      8       '2591'
-      9       '4100'
-      10      '2410'
-      11      '2591'
-      12      '4100'
-      13      '2410'
-      14      '2591'
-      15      '4100'
-      16      '2410'
-      17      '2591'
-      18      '4100'
+        isic_4digit
+      1      '2410'
+      2      '2591'
+      3      '4100'
       
       [[6]]
-          tilt_sector
-      1        metals
-      2        metals
-      3  construction
-      4        metals
-      5        metals
-      6  construction
-      7        metals
-      8        metals
-      9  construction
-      10       metals
-      11       metals
-      12 construction
-      13       metals
-      14       metals
-      15 construction
-      16       metals
-      17       metals
-      18 construction
+         tilt_sector
+      1       metals
+      2       metals
+      3 construction
       
       [[7]]
-                   tilt_subsector
-      1              iron & steel
-      2              other metals
-      3  construction residential
-      4              iron & steel
-      5              other metals
-      6  construction residential
-      7              iron & steel
-      8              other metals
-      9  construction residential
-      10             iron & steel
-      11             other metals
-      12 construction residential
-      13             iron & steel
-      14             other metals
-      15 construction residential
-      16             iron & steel
-      17             other metals
-      18 construction residential
+                  tilt_subsector
+      1             iron & steel
+      2             other metals
+      3 construction residential
       
       [[8]]
-         unit
-      1    kg
-      2    kg
-      3    m2
-      4    kg
-      5    kg
-      6    m2
-      7    kg
-      8    kg
-      9    m2
-      10   kg
-      11   kg
-      12   m2
-      13   kg
-      14   kg
-      15   m2
-      16   kg
-      17   kg
-      18   m2
+        unit
+      1   kg
+      2   kg
+      3   m2
       
 
 # emissions_profile_upstream_products_ecoinvent hasn't changed
@@ -754,86 +634,6 @@
       14 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       15 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       16 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      17 833caa78-30df-4374-900f-7f88ab44075b
-      18 76269c17-78d6-420b-991a-aa38c51b45b7
-      19 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      20 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      21 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      22 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      23 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      24 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      25 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      26 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      27 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      28 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      29 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      30 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      31 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      32 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      33 833caa78-30df-4374-900f-7f88ab44075b
-      34 76269c17-78d6-420b-991a-aa38c51b45b7
-      35 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      36 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      37 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      38 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      39 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      40 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      41 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      42 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      43 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      44 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      45 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      46 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      47 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      48 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      49 833caa78-30df-4374-900f-7f88ab44075b
-      50 76269c17-78d6-420b-991a-aa38c51b45b7
-      51 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      52 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      53 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      54 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      55 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      56 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      57 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      58 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      59 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      60 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      61 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      62 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      63 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      64 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      65 833caa78-30df-4374-900f-7f88ab44075b
-      66 76269c17-78d6-420b-991a-aa38c51b45b7
-      67 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      68 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      69 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      70 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      71 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      72 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      73 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      74 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      75 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      76 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      77 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      78 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      79 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      80 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      81 833caa78-30df-4374-900f-7f88ab44075b
-      82 76269c17-78d6-420b-991a-aa38c51b45b7
-      83 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      84 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      85 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      86 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      87 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      88 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      89 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      90 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      91 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      92 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      93 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      94 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      95 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      96 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       
       [[2]]
                                                       ei_activity_name
@@ -853,86 +653,6 @@
       14                         iron-nickel-chromium alloy production
       15                         iron-nickel-chromium alloy production
       16                         iron-nickel-chromium alloy production
-      17      market for deep drawing, steel, 10000 kN press, automode
-      18 market for shed, large, wood, non-insulated, fire-unprotected
-      19                         iron-nickel-chromium alloy production
-      20                         iron-nickel-chromium alloy production
-      21                         iron-nickel-chromium alloy production
-      22                         iron-nickel-chromium alloy production
-      23                         iron-nickel-chromium alloy production
-      24                         iron-nickel-chromium alloy production
-      25                         iron-nickel-chromium alloy production
-      26                         iron-nickel-chromium alloy production
-      27                         iron-nickel-chromium alloy production
-      28                         iron-nickel-chromium alloy production
-      29                         iron-nickel-chromium alloy production
-      30                         iron-nickel-chromium alloy production
-      31                         iron-nickel-chromium alloy production
-      32                         iron-nickel-chromium alloy production
-      33      market for deep drawing, steel, 10000 kN press, automode
-      34 market for shed, large, wood, non-insulated, fire-unprotected
-      35                         iron-nickel-chromium alloy production
-      36                         iron-nickel-chromium alloy production
-      37                         iron-nickel-chromium alloy production
-      38                         iron-nickel-chromium alloy production
-      39                         iron-nickel-chromium alloy production
-      40                         iron-nickel-chromium alloy production
-      41                         iron-nickel-chromium alloy production
-      42                         iron-nickel-chromium alloy production
-      43                         iron-nickel-chromium alloy production
-      44                         iron-nickel-chromium alloy production
-      45                         iron-nickel-chromium alloy production
-      46                         iron-nickel-chromium alloy production
-      47                         iron-nickel-chromium alloy production
-      48                         iron-nickel-chromium alloy production
-      49      market for deep drawing, steel, 10000 kN press, automode
-      50 market for shed, large, wood, non-insulated, fire-unprotected
-      51                         iron-nickel-chromium alloy production
-      52                         iron-nickel-chromium alloy production
-      53                         iron-nickel-chromium alloy production
-      54                         iron-nickel-chromium alloy production
-      55                         iron-nickel-chromium alloy production
-      56                         iron-nickel-chromium alloy production
-      57                         iron-nickel-chromium alloy production
-      58                         iron-nickel-chromium alloy production
-      59                         iron-nickel-chromium alloy production
-      60                         iron-nickel-chromium alloy production
-      61                         iron-nickel-chromium alloy production
-      62                         iron-nickel-chromium alloy production
-      63                         iron-nickel-chromium alloy production
-      64                         iron-nickel-chromium alloy production
-      65      market for deep drawing, steel, 10000 kN press, automode
-      66 market for shed, large, wood, non-insulated, fire-unprotected
-      67                         iron-nickel-chromium alloy production
-      68                         iron-nickel-chromium alloy production
-      69                         iron-nickel-chromium alloy production
-      70                         iron-nickel-chromium alloy production
-      71                         iron-nickel-chromium alloy production
-      72                         iron-nickel-chromium alloy production
-      73                         iron-nickel-chromium alloy production
-      74                         iron-nickel-chromium alloy production
-      75                         iron-nickel-chromium alloy production
-      76                         iron-nickel-chromium alloy production
-      77                         iron-nickel-chromium alloy production
-      78                         iron-nickel-chromium alloy production
-      79                         iron-nickel-chromium alloy production
-      80                         iron-nickel-chromium alloy production
-      81      market for deep drawing, steel, 10000 kN press, automode
-      82 market for shed, large, wood, non-insulated, fire-unprotected
-      83                         iron-nickel-chromium alloy production
-      84                         iron-nickel-chromium alloy production
-      85                         iron-nickel-chromium alloy production
-      86                         iron-nickel-chromium alloy production
-      87                         iron-nickel-chromium alloy production
-      88                         iron-nickel-chromium alloy production
-      89                         iron-nickel-chromium alloy production
-      90                         iron-nickel-chromium alloy production
-      91                         iron-nickel-chromium alloy production
-      92                         iron-nickel-chromium alloy production
-      93                         iron-nickel-chromium alloy production
-      94                         iron-nickel-chromium alloy production
-      95                         iron-nickel-chromium alloy production
-      96                         iron-nickel-chromium alloy production
       
       [[3]]
                               ei_geography
@@ -952,86 +672,6 @@
       14                               RER
       15                                CH
       16                               GLO
-      17                               RoW
-      18                               RoW
-      19                               GLO
-      20                               RER
-      21                               RER
-      22                               RER
-      23                               RER
-      24                               GLO
-      25 Europe, without Russia and Turkey
-      26                                CH
-      27                               RER
-      28                                CH
-      29                               GLO
-      30                               RER
-      31                                CH
-      32                               GLO
-      33                               RoW
-      34                               RoW
-      35                               GLO
-      36                               RER
-      37                               RER
-      38                               RER
-      39                               RER
-      40                               GLO
-      41 Europe, without Russia and Turkey
-      42                                CH
-      43                               RER
-      44                                CH
-      45                               GLO
-      46                               RER
-      47                                CH
-      48                               GLO
-      49                               RoW
-      50                               RoW
-      51                               GLO
-      52                               RER
-      53                               RER
-      54                               RER
-      55                               RER
-      56                               GLO
-      57 Europe, without Russia and Turkey
-      58                                CH
-      59                               RER
-      60                                CH
-      61                               GLO
-      62                               RER
-      63                                CH
-      64                               GLO
-      65                               RoW
-      66                               RoW
-      67                               GLO
-      68                               RER
-      69                               RER
-      70                               RER
-      71                               RER
-      72                               GLO
-      73 Europe, without Russia and Turkey
-      74                                CH
-      75                               RER
-      76                                CH
-      77                               GLO
-      78                               RER
-      79                                CH
-      80                               GLO
-      81                               RoW
-      82                               RoW
-      83                               GLO
-      84                               RER
-      85                               RER
-      86                               RER
-      87                               RER
-      88                               GLO
-      89 Europe, without Russia and Turkey
-      90                                CH
-      91                               RER
-      92                                CH
-      93                               GLO
-      94                               RER
-      95                                CH
-      96                               GLO
       
       [[4]]
                                                   input_activity_uuid_product_uuid
@@ -1051,86 +691,6 @@
       14 a1383009-9188-5326-916a-1e4ea2d835c4_28c2473e-1e11-4078-9a76-de9550553adc
       15 add1dfa9-2b45-5648-be73-aec8f6d0fc7c_e79575a7-0b20-46d5-94b2-99d1916105db
       16 15017181-3042-5962-88d3-3ef45f8c0462_17c72eaf-0185-42dc-87d4-4882e550ba09
-      17 55a5ac05-ab15-5a27-9d0e-6ecf840039f1_f10b8722-4be1-43d5-b17d-c51ad0e29d29
-      18 bc548877-9cc6-590d-ba72-1d1d2daeb5b9_e2ccc500-255f-448c-8c88-ed25177993df
-      19 bdc93cd8-00b4-5b3e-993e-b7fef7059e52_4e584f6f-2e71-4796-931e-bb9a273c161c
-      20 fdb1f848-173f-5fe1-96a2-588171e87e30_c2c93af2-47cb-4ec7-a1bd-d3d572bca039
-      21 95fcd1bb-4dc6-516a-a3b2-30a4f0530639_3b1d249a-c924-4d6c-8e1f-647f562daa54
-      22 daef2f9a-4108-52ae-90a7-fe64abad51bc_6e74937e-b691-4c49-9b8f-5ba44d7c081d
-      23 3b190359-a32e-5294-af63-983f38ce6525_759b89bd-3aa6-42ad-b767-5bb9ef5d331d
-      24 2c92cdcd-29df-53ba-a209-77c7de201d14_6e316c64-0481-4832-b097-296e14c0b02f
-      25 9392c694-12a6-5cd7-a421-d4866359df2c_0d3eda5a-4601-4573-9549-0701c459ab88
-      26 c18c6cc9-4a26-5c47-9ea9-8635ff2c158e_240c1a3c-1aba-4528-afc3-3f27f56583be
-      27 c4ec0b1e-2a3b-5700-871c-2adbbb29bc1d_4f312355-ac65-4635-8fb2-006dba64ce60
-      28 7361f7fb-5cf2-598c-823a-a4b7e50c3d28_a9007f10-7e39-4d50-8f4a-d6d03ce3d673
-      29 0d9d1001-6635-51b9-bc24-470161f83e97_23fccced-e1e5-421d-9abe-5b59c51a862e
-      30 a1383009-9188-5326-916a-1e4ea2d835c4_28c2473e-1e11-4078-9a76-de9550553adc
-      31 add1dfa9-2b45-5648-be73-aec8f6d0fc7c_e79575a7-0b20-46d5-94b2-99d1916105db
-      32 15017181-3042-5962-88d3-3ef45f8c0462_17c72eaf-0185-42dc-87d4-4882e550ba09
-      33 55a5ac05-ab15-5a27-9d0e-6ecf840039f1_f10b8722-4be1-43d5-b17d-c51ad0e29d29
-      34 bc548877-9cc6-590d-ba72-1d1d2daeb5b9_e2ccc500-255f-448c-8c88-ed25177993df
-      35 bdc93cd8-00b4-5b3e-993e-b7fef7059e52_4e584f6f-2e71-4796-931e-bb9a273c161c
-      36 fdb1f848-173f-5fe1-96a2-588171e87e30_c2c93af2-47cb-4ec7-a1bd-d3d572bca039
-      37 95fcd1bb-4dc6-516a-a3b2-30a4f0530639_3b1d249a-c924-4d6c-8e1f-647f562daa54
-      38 daef2f9a-4108-52ae-90a7-fe64abad51bc_6e74937e-b691-4c49-9b8f-5ba44d7c081d
-      39 3b190359-a32e-5294-af63-983f38ce6525_759b89bd-3aa6-42ad-b767-5bb9ef5d331d
-      40 2c92cdcd-29df-53ba-a209-77c7de201d14_6e316c64-0481-4832-b097-296e14c0b02f
-      41 9392c694-12a6-5cd7-a421-d4866359df2c_0d3eda5a-4601-4573-9549-0701c459ab88
-      42 c18c6cc9-4a26-5c47-9ea9-8635ff2c158e_240c1a3c-1aba-4528-afc3-3f27f56583be
-      43 c4ec0b1e-2a3b-5700-871c-2adbbb29bc1d_4f312355-ac65-4635-8fb2-006dba64ce60
-      44 7361f7fb-5cf2-598c-823a-a4b7e50c3d28_a9007f10-7e39-4d50-8f4a-d6d03ce3d673
-      45 0d9d1001-6635-51b9-bc24-470161f83e97_23fccced-e1e5-421d-9abe-5b59c51a862e
-      46 a1383009-9188-5326-916a-1e4ea2d835c4_28c2473e-1e11-4078-9a76-de9550553adc
-      47 add1dfa9-2b45-5648-be73-aec8f6d0fc7c_e79575a7-0b20-46d5-94b2-99d1916105db
-      48 15017181-3042-5962-88d3-3ef45f8c0462_17c72eaf-0185-42dc-87d4-4882e550ba09
-      49 55a5ac05-ab15-5a27-9d0e-6ecf840039f1_f10b8722-4be1-43d5-b17d-c51ad0e29d29
-      50 bc548877-9cc6-590d-ba72-1d1d2daeb5b9_e2ccc500-255f-448c-8c88-ed25177993df
-      51 bdc93cd8-00b4-5b3e-993e-b7fef7059e52_4e584f6f-2e71-4796-931e-bb9a273c161c
-      52 fdb1f848-173f-5fe1-96a2-588171e87e30_c2c93af2-47cb-4ec7-a1bd-d3d572bca039
-      53 95fcd1bb-4dc6-516a-a3b2-30a4f0530639_3b1d249a-c924-4d6c-8e1f-647f562daa54
-      54 daef2f9a-4108-52ae-90a7-fe64abad51bc_6e74937e-b691-4c49-9b8f-5ba44d7c081d
-      55 3b190359-a32e-5294-af63-983f38ce6525_759b89bd-3aa6-42ad-b767-5bb9ef5d331d
-      56 2c92cdcd-29df-53ba-a209-77c7de201d14_6e316c64-0481-4832-b097-296e14c0b02f
-      57 9392c694-12a6-5cd7-a421-d4866359df2c_0d3eda5a-4601-4573-9549-0701c459ab88
-      58 c18c6cc9-4a26-5c47-9ea9-8635ff2c158e_240c1a3c-1aba-4528-afc3-3f27f56583be
-      59 c4ec0b1e-2a3b-5700-871c-2adbbb29bc1d_4f312355-ac65-4635-8fb2-006dba64ce60
-      60 7361f7fb-5cf2-598c-823a-a4b7e50c3d28_a9007f10-7e39-4d50-8f4a-d6d03ce3d673
-      61 0d9d1001-6635-51b9-bc24-470161f83e97_23fccced-e1e5-421d-9abe-5b59c51a862e
-      62 a1383009-9188-5326-916a-1e4ea2d835c4_28c2473e-1e11-4078-9a76-de9550553adc
-      63 add1dfa9-2b45-5648-be73-aec8f6d0fc7c_e79575a7-0b20-46d5-94b2-99d1916105db
-      64 15017181-3042-5962-88d3-3ef45f8c0462_17c72eaf-0185-42dc-87d4-4882e550ba09
-      65 55a5ac05-ab15-5a27-9d0e-6ecf840039f1_f10b8722-4be1-43d5-b17d-c51ad0e29d29
-      66 bc548877-9cc6-590d-ba72-1d1d2daeb5b9_e2ccc500-255f-448c-8c88-ed25177993df
-      67 bdc93cd8-00b4-5b3e-993e-b7fef7059e52_4e584f6f-2e71-4796-931e-bb9a273c161c
-      68 fdb1f848-173f-5fe1-96a2-588171e87e30_c2c93af2-47cb-4ec7-a1bd-d3d572bca039
-      69 95fcd1bb-4dc6-516a-a3b2-30a4f0530639_3b1d249a-c924-4d6c-8e1f-647f562daa54
-      70 daef2f9a-4108-52ae-90a7-fe64abad51bc_6e74937e-b691-4c49-9b8f-5ba44d7c081d
-      71 3b190359-a32e-5294-af63-983f38ce6525_759b89bd-3aa6-42ad-b767-5bb9ef5d331d
-      72 2c92cdcd-29df-53ba-a209-77c7de201d14_6e316c64-0481-4832-b097-296e14c0b02f
-      73 9392c694-12a6-5cd7-a421-d4866359df2c_0d3eda5a-4601-4573-9549-0701c459ab88
-      74 c18c6cc9-4a26-5c47-9ea9-8635ff2c158e_240c1a3c-1aba-4528-afc3-3f27f56583be
-      75 c4ec0b1e-2a3b-5700-871c-2adbbb29bc1d_4f312355-ac65-4635-8fb2-006dba64ce60
-      76 7361f7fb-5cf2-598c-823a-a4b7e50c3d28_a9007f10-7e39-4d50-8f4a-d6d03ce3d673
-      77 0d9d1001-6635-51b9-bc24-470161f83e97_23fccced-e1e5-421d-9abe-5b59c51a862e
-      78 a1383009-9188-5326-916a-1e4ea2d835c4_28c2473e-1e11-4078-9a76-de9550553adc
-      79 add1dfa9-2b45-5648-be73-aec8f6d0fc7c_e79575a7-0b20-46d5-94b2-99d1916105db
-      80 15017181-3042-5962-88d3-3ef45f8c0462_17c72eaf-0185-42dc-87d4-4882e550ba09
-      81 55a5ac05-ab15-5a27-9d0e-6ecf840039f1_f10b8722-4be1-43d5-b17d-c51ad0e29d29
-      82 bc548877-9cc6-590d-ba72-1d1d2daeb5b9_e2ccc500-255f-448c-8c88-ed25177993df
-      83 bdc93cd8-00b4-5b3e-993e-b7fef7059e52_4e584f6f-2e71-4796-931e-bb9a273c161c
-      84 fdb1f848-173f-5fe1-96a2-588171e87e30_c2c93af2-47cb-4ec7-a1bd-d3d572bca039
-      85 95fcd1bb-4dc6-516a-a3b2-30a4f0530639_3b1d249a-c924-4d6c-8e1f-647f562daa54
-      86 daef2f9a-4108-52ae-90a7-fe64abad51bc_6e74937e-b691-4c49-9b8f-5ba44d7c081d
-      87 3b190359-a32e-5294-af63-983f38ce6525_759b89bd-3aa6-42ad-b767-5bb9ef5d331d
-      88 2c92cdcd-29df-53ba-a209-77c7de201d14_6e316c64-0481-4832-b097-296e14c0b02f
-      89 9392c694-12a6-5cd7-a421-d4866359df2c_0d3eda5a-4601-4573-9549-0701c459ab88
-      90 c18c6cc9-4a26-5c47-9ea9-8635ff2c158e_240c1a3c-1aba-4528-afc3-3f27f56583be
-      91 c4ec0b1e-2a3b-5700-871c-2adbbb29bc1d_4f312355-ac65-4635-8fb2-006dba64ce60
-      92 7361f7fb-5cf2-598c-823a-a4b7e50c3d28_a9007f10-7e39-4d50-8f4a-d6d03ce3d673
-      93 0d9d1001-6635-51b9-bc24-470161f83e97_23fccced-e1e5-421d-9abe-5b59c51a862e
-      94 a1383009-9188-5326-916a-1e4ea2d835c4_28c2473e-1e11-4078-9a76-de9550553adc
-      95 add1dfa9-2b45-5648-be73-aec8f6d0fc7c_e79575a7-0b20-46d5-94b2-99d1916105db
-      96 15017181-3042-5962-88d3-3ef45f8c0462_17c72eaf-0185-42dc-87d4-4882e550ba09
       
       [[5]]
          input_co2_footprint
@@ -1150,86 +710,6 @@
       14        6.579088e-01
       15        3.366754e+00
       16        4.882162e+00
-      17        4.091668e-01
-      18        2.977502e+02
-      19        1.414927e+00
-      20        3.696992e+08
-      21        3.070715e-01
-      22        4.461018e-01
-      23        6.745218e-01
-      24        6.155684e+00
-      25        4.862393e-01
-      26        2.591234e-02
-      27        9.922842e-02
-      28        7.008449e-01
-      29        2.128406e+01
-      30        6.579088e-01
-      31        3.366754e+00
-      32        4.882162e+00
-      33        4.091668e-01
-      34        2.977502e+02
-      35        1.414927e+00
-      36        3.696992e+08
-      37        3.070715e-01
-      38        4.461018e-01
-      39        6.745218e-01
-      40        6.155684e+00
-      41        4.862393e-01
-      42        2.591234e-02
-      43        9.922842e-02
-      44        7.008449e-01
-      45        2.128406e+01
-      46        6.579088e-01
-      47        3.366754e+00
-      48        4.882162e+00
-      49        4.091668e-01
-      50        2.977502e+02
-      51        1.414927e+00
-      52        3.696992e+08
-      53        3.070715e-01
-      54        4.461018e-01
-      55        6.745218e-01
-      56        6.155684e+00
-      57        4.862393e-01
-      58        2.591234e-02
-      59        9.922842e-02
-      60        7.008449e-01
-      61        2.128406e+01
-      62        6.579088e-01
-      63        3.366754e+00
-      64        4.882162e+00
-      65        4.091668e-01
-      66        2.977502e+02
-      67        1.414927e+00
-      68        3.696992e+08
-      69        3.070715e-01
-      70        4.461018e-01
-      71        6.745218e-01
-      72        6.155684e+00
-      73        4.862393e-01
-      74        2.591234e-02
-      75        9.922842e-02
-      76        7.008449e-01
-      77        2.128406e+01
-      78        6.579088e-01
-      79        3.366754e+00
-      80        4.882162e+00
-      81        4.091668e-01
-      82        2.977502e+02
-      83        1.414927e+00
-      84        3.696992e+08
-      85        3.070715e-01
-      86        4.461018e-01
-      87        6.745218e-01
-      88        6.155684e+00
-      89        4.862393e-01
-      90        2.591234e-02
-      91        9.922842e-02
-      92        7.008449e-01
-      93        2.128406e+01
-      94        6.579088e-01
-      95        3.366754e+00
-      96        4.882162e+00
       
       [[6]]
                                                   input_ei_activity_name
@@ -1249,86 +729,6 @@
       14                                       market for oxygen, liquid
       15                          market for quicklime, in pieces, loose
       16                            market for refractory, basic, packed
-      17                   deep drawing, steel, 10000 kN press, automode
-      18 shed construction, large, wood, non-insulated, fire-unprotected
-      19                        market for anode, for metal electrolysis
-      20                     electric arc furnace converter construction
-      21                            market for electric arc furnace dust
-      22                            market for electric arc furnace slag
-      23                    market group for electricity, medium voltage
-      24                   market for ferrochromium, high-carbon, 68% Cr
-      25                                            market for hard coal
-      26                      market for inert waste, for final disposal
-      27                          market for iron scrap, sorted, pressed
-      28                           market for natural gas, high pressure
-      29                                      market for nickel, class 1
-      30                                       market for oxygen, liquid
-      31                          market for quicklime, in pieces, loose
-      32                            market for refractory, basic, packed
-      33                   deep drawing, steel, 10000 kN press, automode
-      34 shed construction, large, wood, non-insulated, fire-unprotected
-      35                        market for anode, for metal electrolysis
-      36                     electric arc furnace converter construction
-      37                            market for electric arc furnace dust
-      38                            market for electric arc furnace slag
-      39                    market group for electricity, medium voltage
-      40                   market for ferrochromium, high-carbon, 68% Cr
-      41                                            market for hard coal
-      42                      market for inert waste, for final disposal
-      43                          market for iron scrap, sorted, pressed
-      44                           market for natural gas, high pressure
-      45                                      market for nickel, class 1
-      46                                       market for oxygen, liquid
-      47                          market for quicklime, in pieces, loose
-      48                            market for refractory, basic, packed
-      49                   deep drawing, steel, 10000 kN press, automode
-      50 shed construction, large, wood, non-insulated, fire-unprotected
-      51                        market for anode, for metal electrolysis
-      52                     electric arc furnace converter construction
-      53                            market for electric arc furnace dust
-      54                            market for electric arc furnace slag
-      55                    market group for electricity, medium voltage
-      56                   market for ferrochromium, high-carbon, 68% Cr
-      57                                            market for hard coal
-      58                      market for inert waste, for final disposal
-      59                          market for iron scrap, sorted, pressed
-      60                           market for natural gas, high pressure
-      61                                      market for nickel, class 1
-      62                                       market for oxygen, liquid
-      63                          market for quicklime, in pieces, loose
-      64                            market for refractory, basic, packed
-      65                   deep drawing, steel, 10000 kN press, automode
-      66 shed construction, large, wood, non-insulated, fire-unprotected
-      67                        market for anode, for metal electrolysis
-      68                     electric arc furnace converter construction
-      69                            market for electric arc furnace dust
-      70                            market for electric arc furnace slag
-      71                    market group for electricity, medium voltage
-      72                   market for ferrochromium, high-carbon, 68% Cr
-      73                                            market for hard coal
-      74                      market for inert waste, for final disposal
-      75                          market for iron scrap, sorted, pressed
-      76                           market for natural gas, high pressure
-      77                                      market for nickel, class 1
-      78                                       market for oxygen, liquid
-      79                          market for quicklime, in pieces, loose
-      80                            market for refractory, basic, packed
-      81                   deep drawing, steel, 10000 kN press, automode
-      82 shed construction, large, wood, non-insulated, fire-unprotected
-      83                        market for anode, for metal electrolysis
-      84                     electric arc furnace converter construction
-      85                            market for electric arc furnace dust
-      86                            market for electric arc furnace slag
-      87                    market group for electricity, medium voltage
-      88                   market for ferrochromium, high-carbon, 68% Cr
-      89                                            market for hard coal
-      90                      market for inert waste, for final disposal
-      91                          market for iron scrap, sorted, pressed
-      92                           market for natural gas, high pressure
-      93                                      market for nickel, class 1
-      94                                       market for oxygen, liquid
-      95                          market for quicklime, in pieces, loose
-      96                            market for refractory, basic, packed
       
       [[7]]
          input_isic_4digit
@@ -1348,86 +748,6 @@
       14            '2011'
       15            '2394'
       16            '2391'
-      17            '2591'
-      18            '4100'
-      19            '2790'
-      20            '2815'
-      21            '3821'
-      22            '3821'
-      23            '3510'
-      24            '2410'
-      25            '0510'
-      26            '3821'
-      27            '3830'
-      28            '3520'
-      29            '2420'
-      30            '2011'
-      31            '2394'
-      32            '2391'
-      33            '2591'
-      34            '4100'
-      35            '2790'
-      36            '2815'
-      37            '3821'
-      38            '3821'
-      39            '3510'
-      40            '2410'
-      41            '0510'
-      42            '3821'
-      43            '3830'
-      44            '3520'
-      45            '2420'
-      46            '2011'
-      47            '2394'
-      48            '2391'
-      49            '2591'
-      50            '4100'
-      51            '2790'
-      52            '2815'
-      53            '3821'
-      54            '3821'
-      55            '3510'
-      56            '2410'
-      57            '0510'
-      58            '3821'
-      59            '3830'
-      60            '3520'
-      61            '2420'
-      62            '2011'
-      63            '2394'
-      64            '2391'
-      65            '2591'
-      66            '4100'
-      67            '2790'
-      68            '2815'
-      69            '3821'
-      70            '3821'
-      71            '3510'
-      72            '2410'
-      73            '0510'
-      74            '3821'
-      75            '3830'
-      76            '3520'
-      77            '2420'
-      78            '2011'
-      79            '2394'
-      80            '2391'
-      81            '2591'
-      82            '4100'
-      83            '2790'
-      84            '2815'
-      85            '3821'
-      86            '3821'
-      87            '3510'
-      88            '2410'
-      89            '0510'
-      90            '3821'
-      91            '3830'
-      92            '3520'
-      93            '2420'
-      94            '2011'
-      95            '2394'
-      96            '2391'
       
       [[8]]
                                input_reference_product_name
@@ -1447,86 +767,6 @@
       14                                     oxygen, liquid
       15                        quicklime, in pieces, loose
       16                          refractory, basic, packed
-      17      deep drawing, steel, 10000 kN press, automode
-      18 shed, large, wood, non-insulated, fire-unprotected
-      19                      anode, for metal electrolysis
-      20                     electric arc furnace converter
-      21                          electric arc furnace dust
-      22                          electric arc furnace slag
-      23                        electricity, medium voltage
-      24                 ferrochromium, high-carbon, 68% Cr
-      25                                          hard coal
-      26                    inert waste, for final disposal
-      27                        iron scrap, sorted, pressed
-      28                         natural gas, high pressure
-      29                                    nickel, class 1
-      30                                     oxygen, liquid
-      31                        quicklime, in pieces, loose
-      32                          refractory, basic, packed
-      33      deep drawing, steel, 10000 kN press, automode
-      34 shed, large, wood, non-insulated, fire-unprotected
-      35                      anode, for metal electrolysis
-      36                     electric arc furnace converter
-      37                          electric arc furnace dust
-      38                          electric arc furnace slag
-      39                        electricity, medium voltage
-      40                 ferrochromium, high-carbon, 68% Cr
-      41                                          hard coal
-      42                    inert waste, for final disposal
-      43                        iron scrap, sorted, pressed
-      44                         natural gas, high pressure
-      45                                    nickel, class 1
-      46                                     oxygen, liquid
-      47                        quicklime, in pieces, loose
-      48                          refractory, basic, packed
-      49      deep drawing, steel, 10000 kN press, automode
-      50 shed, large, wood, non-insulated, fire-unprotected
-      51                      anode, for metal electrolysis
-      52                     electric arc furnace converter
-      53                          electric arc furnace dust
-      54                          electric arc furnace slag
-      55                        electricity, medium voltage
-      56                 ferrochromium, high-carbon, 68% Cr
-      57                                          hard coal
-      58                    inert waste, for final disposal
-      59                        iron scrap, sorted, pressed
-      60                         natural gas, high pressure
-      61                                    nickel, class 1
-      62                                     oxygen, liquid
-      63                        quicklime, in pieces, loose
-      64                          refractory, basic, packed
-      65      deep drawing, steel, 10000 kN press, automode
-      66 shed, large, wood, non-insulated, fire-unprotected
-      67                      anode, for metal electrolysis
-      68                     electric arc furnace converter
-      69                          electric arc furnace dust
-      70                          electric arc furnace slag
-      71                        electricity, medium voltage
-      72                 ferrochromium, high-carbon, 68% Cr
-      73                                          hard coal
-      74                    inert waste, for final disposal
-      75                        iron scrap, sorted, pressed
-      76                         natural gas, high pressure
-      77                                    nickel, class 1
-      78                                     oxygen, liquid
-      79                        quicklime, in pieces, loose
-      80                          refractory, basic, packed
-      81      deep drawing, steel, 10000 kN press, automode
-      82 shed, large, wood, non-insulated, fire-unprotected
-      83                      anode, for metal electrolysis
-      84                     electric arc furnace converter
-      85                          electric arc furnace dust
-      86                          electric arc furnace slag
-      87                        electricity, medium voltage
-      88                 ferrochromium, high-carbon, 68% Cr
-      89                                          hard coal
-      90                    inert waste, for final disposal
-      91                        iron scrap, sorted, pressed
-      92                         natural gas, high pressure
-      93                                    nickel, class 1
-      94                                     oxygen, liquid
-      95                        quicklime, in pieces, loose
-      96                          refractory, basic, packed
       
       [[9]]
              input_tilt_sector
@@ -1546,86 +786,6 @@
       14              industry
       15 non-metallic minerals
       16              industry
-      17                metals
-      18          construction
-      19              industry
-      20              industry
-      21              industry
-      22              industry
-      23                 power
-      24                metals
-      25                energy
-      26              industry
-      27              industry
-      28                energy
-      29                metals
-      30              industry
-      31 non-metallic minerals
-      32              industry
-      33                metals
-      34          construction
-      35              industry
-      36              industry
-      37              industry
-      38              industry
-      39                 power
-      40                metals
-      41                energy
-      42              industry
-      43              industry
-      44                energy
-      45                metals
-      46              industry
-      47 non-metallic minerals
-      48              industry
-      49                metals
-      50          construction
-      51              industry
-      52              industry
-      53              industry
-      54              industry
-      55                 power
-      56                metals
-      57                energy
-      58              industry
-      59              industry
-      60                energy
-      61                metals
-      62              industry
-      63 non-metallic minerals
-      64              industry
-      65                metals
-      66          construction
-      67              industry
-      68              industry
-      69              industry
-      70              industry
-      71                 power
-      72                metals
-      73                energy
-      74              industry
-      75              industry
-      76                energy
-      77                metals
-      78              industry
-      79 non-metallic minerals
-      80              industry
-      81                metals
-      82          construction
-      83              industry
-      84              industry
-      85              industry
-      86              industry
-      87                 power
-      88                metals
-      89                energy
-      90              industry
-      91              industry
-      92                energy
-      93                metals
-      94              industry
-      95 non-metallic minerals
-      96              industry
       
       [[10]]
              input_tilt_subsector
@@ -1645,86 +805,6 @@
       14                chemicals
       15                   cement
       16           other industry
-      17             other metals
-      18 construction residential
-      19    machinery & equipment
-      20           other industry
-      21           other industry
-      22           other industry
-      23              total power
-      24             iron & steel
-      25              coal energy
-      26           other industry
-      27           other industry
-      28               gas energy
-      29             other metals
-      30                chemicals
-      31                   cement
-      32           other industry
-      33             other metals
-      34 construction residential
-      35    machinery & equipment
-      36           other industry
-      37           other industry
-      38           other industry
-      39              total power
-      40             iron & steel
-      41              coal energy
-      42           other industry
-      43           other industry
-      44               gas energy
-      45             other metals
-      46                chemicals
-      47                   cement
-      48           other industry
-      49             other metals
-      50 construction residential
-      51    machinery & equipment
-      52           other industry
-      53           other industry
-      54           other industry
-      55              total power
-      56             iron & steel
-      57              coal energy
-      58           other industry
-      59           other industry
-      60               gas energy
-      61             other metals
-      62                chemicals
-      63                   cement
-      64           other industry
-      65             other metals
-      66 construction residential
-      67    machinery & equipment
-      68           other industry
-      69           other industry
-      70           other industry
-      71              total power
-      72             iron & steel
-      73              coal energy
-      74           other industry
-      75           other industry
-      76               gas energy
-      77             other metals
-      78                chemicals
-      79                   cement
-      80           other industry
-      81             other metals
-      82 construction residential
-      83    machinery & equipment
-      84           other industry
-      85           other industry
-      86           other industry
-      87              total power
-      88             iron & steel
-      89              coal energy
-      90           other industry
-      91           other industry
-      92               gas energy
-      93             other metals
-      94                chemicals
-      95                   cement
-      96           other industry
       
       [[11]]
          input_unit
@@ -1744,86 +824,6 @@
       14         kg
       15         kg
       16         kg
-      17         kg
-      18         m2
-      19         kg
-      20       unit
-      21         kg
-      22         kg
-      23        kWh
-      24         kg
-      25         kg
-      26         kg
-      27         kg
-      28         m3
-      29         kg
-      30         kg
-      31         kg
-      32         kg
-      33         kg
-      34         m2
-      35         kg
-      36       unit
-      37         kg
-      38         kg
-      39        kWh
-      40         kg
-      41         kg
-      42         kg
-      43         kg
-      44         m3
-      45         kg
-      46         kg
-      47         kg
-      48         kg
-      49         kg
-      50         m2
-      51         kg
-      52       unit
-      53         kg
-      54         kg
-      55        kWh
-      56         kg
-      57         kg
-      58         kg
-      59         kg
-      60         m3
-      61         kg
-      62         kg
-      63         kg
-      64         kg
-      65         kg
-      66         m2
-      67         kg
-      68       unit
-      69         kg
-      70         kg
-      71        kWh
-      72         kg
-      73         kg
-      74         kg
-      75         kg
-      76         m3
-      77         kg
-      78         kg
-      79         kg
-      80         kg
-      81         kg
-      82         m2
-      83         kg
-      84       unit
-      85         kg
-      86         kg
-      87        kWh
-      88         kg
-      89         kg
-      90         kg
-      91         kg
-      92         m3
-      93         kg
-      94         kg
-      95         kg
-      96         kg
       
 
 # sector_profile_any_scenarios hasn't changed
