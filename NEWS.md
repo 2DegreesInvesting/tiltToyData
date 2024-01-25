@@ -1,8 +1,18 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# tiltToyData 0.0.0.9202 (2024-01-25)
+
+- Update Emissions Profile and Sector Profile toy datasets (#38)
+* `toy_emissions_profile_any_companies()`
+* `toy_emissions_profile_products_ecoinvent()`
+* `toy_emissions_profile_upstream_products_ecoinvent()`
+* `toy_sector_profile_companies()`
+* `toy_sector_profile_upstream_companies()`
+* `toy_sector_profile_upstream_products()`
+
 # tiltToyData 0.0.0.9201 (2024-01-24)
 
-- Update Sector Profile toy datasets (#52)
+- Update Sector Profile toy datasets (#36)
 * `toy_sector_profile_companies()`
 * `toy_sector_profile_upstream_companies()`
 * `toy_sector_profile_upstream_products()`
