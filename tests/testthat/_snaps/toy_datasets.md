@@ -7,35 +7,35 @@
                    activity_uuid_product_uuid
       1  76269c17-78d6-420b-991a-aa38c51b45b7
       2  76269c17-78d6-420b-991a-aa38c51b45b7
-      3  76269c17-78d6-420b-991a-aa38c51b45b7
-      4  76269c17-78d6-420b-991a-aa38c51b45b7
+      3  833caa78-30df-4374-900f-7f88ab44075b
+      4  833caa78-30df-4374-900f-7f88ab44075b
       5  76269c17-78d6-420b-991a-aa38c51b45b7
       6  76269c17-78d6-420b-991a-aa38c51b45b7
       7  76269c17-78d6-420b-991a-aa38c51b45b7
       8  76269c17-78d6-420b-991a-aa38c51b45b7
       9  76269c17-78d6-420b-991a-aa38c51b45b7
       10 76269c17-78d6-420b-991a-aa38c51b45b7
-      11 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      12 76269c17-78d6-420b-991a-aa38c51b45b7
+      11 76269c17-78d6-420b-991a-aa38c51b45b7
+      12 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       13 76269c17-78d6-420b-991a-aa38c51b45b7
       14 76269c17-78d6-420b-991a-aa38c51b45b7
-      15 833caa78-30df-4374-900f-7f88ab44075b
+      15 76269c17-78d6-420b-991a-aa38c51b45b7
       16 76269c17-78d6-420b-991a-aa38c51b45b7
       17 76269c17-78d6-420b-991a-aa38c51b45b7
-      18 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      18 76269c17-78d6-420b-991a-aa38c51b45b7
       19 76269c17-78d6-420b-991a-aa38c51b45b7
       20 76269c17-78d6-420b-991a-aa38c51b45b7
       21 76269c17-78d6-420b-991a-aa38c51b45b7
       22 76269c17-78d6-420b-991a-aa38c51b45b7
       23 76269c17-78d6-420b-991a-aa38c51b45b7
       24 76269c17-78d6-420b-991a-aa38c51b45b7
-      25 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      25 76269c17-78d6-420b-991a-aa38c51b45b7
       26 76269c17-78d6-420b-991a-aa38c51b45b7
       27 76269c17-78d6-420b-991a-aa38c51b45b7
       28 76269c17-78d6-420b-991a-aa38c51b45b7
       29 76269c17-78d6-420b-991a-aa38c51b45b7
       30 76269c17-78d6-420b-991a-aa38c51b45b7
-      31 833caa78-30df-4374-900f-7f88ab44075b
+      31 76269c17-78d6-420b-991a-aa38c51b45b7
       32 76269c17-78d6-420b-991a-aa38c51b45b7
       33 76269c17-78d6-420b-991a-aa38c51b45b7
       34 76269c17-78d6-420b-991a-aa38c51b45b7
@@ -53,8 +53,8 @@
       46 76269c17-78d6-420b-991a-aa38c51b45b7
       47 76269c17-78d6-420b-991a-aa38c51b45b7
       48 76269c17-78d6-420b-991a-aa38c51b45b7
-      49 76269c17-78d6-420b-991a-aa38c51b45b7
-      50 833caa78-30df-4374-900f-7f88ab44075b
+      49 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      50 76269c17-78d6-420b-991a-aa38c51b45b7
       51 76269c17-78d6-420b-991a-aa38c51b45b7
       52 76269c17-78d6-420b-991a-aa38c51b45b7
       53 76269c17-78d6-420b-991a-aa38c51b45b7
@@ -62,10 +62,10 @@
       55 76269c17-78d6-420b-991a-aa38c51b45b7
       56 76269c17-78d6-420b-991a-aa38c51b45b7
       57 76269c17-78d6-420b-991a-aa38c51b45b7
-      58 76269c17-78d6-420b-991a-aa38c51b45b7
-      59 76269c17-78d6-420b-991a-aa38c51b45b7
+      58 833caa78-30df-4374-900f-7f88ab44075b
+      59 833caa78-30df-4374-900f-7f88ab44075b
       60 76269c17-78d6-420b-991a-aa38c51b45b7
-      61 833caa78-30df-4374-900f-7f88ab44075b
+      61 76269c17-78d6-420b-991a-aa38c51b45b7
       62 76269c17-78d6-420b-991a-aa38c51b45b7
       63 76269c17-78d6-420b-991a-aa38c51b45b7
       64 76269c17-78d6-420b-991a-aa38c51b45b7
@@ -78,7 +78,7 @@
       71 76269c17-78d6-420b-991a-aa38c51b45b7
       72 76269c17-78d6-420b-991a-aa38c51b45b7
       73 76269c17-78d6-420b-991a-aa38c51b45b7
-      74 76269c17-78d6-420b-991a-aa38c51b45b7
+      74 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       75 76269c17-78d6-420b-991a-aa38c51b45b7
       76 76269c17-78d6-420b-991a-aa38c51b45b7
       
@@ -162,83 +162,83 @@
       76                         tent
       
       [[3]]
-                                      companies_id
-      1                        antimonarchy_canine
-      2                         celestial_lovebird
-      3                     nonphilosophical_llama
-      4                     nonphilosophical_llama
-      5         asteria_megalotomusquinquespinosus
-      6                     quasifaithful_amphiuma
-      7             spectacular_americanriverotter
-      8                          contrite_silkworm
-      9                      harmless_owlbutterfly
-      10                         fascist_maiasaura
-      11                charismatic_islandwhistler
-      12                        ironhearted_tarpan
-      13                  leathery_acornwoodpecker
-      14                           skarn_gallinule
-      15                automotive_alaskanmalamute
-      16                   weatherproof_roadrunner
-      17                         springloaded_newt
-      18                          private_arrowana
-      19                              comely_manta
-      20                    unpurified_acornweevil
-      21                 elementary_xantusmurrelet
-      22                  warriorlike_graysquirrel
-      23                      corrosive_nutcracker
-      24                        exportable_widgeon
-      25                  reversible_affenpinscher
-      26                    carbonless_dwarfrabbit
-      27                     baldish_anemoneshrimp
-      28         relegable_southernhairnosedwombat
-      29                      psychodelic_airedale
-      30                             fellow_bovine
-      31                    armourpiercing_arawana
-      32                     equilibristic_wallaby
-      33         angular_oregonsilverspotbutterfly
-      34                   ergophilic_fieldspaniel
-      35                   graphicial_yellowjacket
-      36                           twill_norwayrat
-      37                     wingless_northernpike
-      38                        subdermal_chipmunk
-      39                           choppy_mongoose
-      40              preexistent_africanmolesnake
-      41                      endodermic_izuthrush
-      42                    chronographic_armyworm
-      43                    chronographic_armyworm
-      44                          subzero_whiteeye
-      45                          subzero_whiteeye
-      46                   seismological_blackbird
-      47                            wealthy_ocelot
-      48                            feedable_shrew
-      49                     bacciform_mockingbird
-      50                      equipable_pinemarten
-      51                          cranky_milksnake
-      52                            melting_auklet
-      53                        lowborn_arcticduck
-      54                    epitaphic_yellowhammer
-      55                         dystopic_kingbird
-      56                       crowning_wildebeast
-      57                          fulltime_mollusk
-      58              heliophobic_clownanemonefish
-      59              heliophobic_clownanemonefish
-      60                 unemployed_asiaticmouflon
-      61                         erectable_watussi
-      62             insecticidal_clownanemonefish
-      63             lexicologic_americancrocodile
-      64            unsafe_atlanticsharpnosepuffer
-      65                           nondeadly_vixen
-      66                       baldish_jumpingbean
-      67                        griffinesque_eagle
-      68                          animalistic_grub
-      69                      complexionless_gecko
-      70               versicolor_asiantrumpetfish
-      71                  exquisite_englishpointer
-      72                            bereft_anchovy
-      73 gentlemanlike_asiaticlesserfreshwaterclam
-      74                  arthrodic_harborporpoise
-      75                            cuboid_noctule
-      76                 frowsy_metalmarkbutterfly
+                                   companies_id
+      1                  supernatural_millipede
+      2                       discussable_human
+      3                      proagrarian_jabiru
+      4                      proagrarian_jabiru
+      5       macroeconomical_intermediateegret
+      6                     designative_tattler
+      7                   dodecahedral_bellfrog
+      8                      radiological_brant
+      9               hexadic_xenurusunicinctus
+      10                 basaltic_trumpeterswan
+      11                       spiniferous_gnat
+      12                        targeted_nutria
+      13                        devotional_boto
+      14                         graphic_galago
+      15                nonallergenic_phalarope
+      16                       wrinkleable_flea
+      17                    misandrous_flamingo
+      18                  technocrat_nurseshark
+      19                shrewd_americanratsnake
+      20               unreputable_blackpanther
+      21                 ergasiophobic_halicore
+      22                    paleozoological_gar
+      23           deprivable_zebratailedlizard
+      24                   orange_horseshoecrab
+      25              fillable_dogwoodtwigborer
+      26                   monodramatic_tattler
+      27             rearmost_yellowbellylizard
+      28                       greyish_zopilote
+      29                   acidophobic_gemsbuck
+      30 bacteriophobic_gossamerwingedbutterfly
+      31                   gauche_amazontreeboa
+      32               goldenrod_alaskankleekai
+      33                            bleak_llama
+      34                     fracturable_gelada
+      35                   unquenchable_arawana
+      36                     ghastful_groundhog
+      37                         velvet_bunting
+      38                          charcoaly_bee
+      39        quasiliberal_northernspottedowl
+      40             dismissible_xiphiasgladius
+      41                        trilinear_sable
+      42      vermillion_ivorybackedwoodswallow
+      43      vermillion_ivorybackedwoodswallow
+      44               venustraphobic_hamadryad
+      45               venustraphobic_hamadryad
+      46             pegmatite_italiangreyhound
+      47          unfriended_littlenightmonkeys
+      48                           cocoa_piglet
+      49                     nonmythologic_erne
+      50                        bilingual_coral
+      51                    select_islandcanary
+      52        unwieldy_indianringneckparakeet
+      53            nondifficult_imperatorangel
+      54                  metropolitan_squamata
+      55               moonish_ozarkbigearedbat
+      56                        zincoid_waxwing
+      57                    lepidolite_terrapin
+      58                           blowzy_booby
+      59                           blowzy_booby
+      60             cerulean_riograndeescuerzo
+      61                              leggy_dog
+      62                       patriarchic_calf
+      63                            flamy_egret
+      64                    wolfish_arieltoucan
+      65                     weighty_salamander
+      66               largehearted_schapendoes
+      67                     savage_polyturator
+      68                          tenuous_fossa
+      69                     nonplanetary_jenny
+      70                 ducal_austrianpinscher
+      71           taboo_madagascarhissingroach
+      72                       californium_huia
+      73     recruitable_blacknorwegianelkhound
+      74                    ulcerative_goldfish
+      75                          deft_bluebird
+      76                  adequate_islandcanary
       
       [[4]]
              country
@@ -564,45 +564,45 @@
     Output
       [[1]]
                    activity_uuid_product_uuid
-      1  833caa78-30df-4374-900f-7f88ab44075b
-      2  76269c17-78d6-420b-991a-aa38c51b45b7
+      1  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      2  833caa78-30df-4374-900f-7f88ab44075b
       3  76269c17-78d6-420b-991a-aa38c51b45b7
-      4  833caa78-30df-4374-900f-7f88ab44075b
+      4  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       5  833caa78-30df-4374-900f-7f88ab44075b
       6  76269c17-78d6-420b-991a-aa38c51b45b7
-      7  76269c17-78d6-420b-991a-aa38c51b45b7
+      7  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       8  833caa78-30df-4374-900f-7f88ab44075b
-      9  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      9  76269c17-78d6-420b-991a-aa38c51b45b7
       10 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      11 76269c17-78d6-420b-991a-aa38c51b45b7
-      12 833caa78-30df-4374-900f-7f88ab44075b
-      13 833caa78-30df-4374-900f-7f88ab44075b
-      14 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      15 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      16 76269c17-78d6-420b-991a-aa38c51b45b7
-      17 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      18 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      11 833caa78-30df-4374-900f-7f88ab44075b
+      12 76269c17-78d6-420b-991a-aa38c51b45b7
+      13 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      14 833caa78-30df-4374-900f-7f88ab44075b
+      15 76269c17-78d6-420b-991a-aa38c51b45b7
+      16 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      17 833caa78-30df-4374-900f-7f88ab44075b
+      18 76269c17-78d6-420b-991a-aa38c51b45b7
       
       [[2]]
          co2_footprint
-      1     11.1242938
-      2      0.4870576
-      3    479.1300295
-      4     11.5800764
-      5      0.5305151
-      6    329.0656833
-      7     14.0590061
-      8      0.4680294
-      9    463.5008907
-      10     7.7735483
-      11     0.4007417
-      12   217.7544281
-      13    10.7258242
-      14     0.5961322
-      15   428.9694029
-      16    13.9812035
-      17     0.5184246
-      18   381.9552846
+      1     10.3571241
+      2      0.6926969
+      3    302.7862251
+      4     10.3571241
+      5      0.6926969
+      6    302.7862251
+      7     10.3571241
+      8      0.6926969
+      9    302.7862251
+      10    10.3571241
+      11     0.6926969
+      12   302.7862251
+      13    10.3571241
+      14     0.6926969
+      15   302.7862251
+      16    10.3571241
+      17     0.6926969
+      18   302.7862251
       
       [[3]]
                                                       ei_activity_name
@@ -738,8 +738,8 @@
     Output
       [[1]]
                    activity_uuid_product_uuid
-      1  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      2  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      1  833caa78-30df-4374-900f-7f88ab44075b
+      2  76269c17-78d6-420b-991a-aa38c51b45b7
       3  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       4  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       5  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
@@ -751,11 +751,11 @@
       11 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       12 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       13 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      14 76269c17-78d6-420b-991a-aa38c51b45b7
+      14 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       15 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       16 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      17 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      18 833caa78-30df-4374-900f-7f88ab44075b
+      17 833caa78-30df-4374-900f-7f88ab44075b
+      18 76269c17-78d6-420b-991a-aa38c51b45b7
       19 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       20 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       21 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
@@ -770,15 +770,15 @@
       30 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       31 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       32 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      33 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      34 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      33 833caa78-30df-4374-900f-7f88ab44075b
+      34 76269c17-78d6-420b-991a-aa38c51b45b7
       35 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       36 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      37 76269c17-78d6-420b-991a-aa38c51b45b7
+      37 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       38 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       39 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       40 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      41 833caa78-30df-4374-900f-7f88ab44075b
+      41 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       42 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       43 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       44 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
@@ -786,15 +786,15 @@
       46 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       47 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       48 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      49 76269c17-78d6-420b-991a-aa38c51b45b7
-      50 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      49 833caa78-30df-4374-900f-7f88ab44075b
+      50 76269c17-78d6-420b-991a-aa38c51b45b7
       51 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       52 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       53 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       54 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       55 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       56 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      57 833caa78-30df-4374-900f-7f88ab44075b
+      57 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       58 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       59 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       60 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
@@ -802,12 +802,12 @@
       62 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       63 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       64 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      65 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      65 833caa78-30df-4374-900f-7f88ab44075b
       66 76269c17-78d6-420b-991a-aa38c51b45b7
-      67 76269c17-78d6-420b-991a-aa38c51b45b7
+      67 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       68 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       69 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      70 833caa78-30df-4374-900f-7f88ab44075b
+      70 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       71 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       72 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       73 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
@@ -818,14 +818,14 @@
       78 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       79 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       80 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      81 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      82 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      81 833caa78-30df-4374-900f-7f88ab44075b
+      82 76269c17-78d6-420b-991a-aa38c51b45b7
       83 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       84 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       85 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       86 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      87 76269c17-78d6-420b-991a-aa38c51b45b7
-      88 833caa78-30df-4374-900f-7f88ab44075b
+      87 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      88 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       89 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       90 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       91 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
@@ -833,7 +833,7 @@
       93 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       94 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       95 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      96 833caa78-30df-4374-900f-7f88ab44075b
+      96 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       
       [[2]]
                                                       ei_activity_name
@@ -1134,102 +1134,102 @@
       
       [[5]]
          input_co2_footprint
-      1         4.601011e-01
-      2         4.088316e+02
-      3         1.104193e+00
-      4         1.874692e+08
-      5         5.103225e-01
-      6         5.189068e-01
-      7         5.560899e-01
-      8         8.454888e+00
-      9         6.198633e-01
-      10        1.658672e-02
-      11        6.986538e-02
-      12        1.562327e+00
-      13        2.251079e+01
-      14        7.863589e-01
-      15        2.331037e+00
-      16        6.598002e+00
-      17        4.472072e-01
-      18        3.567103e+02
-      19        1.256833e+00
-      20        1.270776e+08
-      21        6.576683e-01
-      22        5.461281e-01
-      23        4.107535e-01
-      24        1.101182e+01
-      25        5.222601e-01
-      26        1.082463e-02
-      27        5.441419e-02
-      28        9.474739e-01
-      29        3.477905e+01
-      30        5.810847e-01
-      31        2.527889e+00
-      32        4.658593e+00
-      33        8.730115e-01
-      34        4.260550e+02
-      35        2.510030e+00
-      36        1.886530e+08
-      37        4.625257e-01
-      38        4.363166e-01
-      39        4.071156e-01
-      40        8.924828e+00
-      41        3.961895e-01
-      42        1.862665e-02
-      43        4.390680e-02
-      44        7.986399e-01
-      45        1.887313e+01
-      46        8.454426e-01
-      47        2.395040e+00
-      48        6.600165e+00
-      49        4.338048e-01
-      50        2.819518e+02
-      51        2.462764e+00
-      52        2.693100e+08
-      53        4.111488e-01
-      54        7.162208e-01
-      55        7.287811e-01
-      56        5.311405e+00
-      57        4.165136e-01
-      58        2.151087e-02
-      59        3.676112e-02
-      60        7.537392e-01
-      61        2.255363e+01
-      62        5.790934e-01
-      63        1.312807e+00
-      64        6.162635e+00
-      65        6.768044e-01
-      66        4.537387e+02
-      67        2.439277e+00
-      68        2.414255e+08
-      69        4.851382e-01
-      70        5.121601e-01
-      71        8.134042e-01
-      72        8.876276e+00
-      73        5.476631e-01
-      74        2.361750e-02
-      75        5.863629e-02
-      76        7.978997e-01
-      77        1.835941e+01
-      78        6.751592e-01
-      79        2.456728e+00
-      80        6.455731e+00
-      81        4.317327e-01
-      82        3.807688e+02
-      83        2.039879e+00
-      84        2.779667e+08
-      85        2.990997e-01
-      86        5.438758e-01
-      87        3.928216e-01
-      88        6.142256e+00
-      89        7.289300e-01
-      90        1.241902e-02
-      91        6.282106e-02
-      92        1.591872e+00
-      93        3.346020e+01
-      94        1.043347e+00
-      95        2.785079e+00
-      96        6.485814e+00
+      1         4.091668e-01
+      2         2.977502e+02
+      3         1.414927e+00
+      4         3.696992e+08
+      5         3.070715e-01
+      6         4.461018e-01
+      7         6.745218e-01
+      8         6.155684e+00
+      9         4.862393e-01
+      10        2.591234e-02
+      11        9.922842e-02
+      12        7.008449e-01
+      13        2.128406e+01
+      14        6.579088e-01
+      15        3.366754e+00
+      16        4.882162e+00
+      17        4.091668e-01
+      18        2.977502e+02
+      19        1.414927e+00
+      20        3.696992e+08
+      21        3.070715e-01
+      22        4.461018e-01
+      23        6.745218e-01
+      24        6.155684e+00
+      25        4.862393e-01
+      26        2.591234e-02
+      27        9.922842e-02
+      28        7.008449e-01
+      29        2.128406e+01
+      30        6.579088e-01
+      31        3.366754e+00
+      32        4.882162e+00
+      33        4.091668e-01
+      34        2.977502e+02
+      35        1.414927e+00
+      36        3.696992e+08
+      37        3.070715e-01
+      38        4.461018e-01
+      39        6.745218e-01
+      40        6.155684e+00
+      41        4.862393e-01
+      42        2.591234e-02
+      43        9.922842e-02
+      44        7.008449e-01
+      45        2.128406e+01
+      46        6.579088e-01
+      47        3.366754e+00
+      48        4.882162e+00
+      49        4.091668e-01
+      50        2.977502e+02
+      51        1.414927e+00
+      52        3.696992e+08
+      53        3.070715e-01
+      54        4.461018e-01
+      55        6.745218e-01
+      56        6.155684e+00
+      57        4.862393e-01
+      58        2.591234e-02
+      59        9.922842e-02
+      60        7.008449e-01
+      61        2.128406e+01
+      62        6.579088e-01
+      63        3.366754e+00
+      64        4.882162e+00
+      65        4.091668e-01
+      66        2.977502e+02
+      67        1.414927e+00
+      68        3.696992e+08
+      69        3.070715e-01
+      70        4.461018e-01
+      71        6.745218e-01
+      72        6.155684e+00
+      73        4.862393e-01
+      74        2.591234e-02
+      75        9.922842e-02
+      76        7.008449e-01
+      77        2.128406e+01
+      78        6.579088e-01
+      79        3.366754e+00
+      80        4.882162e+00
+      81        4.091668e-01
+      82        2.977502e+02
+      83        1.414927e+00
+      84        3.696992e+08
+      85        3.070715e-01
+      86        4.461018e-01
+      87        6.745218e-01
+      88        6.155684e+00
+      89        4.862393e-01
+      90        2.591234e-02
+      91        9.922842e-02
+      92        7.008449e-01
+      93        2.128406e+01
+      94        6.579088e-01
+      95        3.366754e+00
+      96        4.882162e+00
       
       [[6]]
                                                   input_ei_activity_name
@@ -3018,33 +3018,33 @@
                     activity_uuid_product_uuid
       1   76269c17-78d6-420b-991a-aa38c51b45b7
       2   76269c17-78d6-420b-991a-aa38c51b45b7
-      3   833caa78-30df-4374-900f-7f88ab44075b
+      3   76269c17-78d6-420b-991a-aa38c51b45b7
       4   76269c17-78d6-420b-991a-aa38c51b45b7
-      5   76269c17-78d6-420b-991a-aa38c51b45b7
-      6   76269c17-78d6-420b-991a-aa38c51b45b7
-      7   76269c17-78d6-420b-991a-aa38c51b45b7
-      8   76269c17-78d6-420b-991a-aa38c51b45b7
+      5   833caa78-30df-4374-900f-7f88ab44075b
+      6   833caa78-30df-4374-900f-7f88ab44075b
+      7   833caa78-30df-4374-900f-7f88ab44075b
+      8   833caa78-30df-4374-900f-7f88ab44075b
       9   76269c17-78d6-420b-991a-aa38c51b45b7
       10  76269c17-78d6-420b-991a-aa38c51b45b7
       11  76269c17-78d6-420b-991a-aa38c51b45b7
       12  76269c17-78d6-420b-991a-aa38c51b45b7
       13  76269c17-78d6-420b-991a-aa38c51b45b7
       14  76269c17-78d6-420b-991a-aa38c51b45b7
-      15  833caa78-30df-4374-900f-7f88ab44075b
+      15  76269c17-78d6-420b-991a-aa38c51b45b7
       16  76269c17-78d6-420b-991a-aa38c51b45b7
       17  76269c17-78d6-420b-991a-aa38c51b45b7
       18  76269c17-78d6-420b-991a-aa38c51b45b7
       19  76269c17-78d6-420b-991a-aa38c51b45b7
       20  76269c17-78d6-420b-991a-aa38c51b45b7
-      21  833caa78-30df-4374-900f-7f88ab44075b
+      21  76269c17-78d6-420b-991a-aa38c51b45b7
       22  76269c17-78d6-420b-991a-aa38c51b45b7
-      23  76269c17-78d6-420b-991a-aa38c51b45b7
-      24  76269c17-78d6-420b-991a-aa38c51b45b7
+      23  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      24  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       25  76269c17-78d6-420b-991a-aa38c51b45b7
       26  76269c17-78d6-420b-991a-aa38c51b45b7
       27  76269c17-78d6-420b-991a-aa38c51b45b7
       28  76269c17-78d6-420b-991a-aa38c51b45b7
-      29  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      29  76269c17-78d6-420b-991a-aa38c51b45b7
       30  76269c17-78d6-420b-991a-aa38c51b45b7
       31  76269c17-78d6-420b-991a-aa38c51b45b7
       32  76269c17-78d6-420b-991a-aa38c51b45b7
@@ -3062,10 +3062,10 @@
       44  76269c17-78d6-420b-991a-aa38c51b45b7
       45  76269c17-78d6-420b-991a-aa38c51b45b7
       46  76269c17-78d6-420b-991a-aa38c51b45b7
-      47  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      47  76269c17-78d6-420b-991a-aa38c51b45b7
       48  76269c17-78d6-420b-991a-aa38c51b45b7
       49  76269c17-78d6-420b-991a-aa38c51b45b7
-      50  833caa78-30df-4374-900f-7f88ab44075b
+      50  76269c17-78d6-420b-991a-aa38c51b45b7
       51  76269c17-78d6-420b-991a-aa38c51b45b7
       52  76269c17-78d6-420b-991a-aa38c51b45b7
       53  76269c17-78d6-420b-991a-aa38c51b45b7
@@ -3075,7 +3075,7 @@
       57  76269c17-78d6-420b-991a-aa38c51b45b7
       58  76269c17-78d6-420b-991a-aa38c51b45b7
       59  76269c17-78d6-420b-991a-aa38c51b45b7
-      60  833caa78-30df-4374-900f-7f88ab44075b
+      60  76269c17-78d6-420b-991a-aa38c51b45b7
       61  76269c17-78d6-420b-991a-aa38c51b45b7
       62  76269c17-78d6-420b-991a-aa38c51b45b7
       63  76269c17-78d6-420b-991a-aa38c51b45b7
@@ -3099,21 +3099,21 @@
       81  76269c17-78d6-420b-991a-aa38c51b45b7
       82  76269c17-78d6-420b-991a-aa38c51b45b7
       83  76269c17-78d6-420b-991a-aa38c51b45b7
-      84  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      84  76269c17-78d6-420b-991a-aa38c51b45b7
       85  76269c17-78d6-420b-991a-aa38c51b45b7
       86  76269c17-78d6-420b-991a-aa38c51b45b7
       87  76269c17-78d6-420b-991a-aa38c51b45b7
-      88  833caa78-30df-4374-900f-7f88ab44075b
+      88  76269c17-78d6-420b-991a-aa38c51b45b7
       89  76269c17-78d6-420b-991a-aa38c51b45b7
       90  76269c17-78d6-420b-991a-aa38c51b45b7
-      91  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      91  76269c17-78d6-420b-991a-aa38c51b45b7
       92  76269c17-78d6-420b-991a-aa38c51b45b7
       93  76269c17-78d6-420b-991a-aa38c51b45b7
       94  76269c17-78d6-420b-991a-aa38c51b45b7
       95  76269c17-78d6-420b-991a-aa38c51b45b7
       96  76269c17-78d6-420b-991a-aa38c51b45b7
-      97  76269c17-78d6-420b-991a-aa38c51b45b7
-      98  76269c17-78d6-420b-991a-aa38c51b45b7
+      97  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      98  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       99  76269c17-78d6-420b-991a-aa38c51b45b7
       100 76269c17-78d6-420b-991a-aa38c51b45b7
       101 76269c17-78d6-420b-991a-aa38c51b45b7
@@ -3122,7 +3122,7 @@
       104 76269c17-78d6-420b-991a-aa38c51b45b7
       105 76269c17-78d6-420b-991a-aa38c51b45b7
       106 76269c17-78d6-420b-991a-aa38c51b45b7
-      107 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      107 76269c17-78d6-420b-991a-aa38c51b45b7
       108 76269c17-78d6-420b-991a-aa38c51b45b7
       109 76269c17-78d6-420b-991a-aa38c51b45b7
       110 76269c17-78d6-420b-991a-aa38c51b45b7
@@ -3130,11 +3130,11 @@
       112 76269c17-78d6-420b-991a-aa38c51b45b7
       113 76269c17-78d6-420b-991a-aa38c51b45b7
       114 76269c17-78d6-420b-991a-aa38c51b45b7
-      115 76269c17-78d6-420b-991a-aa38c51b45b7
-      116 76269c17-78d6-420b-991a-aa38c51b45b7
-      117 76269c17-78d6-420b-991a-aa38c51b45b7
-      118 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      119 833caa78-30df-4374-900f-7f88ab44075b
+      115 833caa78-30df-4374-900f-7f88ab44075b
+      116 833caa78-30df-4374-900f-7f88ab44075b
+      117 833caa78-30df-4374-900f-7f88ab44075b
+      118 833caa78-30df-4374-900f-7f88ab44075b
+      119 76269c17-78d6-420b-991a-aa38c51b45b7
       120 76269c17-78d6-420b-991a-aa38c51b45b7
       121 76269c17-78d6-420b-991a-aa38c51b45b7
       122 76269c17-78d6-420b-991a-aa38c51b45b7
@@ -3159,11 +3159,11 @@
       141 76269c17-78d6-420b-991a-aa38c51b45b7
       142 76269c17-78d6-420b-991a-aa38c51b45b7
       143 76269c17-78d6-420b-991a-aa38c51b45b7
-      144 833caa78-30df-4374-900f-7f88ab44075b
+      144 76269c17-78d6-420b-991a-aa38c51b45b7
       145 76269c17-78d6-420b-991a-aa38c51b45b7
       146 76269c17-78d6-420b-991a-aa38c51b45b7
-      147 76269c17-78d6-420b-991a-aa38c51b45b7
-      148 76269c17-78d6-420b-991a-aa38c51b45b7
+      147 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      148 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       149 76269c17-78d6-420b-991a-aa38c51b45b7
       150 76269c17-78d6-420b-991a-aa38c51b45b7
       151 76269c17-78d6-420b-991a-aa38c51b45b7
@@ -4269,7 +4269,7 @@
       2  76269c17-78d6-420b-991a-aa38c51b45b7
       3  76269c17-78d6-420b-991a-aa38c51b45b7
       4  76269c17-78d6-420b-991a-aa38c51b45b7
-      5  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      5  76269c17-78d6-420b-991a-aa38c51b45b7
       6  76269c17-78d6-420b-991a-aa38c51b45b7
       7  76269c17-78d6-420b-991a-aa38c51b45b7
       8  76269c17-78d6-420b-991a-aa38c51b45b7
@@ -4279,13 +4279,13 @@
       12 76269c17-78d6-420b-991a-aa38c51b45b7
       13 76269c17-78d6-420b-991a-aa38c51b45b7
       14 76269c17-78d6-420b-991a-aa38c51b45b7
-      15 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      15 76269c17-78d6-420b-991a-aa38c51b45b7
       16 76269c17-78d6-420b-991a-aa38c51b45b7
       17 76269c17-78d6-420b-991a-aa38c51b45b7
       18 76269c17-78d6-420b-991a-aa38c51b45b7
       19 76269c17-78d6-420b-991a-aa38c51b45b7
       20 76269c17-78d6-420b-991a-aa38c51b45b7
-      21 833caa78-30df-4374-900f-7f88ab44075b
+      21 76269c17-78d6-420b-991a-aa38c51b45b7
       22 76269c17-78d6-420b-991a-aa38c51b45b7
       23 76269c17-78d6-420b-991a-aa38c51b45b7
       24 76269c17-78d6-420b-991a-aa38c51b45b7
@@ -4297,10 +4297,10 @@
       30 76269c17-78d6-420b-991a-aa38c51b45b7
       31 76269c17-78d6-420b-991a-aa38c51b45b7
       32 76269c17-78d6-420b-991a-aa38c51b45b7
-      33 76269c17-78d6-420b-991a-aa38c51b45b7
-      34 76269c17-78d6-420b-991a-aa38c51b45b7
+      33 833caa78-30df-4374-900f-7f88ab44075b
+      34 833caa78-30df-4374-900f-7f88ab44075b
       35 76269c17-78d6-420b-991a-aa38c51b45b7
-      36 76269c17-78d6-420b-991a-aa38c51b45b7
+      36 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       37 76269c17-78d6-420b-991a-aa38c51b45b7
       38 76269c17-78d6-420b-991a-aa38c51b45b7
       39 76269c17-78d6-420b-991a-aa38c51b45b7
@@ -4313,8 +4313,8 @@
       46 76269c17-78d6-420b-991a-aa38c51b45b7
       47 76269c17-78d6-420b-991a-aa38c51b45b7
       48 76269c17-78d6-420b-991a-aa38c51b45b7
-      49 833caa78-30df-4374-900f-7f88ab44075b
-      50 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      49 76269c17-78d6-420b-991a-aa38c51b45b7
+      50 76269c17-78d6-420b-991a-aa38c51b45b7
       51 76269c17-78d6-420b-991a-aa38c51b45b7
       52 76269c17-78d6-420b-991a-aa38c51b45b7
       53 76269c17-78d6-420b-991a-aa38c51b45b7
@@ -4323,22 +4323,22 @@
       56 76269c17-78d6-420b-991a-aa38c51b45b7
       57 76269c17-78d6-420b-991a-aa38c51b45b7
       58 76269c17-78d6-420b-991a-aa38c51b45b7
-      59 76269c17-78d6-420b-991a-aa38c51b45b7
+      59 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       60 76269c17-78d6-420b-991a-aa38c51b45b7
       61 76269c17-78d6-420b-991a-aa38c51b45b7
       62 76269c17-78d6-420b-991a-aa38c51b45b7
-      63 76269c17-78d6-420b-991a-aa38c51b45b7
-      64 76269c17-78d6-420b-991a-aa38c51b45b7
+      63 833caa78-30df-4374-900f-7f88ab44075b
+      64 833caa78-30df-4374-900f-7f88ab44075b
       65 76269c17-78d6-420b-991a-aa38c51b45b7
-      66 833caa78-30df-4374-900f-7f88ab44075b
+      66 76269c17-78d6-420b-991a-aa38c51b45b7
       67 76269c17-78d6-420b-991a-aa38c51b45b7
-      68 833caa78-30df-4374-900f-7f88ab44075b
+      68 76269c17-78d6-420b-991a-aa38c51b45b7
       69 76269c17-78d6-420b-991a-aa38c51b45b7
       70 76269c17-78d6-420b-991a-aa38c51b45b7
       71 76269c17-78d6-420b-991a-aa38c51b45b7
       72 76269c17-78d6-420b-991a-aa38c51b45b7
       73 76269c17-78d6-420b-991a-aa38c51b45b7
-      74 76269c17-78d6-420b-991a-aa38c51b45b7
+      74 bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       75 76269c17-78d6-420b-991a-aa38c51b45b7
       76 76269c17-78d6-420b-991a-aa38c51b45b7
       
@@ -4508,12 +4508,12 @@
     Output
       [[1]]
                    activity_uuid_product_uuid
-      1  76269c17-78d6-420b-991a-aa38c51b45b7
-      2  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      3  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
-      4  833caa78-30df-4374-900f-7f88ab44075b
-      5  833caa78-30df-4374-900f-7f88ab44075b
-      6  76269c17-78d6-420b-991a-aa38c51b45b7
+      1  833caa78-30df-4374-900f-7f88ab44075b
+      2  833caa78-30df-4374-900f-7f88ab44075b
+      3  76269c17-78d6-420b-991a-aa38c51b45b7
+      4  76269c17-78d6-420b-991a-aa38c51b45b7
+      5  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
+      6  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       7  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       8  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb
       9  bf94b5a7-b7a2-46d1-bb95-84bc560b12fb

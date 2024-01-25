@@ -106,13 +106,13 @@ test_that("in emissions, all `*uuid` in `companies` also exist in `co2`", {
   expect_true(identical(nrow(suppressMessages(anti_join(companies, inputs))), 0L))
 })
 
-test_that("in emissions, some `*uuid` in `co2` don't exist in `companies`", {
+test_that("in emissions, all `*uuid` in `co2` also exist in `companies`", {
   local_options(readr.show_col_types = FALSE)
 
   companies <- read_csv(toy_emissions_profile_any_companies())
   products <- read_csv(toy_emissions_profile_products_ecoinvent())
   inputs <- read_csv(toy_emissions_profile_upstream_products_ecoinvent())
 
-  expect_true(nrow(suppressMessages(anti_join(products, companies))) > 0L)
-  expect_true(nrow(suppressMessages(anti_join(inputs, companies))) > 0L)
+  expect_true(identical(nrow(suppressMessages(anti_join(products, companies))), 0L))
+  expect_true(identical(nrow(suppressMessages(anti_join(inputs, companies))), 0L))
 })
