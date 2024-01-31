@@ -674,23 +674,23 @@
       16                               GLO
       
       [[4]]
-                                                  input_activity_uuid_product_uuid
-      1  55a5ac05-ab15-5a27-9d0e-6ecf840039f1_f10b8722-4be1-43d5-b17d-c51ad0e29d29
-      2  bc548877-9cc6-590d-ba72-1d1d2daeb5b9_e2ccc500-255f-448c-8c88-ed25177993df
-      3  bdc93cd8-00b4-5b3e-993e-b7fef7059e52_4e584f6f-2e71-4796-931e-bb9a273c161c
-      4  fdb1f848-173f-5fe1-96a2-588171e87e30_c2c93af2-47cb-4ec7-a1bd-d3d572bca039
-      5  95fcd1bb-4dc6-516a-a3b2-30a4f0530639_3b1d249a-c924-4d6c-8e1f-647f562daa54
-      6  daef2f9a-4108-52ae-90a7-fe64abad51bc_6e74937e-b691-4c49-9b8f-5ba44d7c081d
-      7  3b190359-a32e-5294-af63-983f38ce6525_759b89bd-3aa6-42ad-b767-5bb9ef5d331d
-      8  2c92cdcd-29df-53ba-a209-77c7de201d14_6e316c64-0481-4832-b097-296e14c0b02f
-      9  9392c694-12a6-5cd7-a421-d4866359df2c_0d3eda5a-4601-4573-9549-0701c459ab88
-      10 c18c6cc9-4a26-5c47-9ea9-8635ff2c158e_240c1a3c-1aba-4528-afc3-3f27f56583be
-      11 c4ec0b1e-2a3b-5700-871c-2adbbb29bc1d_4f312355-ac65-4635-8fb2-006dba64ce60
-      12 7361f7fb-5cf2-598c-823a-a4b7e50c3d28_a9007f10-7e39-4d50-8f4a-d6d03ce3d673
-      13 0d9d1001-6635-51b9-bc24-470161f83e97_23fccced-e1e5-421d-9abe-5b59c51a862e
-      14 a1383009-9188-5326-916a-1e4ea2d835c4_28c2473e-1e11-4078-9a76-de9550553adc
-      15 add1dfa9-2b45-5648-be73-aec8f6d0fc7c_e79575a7-0b20-46d5-94b2-99d1916105db
-      16 15017181-3042-5962-88d3-3ef45f8c0462_17c72eaf-0185-42dc-87d4-4882e550ba09
+             input_activity_uuid_product_uuid
+      1  f8b471d4-b6b5-4e91-918c-f720e4ae90c5
+      2  44e5e288-4f81-40d0-88b4-e79eaea6574c
+      3  9cdbbd45-c7e6-4308-aa5e-0be4fab4764c
+      4  983dd322-ac70-4167-affd-1a295a6f3464
+      5  7191f33c-f13f-4228-8058-5ebc59ea73da
+      6  c58df129-466c-44c5-858d-3c47800c7993
+      7  3a920a69-f567-4c9d-b737-3ea90a6f2c5f
+      8  cd68b4bd-d6ea-437f-9517-60140eb362e4
+      9  875cd7e3-19a7-45e0-8021-1d4930ac9738
+      10 dd83290a-ca62-448c-812d-3fb0da9cfc6c
+      11 6d77c0f7-076c-4e92-b09c-1d0fddb2bb19
+      12 e2e4b62e-300c-4418-aaa0-d1fa2896bdae
+      13 f4650b0c-02a4-4a1b-8273-7f59f8407ca9
+      14 0014714d-33d9-46f1-8c5e-8574bc3122a0
+      15 0428e3ea-d934-4df8-aac9-c5d1923cc422
+      16 35f71ed6-0c7e-4238-a36e-11f29f8c6d58
       
       [[5]]
          input_co2_footprint
