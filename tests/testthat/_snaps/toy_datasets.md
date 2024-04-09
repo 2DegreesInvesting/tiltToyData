@@ -3934,6 +3934,24 @@
       5 exhibitions, stand fittings
       6 exhibitions, stand fittings
       
+      [[9]]
+        min_headcount
+      1             1
+      2             1
+      3             1
+      4             1
+      5             1
+      6             1
+      
+      [[10]]
+        max_headcount
+      1            10
+      2            10
+      3            10
+      4            10
+      5            10
+      6            10
+      
 
 # ecoinvent_activities hasn't changed
 

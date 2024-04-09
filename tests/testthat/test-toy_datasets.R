@@ -60,6 +60,14 @@ test_that("europages_companies hasn't changed", {
   expect_snapshot(format_robust_snapshot(data))
 })
 
+test_that("europages_companies has headcount", {
+  local_options(readr.show_col_types = FALSE)
+
+  data <- read_csv(toy_europages_companies()) |> head()
+  expect_true(hasName(data, "min_headcount"))
+  expect_true(hasName(data, "max_headcount"))
+})
+
 test_that("ecoinvent_activities hasn't changed", {
   local_snapshot()
   data <- read_csv(toy_ecoinvent_activities() |> head())
