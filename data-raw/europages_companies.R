@@ -14,6 +14,15 @@ inst_path <- toy_path(csv_gz(dataset))
 new_path <- data_raw(csv_gz(paste0(dataset, "-v0.0.0.9203")))
 
 # Copy `europages_companies` v0.0.0.9203 to data-raw/ -----------------------
+if (packageVersion("tiltToyData") > "0.0.0.9203") {
+  rlang::warn(
+    c(
+      "tiltToyData > 0.0.0.9203 should already have the `*headcount` columns.",
+      x = "If `europages_companies` has `*headcount` you'll see an error.",
+      i = "Do you need to rewrite this file?"
+    )
+  )
+}
 dataset <- "europages_companies"
 file_copy(inst_path, new_path)
 
