@@ -25,7 +25,7 @@ csv_gz <- function(path) paste0(path, ".csv.gz")
 inst_path <- toy_path(csv_gz(dataset))
 new_path <- data_raw(csv_gz(paste0(dataset, "-v0.0.0.9203")))
 
-# Copy `europages_companies` v0.0.0.9203 to data-raw/ -----------------------
+# Copy `europages_companies` v0.0.0.9203 to data-raw/
 dataset <- "europages_companies"
 file_copy(inst_path, new_path)
 
