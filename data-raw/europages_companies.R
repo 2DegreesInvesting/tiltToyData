@@ -8,7 +8,7 @@ library(fs)
 withr::local_options(readr.show_col_types = FALSE)
 
 data_raw <- function(...) here("data-raw", ...)
-csv_gz <- function(rel_path) paste0(rel_path, ".csv.gz")
+csv_gz <- function(path) paste0(path, ".csv.gz")
 
 rel_path <- toy_path(csv_gz(dataset))
 new_path <- data_raw(csv_gz(paste0(dataset, "-v0.0.0.9203")))
