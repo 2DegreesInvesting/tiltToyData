@@ -1,11 +1,11 @@
+# https://github.com/2DegreesInvesting/tiltToyData/issues/49
+
 library(dplyr, warn.conflicts = FALSE)
 library(readr, warn.conflicts = FALSE)
 library(here)
 library(fs)
 
 withr::local_options(readr.show_col_types = FALSE)
-
-# https://github.com/2DegreesInvesting/tiltToyData/issues/49
 
 data_raw <- function(...) here("data-raw", ...)
 csv_gz <- function(rel_path) paste0(rel_path, ".csv.gz")
