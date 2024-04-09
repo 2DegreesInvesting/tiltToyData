@@ -8,28 +8,28 @@ withr::local_options(readr.show_col_types = FALSE)
 # https://github.com/2DegreesInvesting/tiltToyData/issues/49
 
 data_raw <- function(...) here("data-raw", ...)
-csv_gz <- function(path) paste0(path, ".csv.gz")
+csv_gz <- function(rel_path) paste0(rel_path, ".csv.gz")
 
-path <- toy_path(csv_gz(dataset))
+rel_path <- toy_path(csv_gz(dataset))
 new_path <- data_raw(csv_gz(paste0(dataset, "-v0.0.0.9203")))
 
 # Copy `europages_companies` v0.0.0.9203 to data-raw/ -----------------------
 dataset <- "europages_companies"
-file_copy(path, new_path)
+file_copy(rel_path, new_path)
 
-europages_companies_old <- data_raw(csv_gz(dataset)) |> read_csv()
+europages_companies_old <- read_csv(new_path)
 
 # Ensure the old dataset lacks the columns I'm about to add
 lacks_name <- function(x, name) !hasName(x, name)
-europages_companies_old |> lacks_name("min_headcount") |> stopifnot()
-europages_companies_old |> lacks_name("max_headcount") |> stopifnot()
+stopifnot(lacks_name(europages_companies_old, "min_headcount"))
+stopifnot(lacks_name(europages_companies_old, "max_headcount"))
 
 europages_companies <- europages_companies_old |>
   mutate(min_headcount = 1, max_headcount = 10)
 
 # Ensure the new dataset has the columns I just added
-europages_companies |> hasName("min_headcount") |> stopifnot()
-europages_companies |> hasName("max_headcount") |> stopifnot()
+stopifnot(hasName(europages_companies, "min_headcount"))
+stopifnot(hasName(europages_companies, "max_headcount"))
 
-# Overwrite
-toy_path(csv_gz(dataset))
+# Update
+write_csv(europages_companies, rel_path)
