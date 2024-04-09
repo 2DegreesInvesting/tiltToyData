@@ -10,12 +10,12 @@ withr::local_options(readr.show_col_types = FALSE)
 data_raw <- function(...) here("data-raw", ...)
 csv_gz <- function(path) paste0(path, ".csv.gz")
 
-rel_path <- toy_path(csv_gz(dataset))
+inst_path <- toy_path(csv_gz(dataset))
 new_path <- data_raw(csv_gz(paste0(dataset, "-v0.0.0.9203")))
 
 # Copy `europages_companies` v0.0.0.9203 to data-raw/ -----------------------
 dataset <- "europages_companies"
-file_copy(rel_path, new_path)
+file_copy(inst_path, new_path)
 
 europages_companies_old <- read_csv(new_path)
 
@@ -32,4 +32,4 @@ stopifnot(hasName(europages_companies, "min_headcount"))
 stopifnot(hasName(europages_companies, "max_headcount"))
 
 # Update
-write_csv(europages_companies, rel_path)
+write_csv(europages_companies, inst_path)
