@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltToyData 0.0.0.9204 (2024-04-10)
+
+* `europages_companies` gains the columns `min_headcount` and `max_headcount`
+(#50).
+
 # tiltToyData 0.0.0.9203 (2024-02-11)
 
 * Follow up from #36 and #38.
