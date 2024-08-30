@@ -1,33 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltToyData/404.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltToyData/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltToyData/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltToyData/index.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltToyData/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltToyData/reference/deprecated.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltToyData/reference/deprecated_path.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltToyData/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltToyData/reference/tiltToyData-package.html</loc>
-  </url>
-  <url>
-    <loc>https://2degreesinvesting.github.io/tiltToyData/reference/toy_files.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://2degreesinvesting.github.io/tiltToyData/404.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltToyData/LICENSE.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltToyData/authors.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltToyData/index.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltToyData/news/index.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltToyData/reference/deprecated.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltToyData/reference/deprecated_path.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltToyData/reference/index.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltToyData/reference/tiltToyData-package.html</loc></url>
+<url><loc>https://2degreesinvesting.github.io/tiltToyData/reference/toy_files.html</loc></url>
 </urlset>
+
